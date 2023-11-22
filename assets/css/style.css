@@ -1,3 +1,19 @@
+/* Font Family */
+@font-face {
+    font-family: Azeret Medium;
+    src: url(/assets/fonts/Azeret-Medium.otf);
+  }
+  
+  @font-face {
+    font-family: Azeret Regular;
+    src: url(/assets/fonts/Azeret-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: Azeret Semibold;
+    src: url(/assets/fonts/Azeret-Semibold.otf);
+  }
+
 :root {
 
     /* ------ Colors ----- */
@@ -13,7 +29,9 @@
 
 
     /* Font Family */
-    --ff-work-sans: 'Work Sans', sans-serif;
+    --ff-azeret-medium: 'Azeret Medium';
+    --ff-azeret-regular: 'Azeret Regular';
+    --ff-azeret-semibold: 'Azeret Semibold';
 
     /* Font Size */
     --fs-1: 86px;
@@ -49,7 +67,7 @@
 }
 
 html {
-    font-family: var(--ff-work-sans);
+    font-family: var(--ff-azeret-regular);
     scroll-behavior: smooth;
 }
 
@@ -334,10 +352,10 @@ video {
 }
 
 .home__bottom-down .boxes {
+    width: 90%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    align-items: start;
+    justify-content: start;
 }
 
 .home__bottom-down .box {
@@ -345,27 +363,36 @@ video {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    border-left: 1px solid rgb(52, 52, 52);
-    padding: 20px;
+    padding: 0 20px;
+}
+
+.home__bottom-down .box .line
+{
+    margin-right: 12px;
+    width: 1px;
+    height: 6rem;
+    background-color: var(--white);
+    opacity: 0.3;
 }
 
 .home__bottom-down h5 {
     opacity: 0.3;
     line-height: 16px;
-
 }
 
 .home__bottom-down .socials {
+    width: 15%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .home__bottom-down .socials .social_links {
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
     gap: 15px;
 }
 
@@ -376,7 +403,6 @@ video {
 .home__bottom-down .socials .social-content p {
     font-size: var(--fs-5);
     line-height: 16px;
-    width: 70%;
 }
 
 
