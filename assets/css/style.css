@@ -18,7 +18,7 @@
     /* Font Size */
     --fs-1: 86px;
     --fs-2: 62px;
-    --fs-3: 2.2rem;
+    --fs-3: 54px;
     --fs-4: 2rem;
     --fs-5: 12px;
     --fs-6: 14px;
@@ -55,21 +55,11 @@ html {
 
 body {
     background-color: var(--white);
-    color: var(--white);
+    color: var(--black);
 }
 
 li {
     list-style: none;
-}
-
-a,
-img,
-span,
-time,
-data,
-input,
-button {
-    display: block;
 }
 
 a {
@@ -106,6 +96,11 @@ button {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.primary-color
+{
+    color: var(--primary-color);
 }
 
 /* ----------------- Reused Styles ------------------ */
@@ -152,6 +147,16 @@ h6 {
 }
 
 
+p {
+    font-size: var(--fs-5);
+}
+
+
+.title
+{
+    text-align: center;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -175,6 +180,7 @@ h6 {
 .home {
     background-color: var(--black);
     border-radius: 30px;
+    color: var(--white);
 }
 
 
@@ -185,17 +191,16 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
 }
 
 .header {
     position: absolute;
     left: 0;
     right: 0;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
 }
 
 .header .logo {
@@ -317,8 +322,8 @@ video {
 .home__bottom-up .home__bottom-left .home__bottom-left-content {
     font-size: var(--fs-5);
     opacity: .3;
-    width: 85%;
     line-height: 16px;
+    width: 80%;
 }
 
 
@@ -326,23 +331,23 @@ video {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .home__bottom-down .boxes {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .home__bottom-down .box {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 12px;
     border-left: 1px solid rgb(52, 52, 52);
-    padding: 26px;
+    padding: 20px;
 }
 
 .home__bottom-down h5 {
@@ -354,7 +359,7 @@ video {
 .home__bottom-down .socials {
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    align-items: start;
     justify-content: center;
     gap: 25px;
 }
@@ -363,4 +368,61 @@ video {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.home__bottom-down .socials .social_links img {
+    width: 35px;
+}
+
+.home__bottom-down .socials .social-content p 
+{
+    font-size: var(--fs-5);
+    line-height: 16px;
+    width: 70%;
+}
+
+
+
+
+
+/* ----------------- Services Section Start ------------------ */
+
+.service-section
+{
+    margin-top: 10rem;
+}
+
+.service__content .service__content-heading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__content .service__content-heading h3
+{
+    width: 70%;
+    line-height: 63px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.service__content .service__content-heading p
+{
+    width: 39%;
+    line-height: 16px;
+}
+
+/* -------------------- Service List ---------------- */
+
+.service__list
+{
+    margin-top: 7rem;
+}
+
+.service__list-up ,
+.service__list-down
+{
+    display: flex;
 }
