@@ -591,6 +591,19 @@ video {
     width: 80%;
 }
 
+.team-member .member__name
+{
+    font-size: 18px;
+    display: block;
+    padding-top: 1rem;
+}
+
+
+.team__members img
+{
+    filter: grayscale(100%) brightness(80%);
+}
+
 .team_members-more
 {
     width: 20%;
@@ -601,10 +614,104 @@ video {
 }
 
 
+/* ----------------------- Clients Section Start ----------------------------- */
+
+.clients__section
+{
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+    background: var(--white-1);
+}
+
+
+.clients__content
+{
+    padding-top: 8rem;
+    
+}
+.clients__content .clinets__content-heading 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.clients__content .clinets__content-heading h5,
+.clients__content .clinets__content-heading p
+{
+    color: var(--black);
+    opacity: .3;
+}
+
+.clients__content .clinets__content-heading h3
+{
+    font-weight: var(--fw-400);
+}
+
+.clients__content .clinets__content-heading p{
+    width: 40%;
+    text-align: center;
+}
+
+
+/* ------------ clients__brands -------------- */
+.clients__brands
+{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.clients__brands .brand img
+{
+    width: 248px;
+    filter: brightness(0.1);
+}
+
+/* ------------ work__process -------------- */
+
+.work__process{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.work__process .work__process-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 410px;
+    width: 32%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: var(--white);
+    position: relative;
+}
 
 
 
-/* ----------------------- Cover Image Start ----------------------------- */
+.work__process .work__process-card img
+{
+    width: 195px;
+    /* background-blend-mode: soft-light; */
+}
+
+
+
+
+
+
+
 /* ----------------------- Cover Image Start ----------------------------- */
 /* ----------------------- Cover Image Start ----------------------------- */
 /* ----------------------- Cover Image Start ----------------------------- */
