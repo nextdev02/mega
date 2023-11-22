@@ -1,0 +1,100 @@
+/* --------------------- Responsive Start ---------------------- */
+
+
+
+/* ------ Smaller than 575px -------- */
+
+@media (min-width: 575px) {
+
+    :root {
+
+        --section-padding: 80px;
+
+    }
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+}
+
+
+
+
+
+
+
+/* ------ Smaller than 768px -------- */
+
+@media (min-width: 768px) {
+
+    :root {
+
+        --section-padding: 80px;
+
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+
+
+
+
+
+/* ------ Smaller than 992px -------- */
+
+@media (min-width: 992px) {
+
+
+    :root {
+
+        --section-padding: 100px;
+
+    }
+
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+
+
+
+/* ------ Smaller than 992px -------- */
+
+@media (min-width: 1366px) {
+
+    :root {
+        --fs-1: 7rem;
+
+    }
+
+
+    .container {
+        max-width: 1366px;
+    }
+
+    .grid-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+
+    /* ------- Header --------- */
+
+    .input-wrapper {
+        max-width: 750px;
+    }
+
+    .navbar-list {
+        gap: 50px;
+    }
+}
