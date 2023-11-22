@@ -19,7 +19,7 @@
     --fs-1: 86px;
     --fs-2: 62px;
     --fs-3: 54px;
-    --fs-4: 2rem;
+    --fs-4: 32px;
     --fs-5: 12px;
     --fs-6: 14px;
 
@@ -98,8 +98,7 @@ button {
     display: none;
 }
 
-.primary-color
-{
+.primary-color {
     color: var(--primary-color);
 }
 
@@ -152,8 +151,7 @@ p {
 }
 
 
-.title
-{
+.title {
     text-align: center;
 }
 
@@ -204,8 +202,9 @@ video {
 }
 
 .header .logo {
-    width: 10%;
-    padding-left: 80px;
+    width: 152px;
+    height: 19px;
+    margin-left: 80px;
 }
 
 .header .nav-items {
@@ -374,8 +373,7 @@ video {
     width: 35px;
 }
 
-.home__bottom-down .socials .social-content p 
-{
+.home__bottom-down .socials .social-content p {
     font-size: var(--fs-5);
     line-height: 16px;
     width: 70%;
@@ -387,34 +385,29 @@ video {
 
 /* ----------------- Services Section Start ------------------ */
 
-.service-section
-{
+.service-section {
     margin-top: 10rem;
 }
 
-.service__content .service__content-heading
-{
+.service__content .service__content-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.service__content .service__content-heading h5
-{
+.service__content .service__content-heading h5 {
     opacity: 0.3;
 }
 
-.service__content .service__content-heading h3
-{
+.service__content .service__content-heading h3 {
     width: 70%;
     line-height: 63px;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.service__content .service__content-heading p
-{
+.service__content .service__content-heading p {
     width: 39%;
     line-height: 16px;
     opacity: 0.3;
@@ -422,8 +415,7 @@ video {
 
 /* -------------------- Service List ---------------- */
 
-.service__list
-{
+.service__list {
     margin-top: 7rem;
     display: flex;
     flex-direction: column;
@@ -433,32 +425,28 @@ video {
     width: 100%;
 }
 
-.service__list-up ,
-.service__list-down
-{
+.service__list-up,
+.service__list-down {
     display: flex;
     align-items: self-start;
     justify-content: center;
     gap: 15px;
-    border-top: 1px solid #6d6d6d2f;
+    border-top: 1px solid #9595952f;
     padding: 1rem 0;
 }
 
 .service__list-up .service__list-box,
-.service__list-down .service__list-box
-{
+.service__list-down .service__list-box {
     width: 30%;
 }
 
 .service__list-up .service__list-box .number,
-.service__list-down .service__list-box .number
-{
+.service__list-down .service__list-box .number {
     opacity: 0.5;
 }
 
 .service__list-up .service__list-box h4,
-.service__list-down .service__list-box h4
-{
+.service__list-down .service__list-box h4 {
     font-size: 18px;
     font-weight: 400;
     display: flex;
@@ -467,9 +455,158 @@ video {
 }
 
 .service__list-up .service__list-box h6,
-.service__list-down .service__list-box h6
-{
+.service__list-down .service__list-box h6 {
     font-weight: 400;
     padding-top: 50px;
     color: var(--secondery-color);
 }
+
+
+/* ----------------------- Cover Image Start ----------------------------- */
+
+.cover__image {
+    margin-top: 7rem;
+}
+
+.cover__image-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cover__image-img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7F00FF;
+    background-blend-mode: soft-light;
+    opacity: 25%;
+    border-radius: 30px;
+}
+
+.cover__image-img img {
+    max-width: 100%;
+    height: 422px;
+}
+
+
+/* ----------------------- Mission Section Start ----------------------------- */
+
+.mission
+{
+    margin-top: 7rem;
+}
+
+.mission__content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.mission__content-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.mission__content-left
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.mission__content-left img
+{
+    width: 392px;
+    height: 392px;
+}
+
+.mission__content-right
+{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 64px;
+}
+
+.mission__content-right h4
+{
+    line-height: 32px;
+    font-size: var(--fs-4);
+}
+
+.mission__content-article 
+{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 40px;
+}
+
+.mission__content-article h6
+{
+    width: 34%;
+    font-weight: var(--fw-400);
+    line-height: 20px;
+    color: var(--secondery-color);
+}
+
+
+/* ----------------------- Team Section Start ----------------------------- */
+
+.team__section
+{
+    margin-top: 10rem;
+}
+
+.team__content
+{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.team__members
+{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.team_members-more
+{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+}
+
+
+
+
+
+/* ----------------------- Cover Image Start ----------------------------- */
+/* ----------------------- Cover Image Start ----------------------------- */
+/* ----------------------- Cover Image Start ----------------------------- */
+/* ----------------------- Cover Image Start ----------------------------- */
+/* ----------------------- Cover Image Start ----------------------------- */
+/* ----------------------- Cover Image Start ----------------------------- */
