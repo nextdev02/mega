@@ -50,7 +50,7 @@ let boxes = new Swiper(".boxes", {
     },
 
     950: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
 
     1050: {
@@ -58,11 +58,11 @@ let boxes = new Swiper(".boxes", {
     },
 
     1150: {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
 
     1250: {
-      slidesPerView: 4.1,
+      slidesPerView: 5.1,
     },
 
 
@@ -102,7 +102,11 @@ let serviceupswiper = new Swiper(".service__list", {
     },
 
     1050: {
-      slidesPerView: 3.6,
+      slidesPerView: 4.4,
+    },
+
+    1150: {
+      slidesPerView: 4.4,
     },
 
     1300: {
@@ -143,11 +147,15 @@ let teamcontent = new Swiper(".team__content", {
     },
 
     950: {
-      slidesPerView: 4,
+      slidesPerView: 4.3,
     },
 
     1050: {
-      slidesPerView: 4,
+      slidesPerView: 3.3,
+    },
+
+    1150: {
+      slidesPerView: 4.3,
     },
 
     1300: {
@@ -187,15 +195,19 @@ let clinets = new Swiper(".clients__brands", {
     },
 
     950: {
-      slidesPerView: 4.5,
+      slidesPerView: 3.7,
     },
 
     1050: {
-      slidesPerView: 5,
+      slidesPerView: 3.6,
+    },
+
+    1150: {
+      slidesPerView: 4,
     },
 
     1300: {
-      slidesPerView: 4.4
+      slidesPerView: 5
     },
 
   },

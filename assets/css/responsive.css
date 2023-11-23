@@ -87,12 +87,235 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023px) {
 
+    :root {
+        /* Font Size */
+        --fs-1: 70px;
+        --fs-2: 55px;
+        --fs-3: 44px;
+        --fs-4: 28px;
+        --fs-5: 12px;
+        --fs-6: 13px;
+    
+        /* Section Space */
+        --section-padding: 60px;
+    }
 
+    .header .logo {
+        margin-left: 40px;
+    }
+
+    .home__bottom-up .home__bottom-left {
+        gap: 10px;
+        width: 55%;
+    }
+
+    .home__bottom-down .boxes {
+        width: 70%;
+    }
+
+    .home__bottom-down .socials {
+        width: 25%;
+        gap: 20px;
+    }
+
+    /* ----------------- Services Section Start ------------------ */
+
+.service-section {
+    margin-top: 6rem;
+}
+
+.service__content .service__content-heading h3 {
+    width: 60%;
+    line-height: 53px;
+}
+
+.service__content .service__content-heading p {
+    width: 55%;
+}
+
+
+/* -------------------- Service List ---------------- */
+
+.services
+{
+    margin-top: 2rem;
+}
+
+/* ----------------------- Cover Image Start ----------------------------- */
+
+.cover__image {
+    margin-top: 6rem;
+}
+
+.cover__image-img img {
+    height: 372px;
+}
+
+/* ----------------------- Mission Section Start ----------------------------- */
+.mission__content-container {
+    gap: 30px;
+}
+
+.mission__content-left {
+    width: 45%;
+}
+
+.mission__content-left img {
+    width: 352px;
+    height: auto;
+}
+
+.mission__content-right {
+    width: 55%;
+    gap: 34px;
+}
+
+.mission__content-article {
+    gap: 30px;
+}
+
+.mission__content-article h6 {
+    width: 45%;
+}
+
+
+/* ----------------------- Team Section Start ----------------------------- */
+
+
+.team_members-more {
+    width: 20%;
+    gap: 1px;
+}
+
+.team_members-more h3
+{
+    line-height: 43px;
+}
+
+/* ----------------------- Contact Section Start ----------------------------- */
+input {
+    width: 28%;
+}
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 1024px) and (max-width: 1366px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
+    :root {
+        /* Font Size */
+        --fs-1: 70px;
+        --fs-2: 55px;
+        --fs-3: 44px;
+        --fs-4: 28px;
+        --fs-5: 12px;
+        --fs-6: 13px;
+    
+        /* Section Space */
+        --section-padding: 60px;
+    }
+
+    .header .logo {
+        margin-left: 40px;
+    }
+
+    .home__bottom-up .home__bottom-left {
+        gap: 10px;
+        width: 55%;
+    }
+
+    .home__bottom-down .boxes {
+        width: 70%;
+    }
+
+    .home__bottom-down .socials {
+        width: 25%;
+        gap: 20px;
+    }
+
+    /* ----------------- Services Section Start ------------------ */
+
+.service-section {
+    margin-top: 6rem;
+}
+
+.service__content .service__content-heading h3 {
+    width: 60%;
+    line-height: 53px;
+}
+
+.service__content .service__content-heading p {
+    width: 55%;
+}
+
+
+/* -------------------- Service List ---------------- */
+
+.services
+{
+    margin-top: 2rem;
+}
+
+/* ----------------------- Cover Image Start ----------------------------- */
+
+.cover__image {
+    margin-top: 6rem;
+}
+
+.cover__image-img img {
+    height: 372px;
+}
+
+/* ----------------------- Mission Section Start ----------------------------- */
+.mission__content-container {
+    gap: 30px;
+}
+
+.mission__content-left {
+    width: 45%;
+}
+
+.mission__content-left img {
+    width: 352px;
+    height: auto;
+}
+
+.mission__content-right {
+    width: 55%;
+    gap: 34px;
+}
+
+.mission__content-article {
+    gap: 30px;
+}
+
+.mission__content-article h6 {
+    width: 45%;
+}
+
+
+/* ----------------------- Team Section Start ----------------------------- */
+
+
+.team_members-more {
+    width: 20%;
+    gap: 1px;
+}
+
+.team_members-more h3
+{
+    line-height: 43px;
+}
+
+/* ----------------------- Contact Section Start ----------------------------- */
+input {
+    width: 28%;
+}
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 1200px) and (max-width: 1366px) {
     
 }
 
