@@ -8,6 +8,7 @@ window.addEventListener("scroll", function () {
 
 });
 
+
 // Header For Mobile
 const toggleBtn = document.querySelector('.toggle_btn');
 const dropdownMenu = document.querySelector('.dropdown_menu');
@@ -20,3 +21,217 @@ toggleBtn.addEventListener('click', function () {
 
 
 
+
+//  HOme Bottom Slider
+
+let boxes = new Swiper(".boxes", {
+  slidesPerView: 6,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 3,
+    },
+
+    550: {
+      slidesPerView: 3,
+    },
+
+    650: {
+      slidesPerView: 3,
+    },
+
+    800: {
+      slidesPerView: 4,
+    },
+
+    950: {
+      slidesPerView: 4.5,
+    },
+
+    1050: {
+      slidesPerView: 6,
+    },
+
+  },
+});
+
+
+// Service Section Slider
+
+let serviceupswiper = new Swiper(".service__list", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 3,
+    },
+
+    550: {
+      slidesPerView: 3,
+    },
+
+    650: {
+      slidesPerView: 3,
+    },
+
+    800: {
+      slidesPerView: 4,
+    },
+
+    950: {
+      slidesPerView: 4.5,
+    },
+
+    1050: {
+      slidesPerView: 5,
+    },
+
+    1300: {
+      slidesPerView: 4.2,
+    },
+
+  },
+});
+
+
+
+
+// Team Member Slider
+
+let teamcontent = new Swiper(".team__content", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 3,
+    },
+
+    550: {
+      slidesPerView: 3,
+    },
+
+    650: {
+      slidesPerView: 3,
+    },
+
+    800: {
+      slidesPerView: 4,
+    },
+
+    950: {
+      slidesPerView: 4,
+    },
+
+    1050: {
+      slidesPerView: 4,
+    },
+
+    1300: {
+      slidesPerView: 4.3
+    },
+
+  },
+});
+
+
+
+// Clients Section Slider
+
+let clinets = new Swiper(".clients__brands", {
+  slidesPerView: 6,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 3,
+    },
+
+    550: {
+      slidesPerView: 3,
+    },
+
+    650: {
+      slidesPerView: 3,
+    },
+
+    800: {
+      slidesPerView: 4,
+    },
+
+    950: {
+      slidesPerView: 4.5,
+    },
+
+    1050: {
+      slidesPerView: 5,
+    },
+
+    1300: {
+      slidesPerView: 4.4
+    },
+
+  },
+});
+
+
+
+// Process Section Slider
+
+let process = new Swiper(".work__process", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 3,
+    },
+
+    550: {
+      slidesPerView: 3,
+    },
+
+    650: {
+      slidesPerView: 3,
+    },
+
+    800: {
+      slidesPerView: 4,
+    },
+
+    950: {
+      slidesPerView: 4,
+    },
+
+    1050: {
+      slidesPerView: 4,
+    },
+
+    1300: {
+      slidesPerView: 4
+    },
+
+  },
+});
