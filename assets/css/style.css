@@ -2,17 +2,17 @@
 @font-face {
     font-family: Azeret Medium;
     src: url(/assets/fonts/Azeret-Medium.otf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: Azeret Regular;
     src: url(/assets/fonts/Azeret-Regular.otf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: Azeret Semibold;
     src: url(/assets/fonts/Azeret-Semibold.otf);
-  }
+}
 
 :root {
 
@@ -300,41 +300,58 @@ video {
 .home__bottom-up .home__bottom-left .sec-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    height: 75px;
-    width: 156px;
-    border: none;
+    width: 153px;
     border-radius: 50px;
-    transition: 0.5s ease;
-}
-
-.home__bottom-up .home__bottom-left .sec-btn:hover {
-    gap: 5px;
+    position: relative;
+    color: var(--white);
+    transform-origin: center;
+    transform-origin: center;
+    transition: background-color .3s cubic-bezier(0.51, 0.03, 0.64, 0.28),
+                transform 0.3s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    transition-delay: 0.03s;
 }
 
 .home__bottom-up .home__bottom-left .sec-btn:hover {
     color: var(--black);
     background-color: var(--white);
-    transition: 0.5s ease-in;
 }
 
-.home__bottom-up .home__bottom-left .sec-btn p {
-    border: 1px solid var(--white);
-    padding: 28px 32px;
-    border-radius: 50px;
-    font-size: var(--fs-6);
+.home__bottom-up .home__bottom-left .sec-btn:hover .white-arrow {
+    display: none;
 }
+
+
+.home__bottom-up .home__bottom-left .sec-btn:hover .dark-arrow {
+    display: inline-block;
+    transition: all 1.9s ease-in-out;
+    transition-delay: .3s; /* Adjusted delay */
+}
+
+.home__bottom-up .home__bottom-left .sec-btn span {
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 28px 32px;
+    font-size: var(--fs-6);
+    transition: opacity 0.4s ease-in-out;
+}
+
 
 .home__bottom-up .home__bottom-left .sec-btn .dark-arrow,
 .home__bottom-up .home__bottom-left .sec-btn .white-arrow {
     width: 20px;
+    position: absolute;
+    right: 0%;
+    bottom: 36%;
+    transform: translateY(-50%);
+}
+
+.home__bottom-up .home__bottom-left .sec-btn:hover .dark-arrow{
+    right: 20%;
 }
 
 .home__bottom-up .home__bottom-left .sec-btn .dark-arrow {
     display: none;
 }
-
 
 .home__bottom-up .home__bottom-left .home__bottom-left-content {
     font-size: var(--fs-5);
@@ -366,8 +383,7 @@ video {
     padding: 0 20px;
 }
 
-.home__bottom-down .box .line
-{
+.home__bottom-down .box .line {
     margin-right: 12px;
     width: 1px;
     height: 6rem;
@@ -523,13 +539,11 @@ video {
 
 /* ----------------------- Mission Section Start ----------------------------- */
 
-.mission
-{
+.mission {
     margin-top: 7rem;
 }
 
-.mission__content
-{
+.mission__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -537,30 +551,26 @@ video {
     padding-top: 1rem;
 }
 
-.mission__content-container
-{
+.mission__content-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
 }
 
-.mission__content-left
-{
+.mission__content-left {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 45%;
 }
 
-.mission__content-left img
-{
+.mission__content-left img {
     width: 392px;
     height: 392px;
 }
 
-.mission__content-right
-{
+.mission__content-right {
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -569,22 +579,19 @@ video {
     gap: 64px;
 }
 
-.mission__content-right h4
-{
+.mission__content-right h4 {
     line-height: 32px;
     font-size: var(--fs-4);
 }
 
-.mission__content-article 
-{
+.mission__content-article {
     display: flex;
     align-items: start;
     justify-content: start;
     gap: 40px;
 }
 
-.mission__content-article h6
-{
+.mission__content-article h6 {
     width: 34%;
     font-weight: var(--fw-400);
     line-height: 20px;
@@ -594,13 +601,11 @@ video {
 
 /* ----------------------- Team Section Start ----------------------------- */
 
-.team__section
-{
+.team__section {
     margin-top: 10rem;
 }
 
-.team__content
-{
+.team__content {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -608,8 +613,7 @@ video {
     width: 100%;
 }
 
-.team__members
-{
+.team__members {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -617,21 +621,18 @@ video {
     width: 80%;
 }
 
-.team-member .member__name
-{
+.team-member .member__name {
     font-size: 18px;
     display: block;
     padding-top: 1rem;
 }
 
 
-.team__members img
-{
+.team__members img {
     filter: grayscale(100%) brightness(80%);
 }
 
-.team_members-more
-{
+.team_members-more {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -642,21 +643,19 @@ video {
 
 /* ----------------------- Clients Section Start ----------------------------- */
 
-.clients__section
-{
+.clients__section {
     margin-top: 10rem;
     padding-bottom: 5rem;
     background: var(--white-1);
 }
 
 
-.clients__content
-{
+.clients__content {
     padding-top: 8rem;
-    
+
 }
-.clients__content .clinets__content-heading 
-{
+
+.clients__content .clinets__content-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -665,26 +664,23 @@ video {
 }
 
 .clients__content .clinets__content-heading h5,
-.clients__content .clinets__content-heading p
-{
+.clients__content .clinets__content-heading p {
     color: var(--black);
     opacity: .3;
 }
 
-.clients__content .clinets__content-heading h3
-{
+.clients__content .clinets__content-heading h3 {
     font-weight: var(--fw-400);
 }
 
-.clients__content .clinets__content-heading p{
+.clients__content .clinets__content-heading p {
     width: 40%;
     text-align: center;
 }
 
 
 /* ------------ clients__brands -------------- */
-.clients__brands
-{
+.clients__brands {
     padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -693,15 +689,14 @@ video {
     gap: 1px;
 }
 
-.clients__brands .brand img
-{
+.clients__brands .brand img {
     width: 248px;
     filter: brightness(0.1);
 }
 
 /* ------------ work__process -------------- */
 
-.work__process{
+.work__process {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -709,8 +704,7 @@ video {
     width: 100%;
 }
 
-.work__process .work__process-card
-{
+.work__process .work__process-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -726,8 +720,7 @@ video {
 
 
 
-.work__process .work__process-card img
-{
+.work__process .work__process-card img {
     width: 195px;
     /* background-blend-mode: soft-light; */
 }
