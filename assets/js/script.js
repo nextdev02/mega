@@ -25,7 +25,7 @@ toggleBtn.addEventListener('click', function () {
 //  HOme Bottom Slider
 
 let boxes = new Swiper(".boxes", {
-  slidesPerView: 6,
+  slidesPerView: 5,
   spaceBetween: 10,
   pagination: {
     clickable: true,
@@ -50,12 +50,21 @@ let boxes = new Swiper(".boxes", {
     },
 
     950: {
-      slidesPerView: 4.5,
+      slidesPerView: 3,
     },
 
     1050: {
-      slidesPerView: 6,
+      slidesPerView: 4,
     },
+
+    1150: {
+      slidesPerView: 4,
+    },
+
+    1250: {
+      slidesPerView: 4.1,
+    },
+
 
   },
 });
@@ -73,27 +82,27 @@ let serviceupswiper = new Swiper(".service__list", {
   breakpoints: {
 
     300: {
-      slidesPerView: 3,
+      slidesPerView: 1,
     },
 
     550: {
-      slidesPerView: 3,
+      slidesPerView: 1.8,
     },
 
     650: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
 
     800: {
-      slidesPerView: 4,
+      slidesPerView: 2.7,
     },
 
     950: {
-      slidesPerView: 4.5,
+      slidesPerView: 3,
     },
 
     1050: {
-      slidesPerView: 5,
+      slidesPerView: 3.6,
     },
 
     1300: {
@@ -229,7 +238,16 @@ let process = new Swiper(".work__process", {
       slidesPerView: 4,
     },
 
+    1050: {
+      slidesPerView: 3,
+    },
+
+
     1300: {
+      slidesPerView: 3.5
+    },
+
+    1400: {
       slidesPerView: 4
     },
 

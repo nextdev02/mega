@@ -220,8 +220,7 @@ video {
 }
 
 .header.scrolled {
-    background-color: rgba(164, 164, 164, 0.093);
-    backdrop-filter: blur(23px);
+    background-color: var(--white);
     transition: 0.5s ease;
     z-index: 200;
 }
@@ -231,9 +230,32 @@ video {
 }
 
 .header.scrolled  .btn{
-    color: black;
-    background: var(--white-1);
+    color: var(--white);
+    background: var(--white-2);
+}
 
+.header.scrolled  .btn a{
+    color: var(--white);
+}
+
+.header.scrolled  .btn a{
+    color: var(--white);
+}
+
+.header.scrolled .btn .c-white-arrow
+{
+    display: block;
+}
+
+.header.scrolled .btn img
+{
+    display: none;
+}
+
+.header .logo {
+    width: 152px;
+    height: 19px;
+    margin-left: 80px;
 }
 
 .header .logo {
@@ -261,6 +283,7 @@ video {
     background-color: var(--white);
     gap: 12px;
     padding: 24px 36px;
+    height: 75px;
     border-radius: 0 0 0 27px;
 }
 
@@ -274,6 +297,11 @@ video {
     height: 10px;
 }
 
+.header .btn .c-white-arrow
+{
+    display: none;
+}
+
 .header .toggle_btn {
     display: none;
 }
@@ -281,16 +309,6 @@ video {
 .dropdown_menu {
     display: none;
 }
-
-/* ----------------- MObile Navbar ---------------- */
-.menu-toggle:not(.open) .bar1 {
-    background-color: #333;
-    height: 3px;
-    width: 25px;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
 
 
 
@@ -339,8 +357,7 @@ video {
     color: var(--white);
     transform-origin: center;
     transform-origin: center;
-    transition: background-color .3s cubic-bezier(0.51, 0.03, 0.64, 0.28),
-                transform 0.3s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    transition: 0.3s linear;
     transition-delay: 0.03s;
 }
 
@@ -356,8 +373,8 @@ video {
 
 .home__bottom-up .home__bottom-left .sec-btn:hover .dark-arrow {
     display: inline-block;
-    transition: all 1.9s ease-in-out;
-    transition-delay: .3s; /* Adjusted delay */
+    transition: 0.3s linear;
+    transition-delay: .3s;
 }
 
 .home__bottom-up .home__bottom-left .sec-btn span {
@@ -365,7 +382,7 @@ video {
     border-radius: 50px;
     padding: 28px 32px;
     font-size: var(--fs-6);
-    transition: opacity 0.4s ease-in-out;
+    transition: 0.3s linear;
 }
 
 
