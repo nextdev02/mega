@@ -10,8 +10,13 @@
 }
 
 @font-face {
-    font-family: Azeret Semibold;
-    src: url(/assets/fonts/Azeret-Semibold.otf);
+    font-family: TTHoves Regular;
+    src: url(/assets/fonts/TTHoves-Regular.ttf);
+}
+
+@font-face {
+    font-family: TTHoves Medium;
+    src: url(/assets/fonts/TTHoves-Medium.ttf);
 }
 
 :root {
@@ -31,7 +36,8 @@
     /* Font Family */
     --ff-azeret-medium: 'Azeret Medium';
     --ff-azeret-regular: 'Azeret Regular';
-    --ff-azeret-semibold: 'Azeret Semibold';
+    --ff-tthoves-regular: 'TTHoves Regular';
+    --ff-tthoves-medium: 'TTHoves Medium';
 
     /* Font Size */
     --fs-1: 86px;
@@ -65,7 +71,7 @@
 }
 
 html {
-    font-family: var(--ff-azeret-regular);
+    font-family: var(--ff-tthoves-medium);
     scroll-behavior: smooth;
 }
 
@@ -291,7 +297,7 @@ video {
 
 .header .btn a {
     color: var(--black);
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
 }
 
 .header .btn img {
@@ -972,3 +978,7 @@ input::placeholder {
 {
     width: 100%;
 }
+
+
+
+

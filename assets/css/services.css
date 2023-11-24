@@ -1,0 +1,367 @@
+/* Font Family */
+@font-face {
+    font-family: Azeret Medium;
+    src: url(/assets/fonts/Azeret-Medium.otf);
+}
+
+@font-face {
+    font-family: Azeret Regular;
+    src: url(/assets/fonts/Azeret-Regular.otf);
+}
+
+@font-face {
+    font-family: Azeret Semibold;
+    src: url(/assets/fonts/Azeret-Semibold.otf);
+}
+
+:root {
+
+    /* ------ Colors ----- */
+
+    --primary-color: #7F00FF;
+    --secondery-color: #1F0A3F;
+    --black: #000000;
+
+    --white: #FFFFFF;
+    --white-1: #F1F0EC;
+    --white-2: #C1C1C1;
+
+
+
+    /* Font Family */
+    --ff-azeret-medium: 'Azeret Medium';
+    --ff-azeret-regular: 'Azeret Regular';
+    --ff-azeret-semibold: 'Azeret Semibold';
+
+    /* Font Size */
+    --fs-1: 86px;
+    --fs-2: 62px;
+    --fs-3: 54px;
+    --fs-4: 32px;
+    --fs-5: 12px;
+    --fs-6: 14px;
+
+    /* Font Width */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+
+    /* Section Space */
+
+    --section-padding: 60px;
+}
+
+
+
+/* ----------------- Custom Css ------------------ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--ff-azeret-regular);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-1);
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
+input {
+    width: 100%;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+/* ----------------- Reused Styles ------------------ */
+
+.container {
+    padding-inline: 15px;
+}
+
+.section {
+    padding-block: var(--section-padding);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: var(--fw-400);
+}
+
+h1 {
+    font-size: var(--fs-1);
+}
+
+h2 {
+    font-size: var(--fs-2);
+}
+
+h3 {
+    font-size: var(--fs-3);
+}
+
+h4 {
+    font-size: var(--fs-4);
+}
+
+h5 {
+    font-size: var(--fs-5);
+}
+
+h6 {
+    font-size: var(--fs-6);
+}
+
+
+p {
+    font-size: var(--fs-5);
+}
+
+
+.title {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.grid-list {
+    display: grid;
+    gap: 20px;
+}
+
+.section-title,
+.section-text {
+    text-align: center;
+}
+
+
+/* ----------------- Header Start ------------------ */
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header .logo {
+    width: 152px;
+    height: 19px;
+    margin-left: 80px;
+}
+
+.header .logo {
+    width: 152px;
+    height: 19px;
+    margin-left: 80px;
+}
+
+.header .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.header .nav-items a {
+    font-size: var(--fs-5);
+    font-weight: normal;
+}
+
+.header .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondery-color);
+    gap: 12px;
+    padding: 24px 36px;
+    height: 75px;
+    border-radius: 0 0 0 27px;
+}
+
+.header .btn a {
+    color: var(--white);
+    font-size: var(--fs-6);
+}
+
+.header .btn img {
+    width: 20px;
+    height: 10px;
+}
+
+
+
+.header .toggle_btn {
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- Contact Section Start ----------------------------- */
+
+.contact__Section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.contact__info {
+    padding-top: 3rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact__info h1 {
+    line-height: 76px;
+}
+
+.contact__info-name,
+.contact__info-email,
+.contact-details {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 25%;
+    margin: 0 24px;
+    margin-top: 2px;
+    border-bottom: 3px solid var(--secondery-color);
+    padding: 10px 0;
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--secondery-color);
+}
+
+
+/* ----------------------- Footer Start ----------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: var(--white-2);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    height: 768px;
+    padding-bottom: 2rem;
+}
+
+.footer__short-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.footer__short-links .short-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+}
+
+.footer__short-links .short-link a {
+    font-size: var(--fs-5);
+}
+
+.footer__short-links .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.footer__short-links .social-link img {
+    width: 35px;
+    filter: grayscale(100%) brightness(0%);
+}
+
+
+.footer__big-logo {
+    width: 100%;
+}
+
+.footer__big-logo img {
+    width: 100%;
+}
