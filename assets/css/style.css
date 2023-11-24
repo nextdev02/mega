@@ -388,61 +388,67 @@ video {
     width: 30%;
 }
 
-.home__bottom-up .home__bottom-left .sec-btn {
-    display: flex;
-    align-items: center;
-    width: 153px;
-    border-radius: 50px;
-    position: relative;
-    color: var(--white);
-    transform-origin: center;
-    transform-origin: center;
-    transition: 0.3s linear;
-    transition-delay: 0.03s;
-    font-family: var(--ff-tthoves-regular);
-}
+/* ---------- Animated Button -------------- */
 
-.home__bottom-up .home__bottom-left .sec-btn:hover {
-    color: var(--black);
-    background-color: var(--white);
-}
-
-.home__bottom-up .home__bottom-left .sec-btn:hover .white-arrow {
-    display: none;
-}
-
-
-.home__bottom-up .home__bottom-left .sec-btn:hover .dark-arrow {
-    display: inline-block;
-    transition: 0.3s linear;
-    transition-delay: .3s;
-}
-
-.home__bottom-up .home__bottom-left .sec-btn span {
+.home__bottom-left .btn-animation{
+    margin-top: 24px;
     border: 1px solid var(--white);
+    padding: 10px 0px;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     border-radius: 50px;
-    padding: 28px 32px;
-    font-size: var(--fs-6);
-    transition: 0.3s linear;
+    background-color: var(--black);
+    transition: .2s ease-in-out;
 }
 
-
-.home__bottom-up .home__bottom-left .sec-btn .dark-arrow,
-.home__bottom-up .home__bottom-left .sec-btn .white-arrow {
-    width: 20px;
+.home__bottom-left .btn-animation .inner-arrow{
+    font-size: 20px;
+    color: var(--white);
+    z-index: 2;
+    margin: 0px -50px 0px 50px;
+    transition: .2s ease-in-out;
+}
+.home__bottom-left .btn-animation:hover .inner-arrow{
+    margin: unset;
+    color: var(--black) !important;
+    display: block;
+}
+.home__bottom-left .btn-animation:hover{
+    background: var(--white);
+    width: 160px;
+}
+.home__bottom-left .ab-btn {
+    color: var(--white);
+    z-index: 2;
+    margin: 0px -13px 0px 13px;
+}
+.home__bottom-left .btn-animation:hover .ab-btn{
+    color: var(--black) !important;
+    margin: unset;
+}
+.home__bottom-left .btn-animation span{
     position: absolute;
-    right: 0%;
-    bottom: 36%;
-    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    background: var(--black);
+    transition: .2s linear;
+    border-radius: 50px;
+    z-index: 1;
+}
+.home__bottom-left .btn-animation:hover span{
+    height: 0%;
+    width: 50%;
 }
 
-.home__bottom-up .home__bottom-left .sec-btn:hover .dark-arrow {
-    right: 20%;
-}
 
-.home__bottom-up .home__bottom-left .sec-btn .dark-arrow {
-    display: none;
-}
+
 
 .home__bottom-up .home__bottom-left .home__bottom-left-content {
     font-size: var(--fs-5);
@@ -451,6 +457,8 @@ video {
     width: 80%;
     font-family: var(--ff-tthoves-regular);
 }
+
+
 
 
 .home__bottom-down {
@@ -781,84 +789,69 @@ video {
     font-family: var(--ff-tthoves-regular);
 }
 
-.team_members-more .about-btn {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    width: 153px;
-    border-radius: 50px;
+.team-member-details
+{
+    display: none;
+}
+
+
+/* ---------- Animated Button -------------- */
+
+.btn-animation{
+    margin-top: 24px;
+    border: 1px solid #7F00FF;
+    padding: 10px 0px;
+    color: #7F00FF;
     position: relative;
-    color: var(--white);
-    transform-origin: center;
-    transform-origin: center;
-    transition: 0.3s linear;
-    transition-delay: 0.03s;
-}
-
-.team_members-more .about-btn i {
-    font-size: 20px;
-    color: var(--primary-color);
-}
-
-.team_members-more .about-btn .dark-arrow {
-    color: var(--white);
-}
-
-.team_members-more .about-btn:hover {
-    color: var(--white);
-    background-color: var(--primary-color);
-}
-
-.team_members-more .about-btn:hover i {
-    display: none;
-}
-
-
-.team_members-more .about-btn:hover .dark-arrow {
-    display: inline-block;
-    transition: 0.3s linear;
-    transition-delay: .3s;
-}
-
-.team_members-more .about-btn span {
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    z-index: 2;
+    height: 70px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     border-radius: 50px;
-    padding: 28px 32px;
-    font-size: var(--fs-6);
-    transition: 0.3s linear;
-    font-family: var(--ff-tthoves-regular);
+    background-color: #7F00FF;
+    transition: .2s ease-in-out;
 }
-
-.team_members-more .about-btn span:hover {
-    color: var(--white);
+.btn-animation .inner-arrow{
+    font-size: 20px;
+    color: #7F00FF;
+    z-index: 2;
+    margin: 0px -40px 0px 40px;
+    transition: .2s ease-in-out;
 }
-
-.team_members-more .about-btn .dark-arrow,
-.team_members-more .about-btn i {
-    width: 20px;
+.btn-animation:hover .inner-arrow{
+    margin: unset;
+    color: #fff !important;
+    display: block;
+}
+.btn-animation:hover{
+    background: #7F00FF;
+    width: 160px;
+}
+.ab-btn {
+    color: #7F00FF;
+    z-index: 2;
+    margin: 0px -13px 0px 13px;
+}
+.btn-animation:hover .ab-btn{
+    color: #fff !important;
+    margin: unset;
+}
+.btn-animation span{
     position: absolute;
-    right: -5%;
-    bottom: 22%;
-    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    transition: .2s linear;
+    border-radius: 50px;
+    z-index: 1;
 }
-
-.team_members-more .about-btn i {
-    width: 20px;
-    position: absolute;
-    right: -9%;
-    bottom: 22%;
-    transform: translateY(-50%);
+.btn-animation:hover span{
+    height: 0%;
+    width: 50%;
 }
-
-.team_members-more .about-btn:hover .dark-arrow {
-    right: 15%;
-}
-
-.team_members-more .about-btn .dark-arrow {
-    display: none;
-}
-
 
 
 /* ----------------------- Clients Section Start ----------------------------- */
