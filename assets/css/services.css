@@ -10,10 +10,14 @@
 }
 
 @font-face {
-    font-family: Azeret Semibold;
-    src: url(/assets/fonts/Azeret-Semibold.otf);
+    font-family: TTHoves Regular;
+    src: url(/assets/fonts/TTHoves-Regular.ttf);
 }
 
+@font-face {
+    font-family: TTHoves Medium;
+    src: url(/assets/fonts/TTHoves-Medium.ttf);
+}
 :root {
 
     /* ------ Colors ----- */
@@ -31,13 +35,14 @@
     /* Font Family */
     --ff-azeret-medium: 'Azeret Medium';
     --ff-azeret-regular: 'Azeret Regular';
-    --ff-azeret-semibold: 'Azeret Semibold';
+    --ff-tthoves-regular: 'TTHoves Regular';
+    --ff-tthoves-medium: 'TTHoves Medium';
 
     /* Font Size */
     --fs-1: 86px;
-    --fs-2: 62px;
-    --fs-3: 54px;
-    --fs-4: 32px;
+    --fs-2: 54px;
+    --fs-3: 32px;
+    --fs-4: 18px;
     --fs-5: 12px;
     --fs-6: 14px;
 
@@ -65,12 +70,12 @@
 }
 
 html {
-    font-family: var(--ff-azeret-regular);
+    font-family: var(--ff-tthoves-regular);
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--white-1);
+    background-color: var(--white);
     color: var(--black);
 }
 
@@ -163,7 +168,7 @@ h6 {
 
 
 p {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
 }
 
 
@@ -256,19 +261,233 @@ p {
 
 
 
+/* ----------------------------- Service Section Start------------------------------ */
+
+.service__section
+{
+    padding: 5rem;
+    position: relative;
+}
+
+.service-title h1
+{
+    font-size: 488px;
+    font-weight: 100;
+    color: var(--white-1);
+    position: absolute;
+    left: -9rem;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service__section-content {
+    background-color: var(--white-1);
+}
+
+.service__section-content .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.service__container
+{
+    width: 744px;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+}
+
+.service__title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.service__title h4
+{
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--secondery-color);
+    width: 50%;
+}
+
+.service__title p{
+    font-family: var(--ff-tthoves-regular);
+    font-size: var(--fs-6);
+    color: #EE660C;
+    line-height: 20px;
+    text-align: end;
+    width: 47%;
+}
+
+.service__boxes-list
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.service__boxes-list .service__boxes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    width: 50%;
+}
+
+.service__boxes-list .service__boxes .service-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.service__boxes-list .service__boxes .service-details .number
+{
+    color: var(--white-2);
+    padding-bottom: 20px;
+    font-family: var(--ff-tthoves-regular);
+}
+
+.service__boxes-list .service__boxes .service-details p 
+{
+    font-size: var(--fs-6);
+    color: var(--secondery-color);
+    font-family: var(--ff-tthoves-regular);
+    line-height: 20px;
+    padding-top: 50px;
+}
 
 
 
+/* ----------------------- Clients Support Start -------------------- */
+.support__section
+{
+    padding: 7rem 0;
+    z-index: 2;
+}
+
+.support__section .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.support__content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1.5rem;
+    width: 744px;
+}
+
+.support__content h3
+{
+    font-size: var(--fs-3);
+    font-family: var(--ff-tthoves-medium);
+    line-height: 32px;
+    color: var(--secondery-color);
+}
 
 
 
+/* -----------------------  Extra Support Start -------------------- */
+
+.extra__support
+{
+    background-color: var(--white-1);
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.extra__support .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 744px;
+}
+
+.extra__support-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.extra__support-heading
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 4rem;
+}
 
+.extra__support-heading h2
+{
+    width: 50%;
+    font-family: var(--ff-tthoves-medium);
+    font-size: var(--fs-2);
+    line-height: 63px;
+}
 
+.extra__support-heading h6
+{
+    width: 50%;
+    margin-bottom: -1rem;
+    color: var(--secondery-color);
+    line-height: 20px;
+}
 
+.extra__support-list
+{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 3rem;
+    padding-left: 15rem;
+}
 
+.extra__support-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.5rem;
+}
 
+.extra__support-card .blue-card
+{
+    height: 24px;
+    width: 24px;
+    background-color: var(--primary-color);
+}
+
+.extra__support-card h3
+{
+    width: 60%;
+    font-family: var(--ff-tthoves-medium);
+    font-size: var(--fs-3);
+    line-height: 38px;
+}
 
 /* ----------------------- Contact Section Start ----------------------------- */
 

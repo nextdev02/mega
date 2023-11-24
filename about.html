@@ -379,7 +379,6 @@
 
 
         <!-- ------------------- Contact Section Start---------------------- -->
-
         <section class="contact__Section">
             <div class="container">
                 <div class="contact__section-content">
@@ -388,26 +387,31 @@
                             to <span class="primary-color">consult you_</span></h1>
                     </div>
 
-                    <div class="contact__info">
-                        <div class="contact__info-name">
-                            <h4>
-                                My name is <input type="text" placeholder="First and last name" required> and I'm
-                                interested in <input type="text" placeholder="Service name" required>
-                            </h4>
+                    <form action="/submit_form" method="post">
+                        <div class="contact__info">
+                            <div class="contact__info-name">
+                                <h4>
+                                    My name is <input type="text" name="fullname" placeholder="First and last name" required> and I'm
+                                    interested in <input type="text" name="service" placeholder="Service name" required>
+                                </h4>
+                            </div>
+                    
+                            <div class="contact__info-email">
+                                <h4>
+                                    Please, contact me at <input type="email" name="email" placeholder="name@example.com" required>
+                                </h4>
+                            </div>
+                    
+                            <div class="contact-details">
+                                <h4>
+                                    Optionally, I'm sharing more <input type="text" name="projectDetails" placeholder="your project details">
+                                </h4>
+                            </div>
                         </div>
-
-                        <div class="contact__info-email">
-                            <h4>
-                                Please, contact me at <input type="email" placeholder="name@example.com" required>
-                            </h4>
-                        </div>
-
-                        <div class="contact-details">
-                            <h4>
-                                Optionally, I'm sharing more <input type="text" placeholder="your project details">
-                            </h4>
-                        </div>
-                    </div>
+                    
+                        <button type="submit"></button>
+                    </form>
+                    
                 </div>
             </div>
         </section>

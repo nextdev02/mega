@@ -268,7 +268,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .about__hero-content {
@@ -318,13 +317,15 @@ p {
 
 
 /* ------------------------- Mission Section ---------------------------- */
+.mission__section{
+    margin-bottom: 15rem;
+}
 
 .mission__section .container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 
@@ -365,7 +366,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .clients__content {
@@ -410,13 +410,17 @@ p {
 
 /* ------------------------- Our Values Section ---------------------------- */
 
+.value__section {
+    margin-bottom: 20rem;
+    margin-top: 15rem;
+}
+
 .value__section .container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
 }
 
 .value__content
