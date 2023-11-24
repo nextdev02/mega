@@ -1,8 +1,365 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 450px) {
+
+    .team__content .team__members {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        width: 330px;
+    }
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+    :root {
+        /* Font Size */
+        --fs-1: 47px;
+        --fs-2: 62px;
+        --fs-3: 34px;
+        --fs-4: 26px;
+        --fs-5: 10px;
+        --fs-6: 12px;
+
+        /* Section Space */
+        --section-padding: 60px;
+    }
+
+    .header .logo {
+        padding-left: 0px;
+    }
+
+    .home__bottom-up {
+        align-items: start;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .home__bottom-up .home__bottom-left {
+        position: absolute;
+        left: 50px;
+        top: 2.2em;
+        margin-top: 6rem;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .home__bottom-up .home__bottom-up-heading {
+        width: 100%;
+        line-height: 47px;
+    }
+    
+
+    .home__bottom-up .home__bottom-left .btn-animation 
+    {
+        margin-right: 2rem;
+    }
+
+    .home__bottom-up .home__bottom-left .home__bottom-left-content {  
+        width: 100%;
+        position: absolute;
+        left: -3rem;
+        bottom: -5rem;
+    }
+
+
+    .home__bottom-down {
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        margin-top: 8rem;
+    }
+
+    .home__bottom-down .boxes {
+        width: 100%;
+    }
+
+    .home__bottom-down .socials {
+        width: 60%;
+        gap: 20px;
+    }
+
+    /* ----------------- Services Section Start ------------------ */
+
+    .service-section {
+        padding-top: 7rem;
+    }
+
+    .service__content .service__content-heading h3 {
+        width: 90%;
+        line-height: 39px;
+    }
+
+    .service__content .service__content-heading p {
+        width: 90%;
+    }
+
+
+    /* -------------------- Service List ---------------- */
+
+    .services {
+        padding-top: 1rem;
+    }
+
+
+    /* ----------------------- Cover Image Start ----------------------------- */
+
+    .cover__image {
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    /* ----------------------- Mission Section Start ----------------------------- */
+    .mission__content-container {
+        flex-direction: column;
+    }
+
+    .mission__content-left {
+        width: 95%;
+    }
+
+    .mission__content-left img {
+        width: 290px;
+        height: auto;
+    }
+
+    .mission__content-right {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .mission__content-article {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mission__content-article h6 {
+        width: 70%;
+    }
+
+
+    /* ----------------------- Team Section Start ----------------------------- */
+    .team__section-part {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .team__content .team__members {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        width: 400px;
+    }
+
+
+    .team_members-more {
+        width: 60%;
+    }
+
+    .team_members-more h3 {
+        line-height: 43px;
+    }
+
+    /* ----------------------- Contact Section Start ----------------------------- */
+    input {
+        width: 90%;
+        margin: 0;
+    }
+    
+
+    .contact__info-name h4 {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: flex-start;
+    }
+
+    .footer__short-links {
+        display: flex;
+        align-items: self-end;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+
+    .footer__short-links .short-link {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        gap: 24px;
+    } 
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 601px) and (max-width: 767px) {}
+@media (min-width: 601px) and (max-width: 767px) {
+
+    :root {
+        /* Font Size */
+        --fs-1: 45px;
+        --fs-2: 32px;
+        --fs-3: 28px;
+        --fs-4: 22px;
+        --fs-5: 12px;
+        --fs-6: 13px;
+
+        /* Section Space */
+        --section-padding: 60px;
+    }
+
+    .header .logo {
+        padding-left: 0px;
+    }
+
+    .home__bottom-up {
+        align-items: start;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .home__bottom-up .home__bottom-left {
+        position: absolute;
+        left: 120px;
+        top: -3.2rem;
+        margin-top: 6rem;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .home__bottom-up .home__bottom-up-heading {
+        width: 100%;
+        line-height: 56px;
+    }
+    
+
+    .home__bottom-up .home__bottom-left .btn-animation 
+    {
+        margin-right: 2rem;
+    }
+
+    .home__bottom-up .home__bottom-left .home__bottom-left-content {  
+        width: 100%;
+        position: absolute;
+        left: -7rem;
+        bottom: -7rem;
+    }
+
+
+    .home__bottom-down {
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .home__bottom-down .boxes {
+        width: 100%;
+    }
+
+    .home__bottom-down .socials {
+        width: 40%;
+        gap: 20px;
+    }
+
+    /* ----------------- Services Section Start ------------------ */
+
+    .service-section {
+        padding-top: 7rem;
+    }
+
+    .service__content .service__content-heading h3 {
+        width: 90%;
+        line-height: 39px;
+    }
+
+    .service__content .service__content-heading p {
+        width: 80%;
+    }
+
+
+    /* -------------------- Service List ---------------- */
+
+    .services {
+        padding-top: 1rem;
+    }
+
+
+    /* ----------------------- Cover Image Start ----------------------------- */
+
+    .cover__image {
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+    }
+
+    .cover__image-img img {
+        height: 272px;
+    }
+
+    /* ----------------------- Mission Section Start ----------------------------- */
+    .mission__content-container {
+        flex-direction: column;
+    }
+
+    .mission__content-left {
+        width: 95%;
+    }
+
+    .mission__content-left img {
+        width: 290px;
+        height: auto;
+    }
+
+    .mission__content-right {
+        width: 100%;
+        gap: 24px;
+    }
+
+    .mission__content-article {
+        gap: 20px;
+    }
+
+    .mission__content-article h6 {
+        width: 70%;
+    }
+
+
+    /* ----------------------- Team Section Start ----------------------------- */
+    .team__section-part {
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .team__content .team__members {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        max-width: 480px;
+    }
+
+
+    .team_members-more {
+        width: 60%;
+    }
+
+    .team_members-more h3 {
+        line-height: 43px;
+    }
+
+    /* ----------------------- Contact Section Start ----------------------------- */
+    input {
+        width: 38%;
+    }
+}
 
 
 /* ---------------------------------Mobile Nav bar---------------------------- */
@@ -30,13 +387,16 @@
     .header .toggle_btn {
         display: block;
         z-index: 300;
-        border: 1px solid rgb(200, 200, 200);
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 8px;
+        padding: 0px;
         border-radius: 4px;
+    }
 
+    .header .toggle_btn img 
+    {
+        filter: grayscale(100%) brightness(0%);
     }
 
     .dropdown_menu {
@@ -47,7 +407,7 @@
         height: 0;
         top: 0;
         backdrop-filter: blur(15px);
-        background-color: #fff;
+        background-color: white;
         overflow: hidden;
         transition: left 0.3s ease-in;
     }
@@ -55,7 +415,7 @@
 
     .dropdown_menu.open {
         display: block;
-        height: 380px;
+        height: 350px;
     }
 
     .header .m-nav-items {
@@ -69,7 +429,7 @@
     }
 
     .header .m-nav-items a {
-        color: black;
+        color: rgb(0, 0, 0);
     }
 
 }
@@ -82,9 +442,9 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     :root {
         /* Font Size */
-        --fs-1: 60px;
-        --fs-2: 55px;
-        --fs-3: 44px;
+        --fs-1: 50px;
+        --fs-2: 40px;
+        --fs-3: 37px;
         --fs-4: 28px;
         --fs-5: 12px;
         --fs-6: 13px;
@@ -96,8 +456,20 @@
 
     .home__bottom-up .home__bottom-left {
         gap: 20px;
-        width: 45%;
+        width: 35%;
     }
+
+    .home__bottom-up .home__bottom-up-heading {
+        width: 65%;
+        line-height: 56px;
+    }
+    
+
+    .home__bottom-up .home__bottom-left .btn-animation 
+    {
+        margin-right: 2rem;
+    }
+
 
     .home__bottom-down {
         flex-direction: column;
@@ -124,11 +496,11 @@
 
     .service__content .service__content-heading h3 {
         width: 70%;
-        line-height: 53px;
+        line-height: 39px;
     }
 
     .service__content .service__content-heading p {
-        width: 55%;
+        width: 60%;
     }
 
 
@@ -143,33 +515,30 @@
 
     .cover__image {
         padding-top: 7rem;
-    }
-
-    .cover__image-img img {
-        height: 372px;
+        padding-bottom: 3rem;
     }
 
     /* ----------------------- Mission Section Start ----------------------------- */
     .mission__content-container {
-        gap: 30px;
+        gap: 20px;
     }
 
     .mission__content-left {
-        width: 45%;
+        width: 35%;
     }
 
     .mission__content-left img {
-        width: 352px;
+        width: 280px;
         height: auto;
     }
 
     .mission__content-right {
-        width: 55%;
-        gap: 34px;
+        width: 65%;
+        gap: 24px;
     }
 
     .mission__content-article {
-        gap: 30px;
+        gap: 20px;
     }
 
     .mission__content-article h6 {
@@ -181,7 +550,7 @@
 
 
     .team_members-more {
-        width: 35%;
+        width: 75%;
         gap: 1px;
     }
 
@@ -191,7 +560,7 @@
 
     /* ----------------------- Contact Section Start ----------------------------- */
     input {
-        width: 28%;
+        width: 38%;
     }
 
 }

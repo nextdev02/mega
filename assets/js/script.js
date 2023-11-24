@@ -20,8 +20,6 @@ toggleBtn.addEventListener('click', function () {
 
 
 
-
-
 //  HOme Bottom Slider
 
 let boxes = new Swiper(".boxes", {
@@ -34,7 +32,7 @@ let boxes = new Swiper(".boxes", {
   breakpoints: {
 
     300: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
 
     550: {
@@ -82,15 +80,15 @@ let serviceupswiperup = new Swiper(".service__list-up", {
   breakpoints: {
 
     300: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
     },
 
     550: {
-      slidesPerView: 1.8,
+      slidesPerView: 1.9,
     },
 
     650: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
     },
 
     800: {
@@ -128,11 +126,11 @@ let serviceupswiperdown = new Swiper(".service__list-down", {
   breakpoints: {
 
     300: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
     },
 
     550: {
-      slidesPerView: 1.8,
+      slidesPerView: 1.2,
     },
 
     650: {
@@ -175,19 +173,19 @@ let teamcontent = new Swiper(".team__content", {
   breakpoints: {
 
     300: {
-      slidesPerView: 3,
+      slidesPerView: 1,
     },
 
     550: {
-      slidesPerView: 3,
+      slidesPerView: 1.1,
     },
 
     650: {
-      slidesPerView: 3,
+      slidesPerView: 1.4,
     },
 
     800: {
-      slidesPerView: 4,
+      slidesPerView: 1.2,
     },
 
     950: {
@@ -226,19 +224,19 @@ let clinets = new Swiper(".clients__brands", {
   breakpoints: {
 
     300: {
-      slidesPerView: 3,
+      slidesPerView: 1,
     },
 
     550: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
 
     650: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
 
     800: {
-      slidesPerView: 4,
+      slidesPerView: 2.4,
     },
 
     950: {
@@ -274,19 +272,19 @@ let process = new Swiper(".work__process", {
   breakpoints: {
 
     300: {
-      slidesPerView: 3,
+      slidesPerView: 1,
     },
 
     550: {
-      slidesPerView: 3,
+      slidesPerView: 1.3,
     },
 
     650: {
-      slidesPerView: 3,
+      slidesPerView: 1.8,
     },
 
     800: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
     },
 
     950: {
