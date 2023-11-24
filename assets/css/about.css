@@ -169,7 +169,7 @@ h6 {
 
 
 p {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
 }
 
 
@@ -263,22 +263,22 @@ p {
 
 /* ------------------------------- About Hero Start ---------------------------- */
 
-.about__hero
-{
-    width: 100%;
+.about__hero .container {
+    width: 942px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.about__hero-content
-{
+.about__hero-content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.about__hero-content-left
-{
-    width: 50%;
+.about__hero-content-left {
     display: flex;
     flex-direction: column;
     align-items: self-start;
@@ -286,49 +286,257 @@ p {
     gap: 20px;
 }
 
-.about__hero-content-left .about__hero-heading h3 .highlight-text
-{
+.about__hero-content-left .about__hero-heading h3 .highlight-text {
     font-size: 71px;
     color: var(--primary-color);
     margin-left: 5rem;
 }
 
 .about__hero-content-left h5,
-.about__hero-content-left p 
-{
+.about__hero-content-left p {
     margin-left: 5rem;
 }
 
-.about__hero-content-left h5
-{
-    width: 48%;
+.about__hero-content-left h5 {
     line-height: 24px;
     color: var(--secondery-color);
 }
 
-.about__hero-content-left p
-{
-    width: 76%;
+.about__hero-content-left p {
     font-size: var(--fs-6);
     color: var(--white-2);
     line-height: 20px;
 }
 
-
-.about__hero-content-right
-{
-    width: 50%;
-}
-
-.about__hero-content-right img 
-{
-    width: 464px;
+.about__hero-content-right img {
+    width: 414px;
     height: auto;
 }
 
 
 
 
+
+/* ------------------------- Mission Section ---------------------------- */
+
+.mission__section .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.mission__content {
+    width: 742px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.mission__content .mission__heading h4 {
+    padding-top: 2rem;
+    font-size: var(--fs-4);
+    color: var(--secondery-color);
+}
+
+.mission__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.mission__details p {
+    line-height: 20px;
+    color: var(--white-2);
+    font-family: var(--ff-tthoves-regular);
+}
+
+
+
+/* ------------------------- Clients Section ---------------------------- */
+
+.client__section .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.clients__content {
+    width: 742px;
+}
+
+.clients__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.clients__heading h1,
+.clients__heading p {
+    font-size: 12px;
+    color: var(--white-2);
+    font-family: var(--ff-azeret-regular);
+}
+
+.clients__heading p {
+    width: 75%;
+}
+
+
+
+/* ------------ clients__brands -------------- */
+.clients__brands {
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1px;
+}
+
+.clients__brands .brand img {
+    width: 122px;
+    filter: brightness(0.1);
+}
+
+
+
+
+/* ------------------------- Our Values Section ---------------------------- */
+
+.value__section .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 10rem;
+}
+
+.value__content
+{
+    width: 742px;
+}
+
+.value__titles
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.value__titles h1
+{
+    font-size: 12px;
+    color: var(--white-2);
+    font-family: var(--ff-tthoves-regular);
+}
+
+
+.value__list
+{
+    padding-top: 8rem;
+}
+
+.value__list-top,
+.value__list-bottom 
+{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.value__list-bottom 
+{
+    margin-top: 5rem;
+}
+
+.value__list-box
+{
+    width: 50%;
+}
+
+.value__list-box h5
+{
+    padding-top: 20px;
+}
+
+.value__list-box p
+{
+    padding-top: 50px;
+    font-size: var(--fs-6);
+    line-height: 20px;
+    color: var(--secondery-color);
+    width: 90%;
+}
+
+
+
+
+/* ----------------------- Team Section Start ----------------------------- */
+
+.team__section .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.team__content
+{
+    width: 742px;
+}
+
+
+.team__heading
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 8rem;
+}
+
+.team__heading h3
+{
+    width: 50%;
+}
+
+.team__heading p
+{
+    width: 50%;
+    font-size: var(--fs-6);
+    color: var(--secondery-color);
+    line-height: 20px;
+    font-family: var(--ff-tthoves-regular);
+}
+
+
+.team__members
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+}
+
+
+.team__members-container
+{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    gap: 30px
+    ;
+}
 
 
 
@@ -339,8 +547,9 @@ p {
 /* ----------------------- Contact Section Start ----------------------------- */
 
 .contact__Section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    background-color: var(--white);
 }
 
 
@@ -380,7 +589,7 @@ input::placeholder {
 
 .footer {
     width: 100%;
-    background-color: var(--white-2);
+    background-color: var(--white-1);
 }
 
 .footer__content {

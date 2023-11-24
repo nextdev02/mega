@@ -920,7 +920,7 @@ input::placeholder {
 
 .footer{
     width: 100%;
-    background-color: var(--white-2);
+    background-color: var(--white-1);
 }
 
 .footer__content
