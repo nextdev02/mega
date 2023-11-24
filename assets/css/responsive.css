@@ -1,16 +1,4 @@
-@media (min-width: 1400px){
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1366px;
-}
-.home__bottom {
-    padding-top: 444px;
-    height: 975px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-width: 1366px;
-}
-}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -140,6 +128,7 @@
 
 .service__content .service__content-heading h3 {
     width: 60%;
+    font-family: var;
     line-height: 53px;
 }
 
