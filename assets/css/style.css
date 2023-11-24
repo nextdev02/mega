@@ -392,7 +392,7 @@ video {
 
 .home__bottom-left .btn-animation{
     margin-top: 24px;
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
     padding: 10px 0px;
     color: var(--white);
     position: relative;
@@ -799,7 +799,7 @@ video {
 
 .btn-animation{
     margin-top: 24px;
-    border: 1px solid #7F00FF;
+    border: 2px solid #7F00FF;
     padding: 10px 0px;
     color: #7F00FF;
     position: relative;
