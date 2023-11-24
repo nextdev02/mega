@@ -70,11 +70,11 @@ let boxes = new Swiper(".boxes", {
 });
 
 
-// Service Section Slider
+// Service Up Section Slider
 
-let serviceupswiper = new Swiper(".service__list", {
-  slidesPerView: 10,
-  spaceBetween: 1,
+let serviceupswiperup = new Swiper(".service__list-up", {
+  slidesPerView: 4,
+  spaceBetween: 10,
   pagination: {
     clickable: true,
   },
@@ -98,31 +98,75 @@ let serviceupswiper = new Swiper(".service__list", {
     },
 
     950: {
-      slidesPerView: 4.5,
+      slidesPerView: 3,
     },
 
     1050: {
-      slidesPerView: 4.4,
+      slidesPerView: 4,
     },
 
     1150: {
-      slidesPerView: 4.4,
+      slidesPerView: 4,
     },
 
     1300: {
-      slidesPerView: 4.2,
+      slidesPerView: 4,
+    },
+
+  },
+});
+
+// Service Down Section Slider
+
+let serviceupswiperdown = new Swiper(".service__list-down", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 1,
+    },
+
+    550: {
+      slidesPerView: 1.8,
+    },
+
+    650: {
+      slidesPerView: 2,
+    },
+
+    800: {
+      slidesPerView: 2.7,
+    },
+
+    950: {
+      slidesPerView: 3,
+    },
+
+    1050: {
+      slidesPerView: 4,
+    },
+
+    1150: {
+      slidesPerView: 4,
+    },
+
+    1300: {
+      slidesPerView: 4,
     },
 
   },
 });
 
 
-
-
 // Team Member Slider
 
 let teamcontent = new Swiper(".team__content", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 10,
   pagination: {
     clickable: true,
@@ -147,19 +191,19 @@ let teamcontent = new Swiper(".team__content", {
     },
 
     950: {
-      slidesPerView: 4.3,
+      slidesPerView: 2.3,
     },
 
     1050: {
-      slidesPerView: 3.3,
+      slidesPerView: 2.3,
     },
 
     1150: {
-      slidesPerView: 4.3,
+      slidesPerView: 3,
     },
 
     1300: {
-      slidesPerView: 4.3
+      slidesPerView: 3.2
     },
 
   },
