@@ -73,8 +73,8 @@ let boxes = new Swiper(".boxes", {
 // Service Section Slider
 
 let serviceupswiper = new Swiper(".service__list", {
-  slidesPerView: 4,
-  spaceBetween: 10,
+  slidesPerView: 10,
+  spaceBetween: 1,
   pagination: {
     clickable: true,
   },
@@ -98,7 +98,7 @@ let serviceupswiper = new Swiper(".service__list", {
     },
 
     950: {
-      slidesPerView: 3,
+      slidesPerView: 4.5,
     },
 
     1050: {
@@ -242,19 +242,16 @@ let process = new Swiper(".work__process", {
     },
 
     800: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
 
     950: {
-      slidesPerView: 4,
-    },
-
-    1050: {
-      slidesPerView: 4,
-    },
-
-    1050: {
       slidesPerView: 3,
+    },
+
+
+    1050: {
+      slidesPerView: 3.2,
     },
 
 
