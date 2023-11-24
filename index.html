@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -75,8 +78,7 @@
                 <div class="home__bottom">
                     <div class="home__bottom-up">
                         <h1 class="home__bottom-up-heading">
-                            We’re <span class="primary-color">different</span> and
-                            we know it.
+                            We’re <span class="primary-color">different</span> and <br> we know it.
                         </h1>
 
                         <div class="home__bottom-left">
@@ -544,20 +546,20 @@
                         <div class="contact__info">
                             <div class="contact__info-name">
                                 <h4>
-                                    My name is <input type="text" name="fullname" placeholder="First and last name" required> and I'm
-                                    interested in <input type="text" name="service" placeholder="Service name" required>
+                                    <label for="fullname">My name is</label> <input id="fullname" type="text" name="fullname" placeholder="First and last name" required> and I'm
+                                    <label for="service">interested in</label> <input id="service" type="text" name="service" placeholder="Service name" required>
                                 </h4>
                             </div>
                     
                             <div class="contact__info-email">
                                 <h4>
-                                    Please, contact me at <input type="email" name="email" placeholder="name@example.com" required>
+                                    <label for="email">Please, contact me at</label> <input id="email" type="email" name="email" placeholder="name@example.com" required>
                                 </h4>
                             </div>
                     
                             <div class="contact-details">
                                 <h4>
-                                    Optionally, I'm sharing more <input type="text" name="projectDetails" placeholder="your project details">
+                                    <label for="project-details">Optionally, I'm sharing more</label> <input id="project-details" type="text" name="projectDetails" placeholder="your project details">
                                 </h4>
                             </div>
                         </div>
@@ -574,7 +576,7 @@
         <!-- ------------------- Footer Section Start---------------------- -->
 
 
-        <section class="footer">
+        <section class="footer animate__animated animate__slideInUp animate__delay-5s">
             <div class="container">
                 <div class="footer__content">
                     <div class="footer__short-links">

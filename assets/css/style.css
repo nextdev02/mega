@@ -1,24 +1,26 @@
 /* Font Family */
 @font-face {
-    font-family: Azeret Medium;
-    src: url(/assets/fonts/Azeret-Medium.otf);
+    font-family: Azeret-Medium;
+    src: url("../fonts/Azeret-Medium.otf");
 }
 
 @font-face {
-    font-family: Azeret Regular;
-    src: url(/assets/fonts/Azeret-Regular.otf);
+    font-family: Azeret-Regular;
+    src: url("../fonts/Azeret-Regular.otf");
 }
 
 @font-face {
-    font-family: TTHoves Regular;
-    src: url(/assets/fonts/TTHoves-Regular.ttf);
+    font-family: TTHoves-Regular;
+    src: url("../fonts/TTHoves-Regular.ttf");
 }
 
 @font-face {
-    font-family: TTHoves Medium;
-    src: url(/assets/fonts/TTHoves-Medium.ttf);
+    font-family: TTHoves-Medium;
+    src: url("../fonts/TTHoves-Medium.ttf");
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root {
 
     /* ------ Colors ----- */
@@ -34,10 +36,10 @@
 
 
     /* Font Family */
-    --ff-azeret-medium: 'Azeret Medium';
-    --ff-azeret-regular: 'Azeret Regular';
-    --ff-tthoves-regular: 'TTHoves Regular';
-    --ff-tthoves-medium: 'TTHoves Medium';
+    --ff-azeret-medium: 'Azeret-Medium';
+    --ff-azeret-regular: 'Azeret-Regular';
+    --ff-tthoves-regular: 'TTHoves-Regular';
+    --ff-tthoves-medium: 'TTHoves-Medium';
 
     /* Font Size */
     --fs-1: 86px;
@@ -239,7 +241,7 @@ video {
 
 .header.scrolled  .btn{
     color: var(--white);
-    background: var(--white-2);
+    background: #000;
 }
 
 .header.scrolled  .btn a{
@@ -282,8 +284,12 @@ video {
 .header .nav-items a {
     font-size: var(--fs-5);
     font-weight: normal;
+    font-family: var(--ff-tthoves-regular);
 }
-
+.header .nav-items a:hover{
+    color: aquamarine;
+    border-bottom: 1px solid aquamarine;
+}
 .header .btn {
     display: flex;
     align-items: center;
@@ -317,6 +323,10 @@ video {
 .dropdown_menu {
     display: none;
 }
+.header.scrolled .nav-items a:hover{
+    color: #7F00FF;
+    border-bottom: 1px solid #7F00FF;
+}
 
 
 
@@ -328,6 +338,7 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 1366px;
 }
 
 .home__bottom-up {
@@ -345,6 +356,7 @@ video {
 .home__bottom-up .home__bottom-up-heading {
     font-size: var(--fs-1);
     line-height: 96px;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .home__bottom-up .home__bottom-left {
@@ -353,7 +365,7 @@ video {
     align-items: end;
     justify-content: space-between;
     gap: 30px;
-    width: 45%;
+    width: 47%;
 }
 
 .home__bottom-up .home__bottom-left .sec-btn {
@@ -367,6 +379,7 @@ video {
     transform-origin: center;
     transition: 0.3s linear;
     transition-delay: 0.03s;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .home__bottom-up .home__bottom-left .sec-btn:hover {
@@ -416,6 +429,7 @@ video {
     opacity: .3;
     line-height: 16px;
     width: 80%;
+    font-family: var(--ff-tthoves-regular);
 }
 
 
@@ -432,7 +446,12 @@ video {
     align-items: start;
     justify-content: start;
 }
-
+.home__bottom-down .box h2{
+    font-family: var(--ff-tthoves-regular);
+}
+.home__bottom-down .box h5{
+    font-family: var(--ff-azeret-regular);
+}
 .home__bottom-down .box {
     display: flex;
     align-items: center;
@@ -498,6 +517,7 @@ video {
 
 .service__content .service__content-heading h5 {
     opacity: 0.3;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .service__content .service__content-heading h3 {
@@ -505,12 +525,14 @@ video {
     line-height: 63px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .service__content .service__content-heading p {
     width: 39%;
     line-height: 16px;
     opacity: 0.3;
+    font-family: var(--ff-tthoves-regular);
 }
 
 
@@ -550,6 +572,7 @@ video {
 .service__list-up .service__list-box .number,
 .service__list-down .service__list-box .number {
     opacity: 0.5;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .service__list-up .service__list-box h4,
@@ -559,6 +582,7 @@ video {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .service__list-up .service__list-box h6,
@@ -566,6 +590,7 @@ video {
     font-weight: 400;
     padding-top: 50px;
     color: var(--secondery-color);
+    font-family: var(--ff-tthoves-regular);
 }
 
 
@@ -607,7 +632,9 @@ video {
 .mission {
     margin-top: 7rem;
 }
-
+.mission__title h3{
+    font-family: var(--ff-tthoves-medium);
+}
 .mission__content {
     display: flex;
     flex-direction: column;
@@ -615,7 +642,12 @@ video {
     justify-content: center;
     padding-top: 1rem;
 }
-
+.mission__content h4{
+    font-family: var(--ff-tthoves-medium);
+}
+.mission__content h6{
+    font-family: var(--ff-tthoves-regular);
+}
 .mission__content-container {
     display: flex;
     align-items: center;
@@ -689,6 +721,7 @@ video {
     font-size: 18px;
     display: block;
     padding-top: 1rem;
+    font-family: var(--ff-tthoves-regular);
 }
 
 
@@ -709,6 +742,7 @@ video {
     font-size: var(--fs-3);
     font-weight: 400;
     line-height: 63px;
+    font-family: var(--ff-tthoves-medium);
 }
 
 .team_members-more h3
@@ -726,6 +760,7 @@ video {
     font-weight: 400;
     line-height: 20px;
     color: var(--secondery-color);
+    font-family: var(--ff-tthoves-regular);
 }
 
 .team_members-more .about-btn {
@@ -765,6 +800,7 @@ video {
     padding: 28px 32px;
     font-size: var(--fs-6);
     transition: 0.3s linear;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .team_members-more .about-btn span:hover {
@@ -816,10 +852,12 @@ video {
 .clients__content .clinets__content-heading p {
     color: var(--black);
     opacity: .3;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .clients__content .clinets__content-heading h3 {
     font-weight: var(--fw-400);
+    font-family: var(--ff-tthoves-medium);
 }
 
 .clients__content .clinets__content-heading p {
@@ -866,7 +904,9 @@ video {
     background-color: var(--white);
     position: relative;
 }
-
+.work__process .work__process-card h4{
+    font-family: var(--ff-tthoves-medium);
+}
 
 
 .work__process .work__process-card img {
@@ -894,14 +934,19 @@ video {
 
 .contact__info h1 {
    line-height: 76px;
+   font-family: var(--ff-tthoves-medium);
 }
-
+.contact__section-title h1{
+    font-family: var(--ff-tthoves-medium);
+}
 .contact__info-name,
 .contact__info-email,
 .contact-details {
     margin-bottom: 20px;
 }
-
+.contact__section-content label{
+    font-family: var(--ff-tthoves-regular);
+}
 input {
     width: 25%;
     margin: 0 24px;
@@ -952,6 +997,7 @@ input::placeholder {
 .footer__short-links .short-link a 
 {
     font-size: var(--fs-5);
+    font-family: var(--ff-azeret-regular);
 }
 
 .footer__short-links .social-link

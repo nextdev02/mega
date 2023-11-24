@@ -1,22 +1,25 @@
 /* Font Family */
 @font-face {
-    font-family: Azeret Medium;
-    src: url(/assets/fonts/Azeret-Medium.otf);
+    font-family: Azeret-Medium;
+    src: url("../fonts/Azeret-Medium.otf");
 }
 
 @font-face {
-    font-family: Azeret Regular;
-    src: url(/assets/fonts/Azeret-Regular.otf);
+    font-family: Azeret-Regular;
+    src: url("../fonts/Azeret-Regular.otf");
 }
 
 @font-face {
-    font-family: TTHoves Regular;
-    src: url(/assets/fonts/TTHoves-Regular.ttf);
+    font-family: TTHoves-Regular;
+    src: url("../fonts/TTHoves-Regular.ttf");
 }
 
 @font-face {
-    font-family: TTHoves Medium;
-    src: url(/assets/fonts/TTHoves-Medium.ttf);
+    font-family: TTHoves-Medium;
+    src: url("../fonts/TTHoves-Medium.ttf");
+}
+html{
+    scroll-behavior: smooth;
 }
 
 :root {

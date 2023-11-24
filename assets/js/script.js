@@ -172,6 +172,9 @@ let teamcontent = new Swiper(".team__content", {
 let clinets = new Swiper(".clients__brands", {
   slidesPerView: 6,
   spaceBetween: 10,
+  autoplay: {
+    delay: 5000,
+  },
   pagination: {
     clickable: true,
   },
