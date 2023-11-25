@@ -18,9 +18,14 @@
     font-family: TTHoves-Medium;
     src: url("../fonts/TTHoves-Medium.ttf");
 }
-html{
+
+
+
+
+html {
     scroll-behavior: smooth;
 }
+
 :root {
 
     /* ------ Colors ----- */
@@ -34,20 +39,25 @@ html{
     --white-2: #C1C1C1;
 
 
+    --p: #736E7A;
+
+
 
     /* Font Family */
-    --ff-azeret-medium: 'Azeret Medium';
-    --ff-azeret-regular: 'Azeret Regular';
-    --ff-tthoves-regular: 'TTHoves Regular';
-    --ff-tthoves-medium: 'TTHoves Medium';
+    --ff-azeret-medium: 'Azeret-Medium';
+    --ff-azeret-regular: 'Azeret-Regular';
+    --ff-tthoves-regular: 'TTHoves-Regular';
+    --ff-tthoves-medium: 'TTHoves-Medium';
+
+
 
     /* Font Size */
-    --fs-1: 86px;
-    --fs-2: 54px;
-    --fs-3: 32px;
-    --fs-4: 18px;
-    --fs-5: 12px;
-    --fs-6: 14px;
+    --fs-1: 54pt;
+    --fs-2: 32pt;
+    --fs-3: 24pt;
+    --fs-4: 18pt;
+    --fs-5: 14pt;
+    --fs-6: 12pt;
 
     /* Font Width */
     --fw-400: 400;
@@ -73,8 +83,8 @@ html{
 }
 
 html {
-    font-family: var(--ff-tthoves-regular);
     scroll-behavior: smooth;
+    font-family: var(--ff-tthoves-regular);
 }
 
 body {
@@ -126,6 +136,8 @@ button {
     color: var(--primary-color);
 }
 
+
+
 /* ----------------- Reused Styles ------------------ */
 
 .container {
@@ -171,7 +183,7 @@ h6 {
 
 
 p {
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
 }
 
 
@@ -209,7 +221,7 @@ p {
 .header .logo {
     width: 152px;
     height: 19px;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .header .logo {
@@ -222,13 +234,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 64px;
+    gap: 110px;
 }
 
 .header .nav-items a {
-    font-size: var(--fs-5);
+    color: var(--black);
+    font-size: var(--fs-7);
     font-weight: normal;
 }
+
 
 .header .btn {
     display: flex;
@@ -243,15 +257,13 @@ p {
 
 .header .btn a {
     color: var(--white);
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
 }
 
 .header .btn img {
     width: 20px;
     height: 10px;
 }
-
-
 
 .header .toggle_btn {
     display: none;
@@ -274,11 +286,12 @@ p {
 
 .service-title h1
 {
-    font-size: 488px;
-    font-weight: 100;
+    font-size: 500px;
+    font-weight: 400;
     color: var(--white-1);
+    letter-spacing: -18px;
     position: absolute;
-    left: -9rem;
+    left: -4rem;
     right: 0;
     overflow: hidden;
     z-index: -1;
@@ -298,7 +311,7 @@ p {
 
 .service__container
 {
-    width: 744px;
+    width: 642px;
     padding-top: 7rem;
     padding-bottom: 8rem;
 }
@@ -311,16 +324,17 @@ p {
     gap: 10px;
 }
 
-.service__title h4
+.service__title h3
 {
-    font-size: 24px;
+    font-size: 19pt;
     line-height: 32px;
     color: var(--secondery-color);
+    font-weight: var(--ff-tthoves-medium);
+    font-weight: 600;
     width: 50%;
 }
 
 .service__title p{
-    font-family: var(--ff-tthoves-regular);
     font-size: var(--fs-6);
     color: #EE660C;
     line-height: 20px;
@@ -348,6 +362,13 @@ p {
     width: 50%;
 }
 
+.service__boxes-list .service__boxes .service-img img
+{
+    width: 155px;
+    height: 155px;
+}
+
+
 .service__boxes-list .service__boxes .service-details
 {
     display: flex;
@@ -357,16 +378,15 @@ p {
 
 .service__boxes-list .service__boxes .service-details .number
 {
-    color: var(--white-2);
+    color: var(--black);
+    opacity: 0.3;
     padding-bottom: 20px;
-    font-family: var(--ff-tthoves-regular);
 }
 
 .service__boxes-list .service__boxes .service-details p 
 {
     font-size: var(--fs-6);
     color: var(--secondery-color);
-    font-family: var(--ff-tthoves-regular);
     line-height: 20px;
     padding-top: 50px;
 }
@@ -378,6 +398,7 @@ p {
 {
     padding: 7rem 0;
     z-index: 2;
+    background-color: var(--secondery-color);
 }
 
 .support__section .container
@@ -394,15 +415,21 @@ p {
     flex-direction: column;
     align-items: self-start;
     gap: 1.5rem;
-    width: 744px;
+    width: 642px;
+}
+
+.support__content h6
+{
+    color: var(--white-1);
+    
 }
 
 .support__content h3
 {
-    font-size: var(--fs-3);
+    font-size: 22pt;
     font-family: var(--ff-tthoves-medium);
-    line-height: 32px;
-    color: var(--secondery-color);
+    line-height: 36px;
+    color: var(--primary-color);
 }
 
 
@@ -421,7 +448,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 744px;
+    width: 642px;
 }
 
 .extra__support-content
@@ -432,7 +459,6 @@ p {
     justify-content: center;
 }
 
-
 .extra__support-heading
 {
     display: flex;
@@ -442,31 +468,29 @@ p {
     padding-bottom: 4rem;
 }
 
-.extra__support-heading h2
+.extra__support-heading h1
 {
-    width: 50%;
     font-family: var(--ff-tthoves-medium);
-    font-size: var(--fs-2);
-    line-height: 63px;
+    font-size: 35pt;
+    line-height: 60px;
 }
 
 .extra__support-heading h6
 {
-    width: 50%;
-    margin-bottom: -1rem;
+    margin-bottom: -3rem;
     color: var(--secondery-color);
+    font-size: 10pt;
     line-height: 20px;
+    width: 93%;
 }
 
 .extra__support-list
 {
-    margin-top: 3rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    margin-left: 9rem;
     gap: 3rem;
-    padding-left: 15rem;
 }
 
 .extra__support-card

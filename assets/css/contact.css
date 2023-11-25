@@ -1,0 +1,445 @@
+/* Font Family */
+@font-face {
+    font-family: Azeret-Medium;
+    src: url("../fonts/Azeret-Medium.otf");
+}
+
+@font-face {
+    font-family: Azeret-Regular;
+    src: url("../fonts/Azeret-Regular.otf");
+}
+
+@font-face {
+    font-family: TTHoves-Regular;
+    src: url("../fonts/TTHoves-Regular.ttf");
+}
+
+@font-face {
+    font-family: TTHoves-Medium;
+    src: url("../fonts/TTHoves-Medium.ttf");
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+
+    /* ------ Colors ----- */
+
+    --primary-color: #7F00FF;
+    --secondery-color: #1F0A3F;
+    --black: #000000;
+
+    --white: #FFFFFF;
+    --white-1: #F1F0EC;
+    --white-2: #C1C1C1;
+
+
+    --p: #736E7A;
+
+
+
+    /* Font Family */
+    --ff-azeret-medium: 'Azeret-Medium';
+    --ff-azeret-regular: 'Azeret-Regular';
+    --ff-tthoves-regular: 'TTHoves-Regular';
+    --ff-tthoves-medium: 'TTHoves-Medium';
+
+
+
+    /* Font Size */
+    --fs-1: 54pt;
+    --fs-2: 32pt;
+    --fs-3: 24pt;
+    --fs-4: 18pt;
+    --fs-5: 14pt;
+    --fs-6: 12pt;
+
+    /* Font Width */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+
+    /* Section Space */
+
+    --section-padding: 60px;
+}
+
+
+
+/* ----------------- Custom Css ------------------ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--ff-tthoves-regular);
+}
+
+body {
+    background-color: var(--white-1);
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
+input {
+    width: 100%;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+
+
+/* ----------------- Reused Styles ------------------ */
+
+.container {
+    padding-inline: 15px;
+}
+
+.section {
+    padding-block: var(--section-padding);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: var(--fw-400);
+}
+
+h1 {
+    font-size: var(--fs-1);
+}
+
+h2 {
+    font-size: var(--fs-2);
+}
+
+h3 {
+    font-size: var(--fs-3);
+}
+
+h4 {
+    font-size: var(--fs-4);
+}
+
+h5 {
+    font-size: var(--fs-5);
+}
+
+h6 {
+    font-size: var(--fs-6);
+}
+
+
+p {
+    font-size: var(--fs-5);
+}
+
+
+.title {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.grid-list {
+    display: grid;
+    gap: 20px;
+}
+
+.section-title,
+.section-text {
+    text-align: center;
+}
+
+
+/* ----------------- Header Start ------------------ */
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header .logo {
+    width: 152px;
+    height: 19px;
+    margin-left: 40px;
+}
+
+.header .logo {
+    width: 152px;
+    height: 19px;
+    margin-left: 80px;
+}
+
+.header .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.header .nav-items a {
+    color: var(--black);
+    font-size: var(--fs-7);
+    font-weight: normal;
+}
+
+
+.header .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondery-color);
+    gap: 12px;
+    padding: 24px 36px;
+    height: 75px;
+    border-radius: 0 0 0 27px;
+}
+
+.header .btn a {
+    color: var(--white);
+    font-size: var(--fs-5);
+}
+
+.header .btn img {
+    width: 20px;
+    height: 10px;
+}
+
+.header .toggle_btn {
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+
+
+
+/* ----------------------------- Contact Hero Section Start------------------------------ */
+
+.contact__hero
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contact__hero .contact__left-img
+{
+    position: absolute;
+    right: -10rem;
+    bottom: -5rem;
+    overflow: hidden;
+}
+
+.contact__hero .contact__left-img img
+{
+    width: 630px;
+    height: 630px;
+}
+
+.contact__hero .container
+{
+    width: 642px;
+}
+
+.contact__hero-heading h1
+{
+    font-family: var(--ff-tthoves-medium);
+    font-size: 45pt;
+}
+
+.contact__hero-heading h1 .highlight-text 
+{
+    margin-left: 8rem;
+    color: var(--primary-color);
+    font-size: 56pt;
+}
+
+.contact_network h3
+{
+    margin: 3rem 0;
+    font-size: 19pt;
+    line-height: 32px;
+}
+
+.contact__details
+{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+}
+
+.contact__details h6
+{
+    font-size: 12pt;
+    color: var(--p);
+}
+
+.contact__details h3
+{
+    color: #EE660C;
+    font-size: 20pt;
+    letter-spacing: -0.2px;
+}
+
+
+/* ----------------------- Contact Section Start ----------------------------- */
+
+.contact__Section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--white);
+}
+
+
+.contact__info {
+    padding-top: 3rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact__info h1 {
+    line-height: 76px;
+}
+
+.contact__info-name,
+.contact__info-email,
+.contact-details {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 25%;
+    margin: 0 24px;
+    margin-top: 2px;
+    border-bottom: 3px solid var(--secondery-color);
+    padding: 10px 0;
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--secondery-color);
+}
+
+
+/* ----------------------- Footer Start ----------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: var(--white-2);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    height: 768px;
+    padding-bottom: 2rem;
+}
+
+.footer__short-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.footer__short-links .short-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+}
+
+.footer__short-links .short-link a {
+    font-size: var(--fs-5);
+}
+
+.footer__short-links .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.footer__short-links .social-link img {
+    width: 35px;
+    filter: grayscale(100%) brightness(0%);
+}
+
+
+.footer__big-logo {
+    width: 100%;
+}
+
+.footer__big-logo img {
+    width: 100%;
+}

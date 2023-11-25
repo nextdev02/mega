@@ -18,7 +18,11 @@
     font-family: TTHoves-Medium;
     src: url("../fonts/TTHoves-Medium.ttf");
 }
-html{
+
+
+
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -35,20 +39,25 @@ html{
     --white-2: #C1C1C1;
 
 
+    --p: #736E7A;
+
+
 
     /* Font Family */
-    --ff-azeret-medium: 'Azeret Medium';
-    --ff-azeret-regular: 'Azeret Regular';
-    --ff-tthoves-regular: 'TTHoves Regular';
-    --ff-tthoves-medium: 'TTHoves Medium';
+    --ff-azeret-medium: 'Azeret-Medium';
+    --ff-azeret-regular: 'Azeret-Regular';
+    --ff-tthoves-regular: 'TTHoves-Regular';
+    --ff-tthoves-medium: 'TTHoves-Medium';
+
+
 
     /* Font Size */
-    --fs-1: 86px;
-    --fs-2: 62px;
-    --fs-3: 54px;
-    --fs-4: 32px;
-    --fs-5: 18px;
-    --fs-6: 14px;
+    --fs-1: 54pt;
+    --fs-2: 32pt;
+    --fs-3: 20pt;
+    --fs-4: 18pt;
+    --fs-5: 14pt;
+    --fs-6: 12pt;
 
     /* Font Width */
     --fw-400: 400;
@@ -74,8 +83,8 @@ html{
 }
 
 html {
-    font-family: var(--ff-tthoves-medium);
     scroll-behavior: smooth;
+    font-family: var(--ff-tthoves-regular);
 }
 
 body {
@@ -127,6 +136,8 @@ button {
     color: var(--primary-color);
 }
 
+
+
 /* ----------------- Reused Styles ------------------ */
 
 .container {
@@ -172,7 +183,7 @@ h6 {
 
 
 p {
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
 }
 
 
@@ -210,7 +221,7 @@ p {
 .header .logo {
     width: 152px;
     height: 19px;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .header .logo {
@@ -223,13 +234,15 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 64px;
+    gap: 110px;
 }
 
 .header .nav-items a {
-    font-size: var(--fs-5);
+    color: var(--black);
+    font-size: var(--fs-7);
     font-weight: normal;
 }
+
 
 .header .btn {
     display: flex;
@@ -244,15 +257,13 @@ p {
 
 .header .btn a {
     color: var(--white);
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
 }
 
 .header .btn img {
     width: 20px;
     height: 10px;
 }
-
-
 
 .header .toggle_btn {
     display: none;
@@ -267,17 +278,19 @@ p {
 /* ------------------------------- About Hero Start ---------------------------- */
 
 .about__hero .container {
-    width: 942px;
+    width: 1085px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: self-start;
+    justify-content: space-evenly;
+    margin-right: 1rem;
 }
 
 .about__hero-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    margin-top: 13rem;
+    margin-bottom: 10rem;
 }
 
 .about__hero-content-left {
@@ -285,33 +298,51 @@ p {
     flex-direction: column;
     align-items: self-start;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
+    position: relative;
 }
 
-.about__hero-content-left .about__hero-heading h3 .highlight-text {
-    font-size: 71px;
+.about__hero-content-left .about__hero-heading h1
+{
+    font-family: var(--ff-tthoves-medium);
+    position: absolute;
+    top: -4rem;
+    left: -154px;
+}
+
+.about__hero-content-left .about__hero-heading h1 .highlight-text {
+    font-size: 71pt;
     color: var(--primary-color);
-    margin-left: 5rem;
+    margin-left: 8.5rem;
+    font-family: var(--ff-tthoves-medium);
 }
 
-.about__hero-content-left h5,
-.about__hero-content-left p {
-    margin-left: 5rem;
-}
 
-.about__hero-content-left h5 {
-    line-height: 24px;
+.about__hero-content-left h4 {
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+    line-height: 30px;
+    width: 64%;
     color: var(--secondery-color);
+    font-family: var(--ff-tthoves-medium);
 }
 
 .about__hero-content-left p {
     font-size: var(--fs-6);
-    color: var(--white-2);
+    font-weight: 400;
+    color: var(--p);
     line-height: 20px;
+    width: 86%;
+}
+.about__hero-content-right
+{
+    z-index: -1;
+    margin-left: -7rem;
+    margin-top: -4rem;
 }
 
 .about__hero-content-right img {
-    width: 414px;
+    width: 500px;
     height: auto;
 }
 
@@ -320,7 +351,7 @@ p {
 
 
 /* ------------------------- Mission Section ---------------------------- */
-.mission__section{
+.mission__section {
     margin-bottom: 15rem;
 }
 
@@ -333,24 +364,27 @@ p {
 
 
 .mission__content {
-    width: 742px;
+    width: 642px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.mission__content .mission__heading h4 {
+.mission__content .mission__heading h2 {
     padding-top: 2rem;
-    font-size: var(--fs-4);
     color: var(--secondery-color);
+    font-family: var(--ff-tthoves-medium);
+    line-height: 38px;
+    font-size: 23pt;
+    letter-spacing: -1.2px;
 }
 
 .mission__details {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 26px;
 }
 
 
@@ -358,6 +392,9 @@ p {
     line-height: 20px;
     color: var(--white-2);
     font-family: var(--ff-tthoves-regular);
+    font-size: var(--fs-6);
+    font-weight: 300;
+    color: var(--p);
 }
 
 
@@ -372,29 +409,37 @@ p {
 }
 
 .clients__content {
-    width: 742px;
+    width: 642px;
 }
 
 .clients__heading {
     display: flex;
     flex-direction: column;
-    gap: 1.7rem;
+    gap: 1rem;
 }
 
-.clients__heading h1,
+.clients__heading h6
+{
+    opacity: 0.3;
+}
+
+.clients__heading h1{
+    font-size: 35pt;
+    font-family: var(--ff-tthoves-medium);
+
+}
+
 .clients__heading p {
-    font-size: 12px;
-    color: var(--white-2);
-    font-family: var(--ff-azeret-regular);
+    font-size: var(--fs-6);
+    line-height: 16px;
+    opacity: 0.3;
+    width: 96%;
 }
-
-.clients__heading p {
-    width: 75%;
-}
-
 
 
 /* ------------ clients__brands -------------- */
+
+
 .clients__brands {
     padding-top: 4rem;
     display: flex;
@@ -414,8 +459,27 @@ p {
 /* ------------------------- Our Values Section ---------------------------- */
 
 .value__section {
-    margin-bottom: 20rem;
-    margin-top: 15rem;
+    margin-bottom: 7rem;
+    margin-top: 7rem;
+    background-color: #15002a;
+    padding: 7rem 0;
+}
+
+.value__list-box {
+    width: 50%;
+    border-top: 1px solid #fff;
+}
+
+.value__list-box:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.value__list-box:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.value__list-box:nth-child(4) {
+    transition-delay: 600ms;
 }
 
 .value__section .container {
@@ -423,64 +487,75 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20rem;
+    margin-bottom: 0rem;
 }
 
-.value__content
-{
-    width: 742px;
+.value__content {
+    width: 642px;
 }
 
-.value__titles
-{
+.value__titles {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
 }
 
-.value__titles h1
+.value__titles h6
 {
-    font-size: 12px;
-    color: var(--white-2);
-    font-family: var(--ff-tthoves-regular);
+    color: var(--p);
 }
 
+.value__titles h1 {
+    color: var(--primary-color);
+    font-family: var(--ff-tthoves-medium);
+}
 
-.value__list
+.value__titles h3 {
+    color: var(--primary-color);
+}
+
+.value__list-box h4 {
+    color: var(--white);
+}
+.value__list-box p
 {
+    line-height: 20px;
+}
+
+.value__list-box h4.number {
+    color: var(--primary-color);
+    padding-top: 20px;
+}
+
+.value__list {
     padding-top: 8rem;
 }
 
 .value__list-top,
-.value__list-bottom 
-{
+.value__list-bottom {
     display: flex;
     align-items: self-start;
     justify-content: center;
     gap: 1.5rem;
 }
 
-.value__list-bottom 
-{
+.value__list-bottom {
     margin-top: 5rem;
 }
 
-.value__list-box
-{
+.value__list-box {
     width: 50%;
 }
 
-.value__list-box h5
-{
+.value__list-box h5 {
     padding-top: 20px;
 }
 
-.value__list-box p
-{
+.value__list-box p {
     padding-top: 50px;
     font-size: var(--fs-6);
     line-height: 20px;
-    color: var(--secondery-color);
+    color: var(--white);
     width: 90%;
 }
 
@@ -497,28 +572,27 @@ p {
     margin-bottom: 10rem;
 }
 
-.team__content
-{
-    width: 742px;
+.team__content {
+    width: 642px;
 }
 
 
-.team__heading
-{
+.team__heading {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     margin-bottom: 8rem;
+    
 }
 
-.team__heading h3
-{
+.team__heading h1 {
     width: 50%;
+    font-size: 37pt;
+    font-family: var(--ff-tthoves-medium);
 }
 
-.team__heading p
-{
-    width: 50%;
+.team__heading h5 {
+    width: 66%;
     font-size: var(--fs-6);
     color: var(--secondery-color);
     line-height: 20px;
@@ -526,8 +600,7 @@ p {
 }
 
 
-.team__members
-{
+.team__members {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -536,17 +609,38 @@ p {
 }
 
 
-.team__members-container
-{
+.team__members-container {
     display: flex;
     align-items: self-start;
     justify-content: space-between;
-    gap: 30px
-    ;
+    gap: 30px;
+}
+
+
+.team__members-container img{
+    filter: grayscale(100%) brightness(100%);
 }
 
 
 
+.team__members-container .member__details h2
+{
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.team__members-container .member__details h6
+{
+    color: #EE660C;
+    font-size: 10px;
+}
+
+
+.team__members-container .member__details p 
+{
+    font-size: 8pt;
+    opacity: 0.3;
+}
 
 
 

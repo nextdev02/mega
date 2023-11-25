@@ -173,7 +173,7 @@ let teamcontent = new Swiper(".team__content", {
   breakpoints: {
 
     300: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
     },
 
     550: {
@@ -226,7 +226,9 @@ let clinets = new Swiper(".clients__brands", {
     300: {
       slidesPerView: 1,
     },
-
+    320: {
+      slidesPerView: 2,
+    },
     550: {
       slidesPerView: 2,
     },
@@ -272,7 +274,7 @@ let process = new Swiper(".work__process", {
   breakpoints: {
 
     300: {
-      slidesPerView: 1,
+      slidesPerView: 1.3,
     },
 
     550: {
