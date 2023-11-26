@@ -215,7 +215,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 99999;
+    z-index: 99;
 }
 .header.scrolled{
     background: #fff;
@@ -290,6 +290,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .contact__hero .contact__left-img
@@ -297,7 +298,6 @@ p {
     position: absolute;
     right: -10rem;
     bottom: -5rem;
-    overflow: hidden;
 }
 
 .contact__hero .contact__left-img img
