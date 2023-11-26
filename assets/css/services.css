@@ -217,7 +217,8 @@ p {
     justify-content: space-between;
     z-index: 100;
 }
-.header.scrolled{
+
+.header.scrolled {
     background: #fff;
 }
 
@@ -281,14 +282,12 @@ p {
 
 /* ----------------------------- Service Section Start------------------------------ */
 
-.service__section
-{
+.service__section {
     padding: 5rem;
     position: relative;
 }
 
-.service-title h1
-{
+.service-title h1 {
     font-size: 500px;
     font-weight: 400;
     color: var(--white-1);
@@ -304,31 +303,27 @@ p {
     background-color: var(--white-1);
 }
 
-.service__section-content .container
-{
+.service__section-content .container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20rem;
 }
 
-.service__container
-{
+.service__container {
     width: 742px;
     padding-top: 7rem;
     padding-bottom: 8rem;
 }
 
-.service__title
-{
+.service__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 
-.service__title h3
-{
+.service__title h3 {
     font-size: 19pt;
     line-height: 32px;
     color: var(--secondery-color);
@@ -337,7 +332,7 @@ p {
     width: 50%;
 }
 
-.service__title p{
+.service__title p {
     font-size: var(--fs-6);
     color: #EE660C;
     line-height: 20px;
@@ -345,8 +340,7 @@ p {
     width: 47%;
 }
 
-.service__boxes-list
-{
+.service__boxes-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -355,8 +349,7 @@ p {
     padding-bottom: 2rem;
 }
 
-.service__boxes-list .service__boxes
-{
+.service__boxes-list .service__boxes {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -365,36 +358,33 @@ p {
     width: 50%;
 }
 
-.service__boxes-list .service__boxes .service-img img
-{
+.service__boxes-list .service__boxes .service-img img {
     width: 155px;
     height: 155px;
 }
 
 
-.service__boxes-list .service__boxes .service-details
-{
+.service__boxes-list .service__boxes .service-details {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.service__boxes-list .service__boxes .service-details .number
-{
+.service__boxes-list .service__boxes .service-details .number {
     color: var(--black);
     opacity: 0.3;
     padding-bottom: 20px;
     font-size: var(--fs-4);
     font-family: var(--ff-tthoves-regular);
 }
-.service__boxes-list .service__boxes .service-details .title{
+
+.service__boxes-list .service__boxes .service-details .title {
     font-size: var(--fs-4);
     font-family: var(--ff-tthoves-regular);
     text-align: left;
 }
 
-.service__boxes-list .service__boxes .service-details p 
-{
+.service__boxes-list .service__boxes .service-details p {
     font-size: var(--fs-6);
     color: var(--secondery-color);
     line-height: 20px;
@@ -405,23 +395,20 @@ p {
 
 
 /* ----------------------- Clients Support Start -------------------- */
-.support__section
-{
+.support__section {
     padding: 7rem 0;
     z-index: 2;
     background-color: var(--secondery-color);
 }
 
-.support__section .container
-{
+.support__section .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.support__content
-{
+.support__content {
     display: flex;
     flex-direction: column;
     align-items: self-start;
@@ -429,16 +416,14 @@ p {
     width: 642px;
 }
 
-.support__content h6
-{
+.support__content h6 {
     color: var(--white-1);
     font-family: var(--ff-tthoves-regular);
     font-size: var(--fs-6);
-    
+
 }
 
-.support__content h3
-{
+.support__content h3 {
     font-size: 22pt;
     font-family: var(--ff-tthoves-medium);
     line-height: 36px;
@@ -449,31 +434,27 @@ p {
 
 /* -----------------------  Extra Support Start -------------------- */
 
-.extra__support
-{
+.extra__support {
     background-color: var(--white-1);
     padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
-.extra__support .container
-{
+.extra__support .container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 642px;
 }
 
-.extra__support-content
-{
+.extra__support-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.extra__support-heading
-{
+.extra__support-heading {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -481,15 +462,13 @@ p {
     padding-bottom: 4rem;
 }
 
-.extra__support-heading h1
-{
+.extra__support-heading h1 {
     font-family: var(--ff-tthoves-medium);
     font-size: 35pt;
     line-height: 60px;
 }
 
-.extra__support-heading h6
-{
+.extra__support-heading h6 {
     margin-bottom: -3rem;
     color: var(--secondery-color);
     font-size: 12pt;
@@ -498,8 +477,7 @@ p {
     font-family: var(--ff-tthoves-regular);
 }
 
-.extra__support-list
-{
+.extra__support-list {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -507,23 +485,20 @@ p {
     gap: 3rem;
 }
 
-.extra__support-card
-{
+.extra__support-card {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5.5rem;
 }
 
-.extra__support-card .blue-card
-{
+.extra__support-card .blue-card {
     height: 24px;
     width: 24px;
     background-color: var(--primary-color);
 }
 
-.extra__support-card h3
-{
+.extra__support-card h3 {
     width: 65%;
     font-family: var(--ff-tthoves-medium);
     font-size: var(--fs-3);
@@ -546,7 +521,8 @@ p {
     flex-direction: column;
     gap: 24px;
 }
-.contact__Section .hey-mobile{
+
+.contact__Section .hey-mobile {
     display: none;
 }
 
@@ -579,9 +555,11 @@ p {
     padding: 10px 0;
     outline: none;
 }
-.contact-details input{
+
+.contact-details input {
     width: 30%;
 }
+
 .contact__Section input::placeholder {
     color: var(--secondery-color);
     font-size: var(--input-font-size);
@@ -594,6 +572,7 @@ p {
     border: none;
     padding: 10px 10px 10px 10px;
 }
+
 .contact__Section .btn-animation {
     margin-top: 0px;
     border: 2px solid var(--black);
@@ -657,12 +636,15 @@ p {
     height: 0%;
     width: 50%;
 }
+
 .submit-area {
     margin-left: 8.7rem;
 }
-.contact__Section .contact-details{
+
+.contact__Section .contact-details {
     display: flex;
 }
+
 /* ----------------------- Footer Start ----------------------------- */
 
 .footer {
@@ -725,4 +707,42 @@ p {
 
 .footer__big-logo img {
     width: 100%;
+}
+
+
+/*-----------------------------------*\
+  #CUSTOM CURSOR
+\*-----------------------------------*/
+
+.cursor {
+    display: none;
+}
+
+
+/**
+   * CUSTOM CURSOR
+   */
+
+.cursor {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background-color: var(--white);
+    mix-blend-mode: exclusion;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.35);
+    transition: transform 0.35s;
+    pointer-events: none;
+    z-index: 1116;
+}
+
+.cursor.hovered {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.cursor.disabled {
+    transform: translate(-50%, -50%) scale(0);
 }
