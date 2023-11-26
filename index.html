@@ -19,9 +19,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/animate.css">
+
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="assets/css/animate.css">
 
   <!-- Smooth Effect -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -29,14 +31,13 @@
 </head>
 
 <body>
-  <!--     
+      <!-- Preloader -->
     <div class="loading" data-loading>
-        <img src="assets/about images/Group 2.png" width="120px" alt="loading">
-    </div> -->
+        <img src="assets/images/logo.png" width="120px" alt="loading">
+    </div>
 
-  <!-- <div class="cursor" data-cursor></div> -->
 
-  <main>
+  <main >
     <!-- ------------------- Header Start ---------------------- -->
 
     <header class="header">
@@ -74,7 +75,7 @@
 
     <!-- ------------------- Video Section Start ---------------------- -->
 
-    <div class="video__cover">
+    <div id="parallax" class="video__cover">
       <video class="home-bg" src="assets/videos/AdobeStock_338930419_Video_HD_Preview(2).mp4" autoplay loop playsinline
         muted></video>
 
@@ -109,7 +110,7 @@
       </div>
     </div>
 
-    <section class="home">
+    <section class="home parallax-item">
       <div class="container">
         <!-- ------------------- Hero Start ---------------------- -->
         <div class="home__bottom">
@@ -127,7 +128,7 @@
             <div class="home__bottom-left slide-right">
               <div class="btn-area">
                 <div class="btn-animation">
-                  <a href="#" class="btn ab-btn">Services</a>
+                  <a href="services.html" class="btn ab-btn">Services</a>
                   <i class="fa-solid fa-arrow-right-long inner-arrow"></i>
                   <span></span>
                 </div>
@@ -193,7 +194,7 @@
               </div>
             </div>
 
-            <div class="socials scale">
+            <div class="socials">
               <div class="social_links">
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -467,7 +468,7 @@
             </h6>
 
             <div class="btn-animation">
-              <a href="#" class="btn ab-btn">About us</a>
+              <a href="about.html" class="btn ab-btn">About us</a>
               <i class="fa-solid fa-arrow-right-long inner-arrow"></i>
               <span></span>
             </div>
@@ -560,7 +561,7 @@
 
     <!-- ------------------- Contact Section Start---------------------- -->
 
-    <section class="contact__Section h-contact">
+    <section class="contact__Section h-contact parallax-item">
       <div class="container">
         <div class="contact__section-content long-slide-up">
           <div class="contact__section-title">
