@@ -303,8 +303,11 @@ video {
     transition: 0.5s ease;
     z-index: 200;
 }
-
+.header .logo img{
+    width: 152px;
+}
 .header.scrolled .logo img {
+    width: 152px;
     filter: grayscale(100%) brightness(0%);
 }
 
@@ -378,7 +381,7 @@ video {
 .header .btn a {
     color: var(--black);
     font-size: var(--fs-6);
-    font-family: var(--ff-tthoves-regular);
+    font-family: var(--ff-azeret-regular);
 }
 
 .header .btn img {
@@ -495,6 +498,7 @@ video {
     color: var(--white);
     z-index: 2;
     margin: 0px -13px 0px 13px;
+    font-family: var(--ff-azeret-regular);
 }
 
 .home__bottom-left .btn-animation:hover .ab-btn {
@@ -684,15 +688,7 @@ video {
     cursor: default;
 }
 
-.service__list-up .service__list-box:hover .number,
-.service__list-down .service__list-box:hover .number{
-   opacity: 0;
-}
 
-.service__list-up .service__list-box:hover h4,
-.service__list-down .service__list-box:hover h4{
-   color: var(--primary-color);
-}
 
 .service__list-up .service__list-box .number,
 .service__list-down .service__list-box .number {
@@ -720,6 +716,26 @@ video {
     font-family: var(--ff-tthoves-regular);
 }
 
+
+.service__list-up .service__list-box:hover .number,
+.service__list-down .service__list-box:hover .number{
+   opacity: 0;
+   transform: translateY(-40px);
+}
+
+.service__list-up .service__list-box:hover h4,
+.service__list-down .service__list-box:hover h4{
+   color: var(--primary-color);
+   transform: translateY(-40px);
+}
+.service__list-up .service__list-box h6,
+.service__list-down .service__list-box h6{
+transition: .3s linear;
+}
+.service__list-up .service__list-box:hover h6,
+.service__list-down .service__list-box:hover h6{
+   transform: translateY(-40px);
+}
 
 /* ----------------------- Cover Image Start ----------------------------- */
 
@@ -906,6 +922,7 @@ video {
 .team-member-details {
     display: none;
 }
+
 
 
 /* ---------- Animated Button -------------- */
@@ -1097,6 +1114,8 @@ video {
 .contact__info-email,
 .contact-details {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact__section-content label {
@@ -1104,27 +1123,94 @@ video {
 }
 
 .contact__Section input {
-    width: 25%;
+    width: 24%;
     margin: 0 24px;
     margin-top: 2px;
     border-bottom: 3px solid var(--secondery-color);
     padding: 10px 0;
     outline: none;
 }
-
+.contact-details input{
+    width: 30%;
+}
 .contact__Section input::placeholder {
     color: var(--secondery-color);
     font-size: var(--input-font-size);
 }
+.contact__Section .btn-area{
+    padding: 0px;
+}
 
+/* contact btn start */
+.contact__Section input.btn.ab-btn {
+    width: 100% !important;
+    height: 70px !important;
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+.contact__Section .btn-animation {
+    margin-top: 0px;
+    border: 2px solid var(--black);
+    padding: 10px 0px;
+    color: var(--black);
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: var(--white);
+    transition: .2s ease-in-out;
+}
 
-/*-----------------------------------*\
-  #CUSTOM CURSOR
-\*-----------------------------------*/
+.contact__Section .btn-animation .inner-arrow {
+    font-size: 20px;
+    color: var(--black);
+    z-index: 2;
+    margin: 0px -40px 0px 40px;
+    transition: .2s ease-in-out;
+}
 
-.cursor { display: none; }
+.contact__Section .btn-animation:hover .inner-arrow {
+    margin: 0px 10px 0px -10px;
+    color: var(--white) !important;
+    display: block;
+}
 
+.contact__Section .btn-animation:hover {
+    background: var(--black);
+    width: 300px;
+}
 
+.contact__Section .ab-btn {
+    color: var(--black);
+    z-index: 2;
+    margin: 0px -13px 0px 13px;
+    font-family: var(--ff-azeret-regular);
+}
+
+.contact__Section .btn-animation:hover .ab-btn {
+    color: var(--white) !important;
+    margin: unset;
+}
+
+.contact__Section .btn-animation span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--white);
+    transition: .2s linear;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.contact__Section .btn-animation:hover span {
+    height: 0%;
+    width: 50%;
+}
 
 /* ----------------------- Footer Start ----------------------------- */
 
@@ -1190,5 +1276,34 @@ video {
 }
 
 
+/*-----------------------------------*\
+  #CUSTOM CURSOR
+\*-----------------------------------*/
+
+.cursor { display: none; }
 
 
+
+    /**
+   * CUSTOM CURSOR
+   */
+
+   .cursor {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background-color: var(--white);
+    mix-blend-mode: exclusion;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.35);
+    transition: transform 0.35s;
+    pointer-events: none;
+    z-index: 1116;
+  }
+
+  .cursor.hovered { transform: translate(-50%, -50%) scale(1.2); }
+
+  .cursor.disabled { transform: translate(-50%, -50%) scale(0); }

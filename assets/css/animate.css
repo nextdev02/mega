@@ -1,0 +1,111 @@
+/* slide up animation start */
+.slide-up {
+    opacity: .7;
+    transition: all .5s;
+    transform: translateY(70%);
+    filter: blur(3px);
+  }
+  
+  .slide-up-show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+  }
+  /* slide-up animation close */
+  
+  /* slide up animation start */
+  .long-slide-up {
+    opacity: .7;
+    transition: all .5s;
+    transform: translateY(100%);
+    filter: blur(3px);
+  }
+  
+  .long-slide-up-show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+  }
+  /* slide-up animation close */
+  
+  /* slide down animation start */
+  .slide-down {
+    opacity: 0;
+    transition: all .7s;
+    transform: translateY(-70%);
+    filter: blur(3px);
+  }
+  
+  .slide-down-show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+  }
+  /* slide-down animation close */
+  
+  /* slide up animation start */
+  .slide-left {
+    opacity: 0;
+    transition: all .5s;
+    transform: translateX(-100%);
+    filter: blur(3px);
+  }
+  
+  .slide-left-show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+  }
+  /* slide-up animation close */
+  /* slide up animation start */
+  .slide-right {
+    opacity: 0;
+    transition: all .5s;
+    transform: translateX(100%);
+    filter: blur(3px);
+  }
+  
+  .slide-right-show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+  }
+  /* slide-up animation close */
+  
+  .rotate {
+    opacity: 0;
+    transition: all .5s;
+    transform: rotate(180deg);
+    filter: blur(3px);
+  }
+  
+  .rotate-show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: rotate(0deg);
+  }
+  
+  
+  /* scale animation start */
+  .scale{
+    opacity: .7;
+    transition: all .6s;
+    transform: scale(3);
+    filter: blur(3px);
+  }
+  
+  .scale-show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+  /* scale animation close */
+  
+  /* jquery class for paralax section */
+  .sec-fixed{
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+  }
+  

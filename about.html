@@ -15,13 +15,19 @@
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <!-- Font Awesome Icons -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
 
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-   <!-- Smooth Effect -->
-   <script defer src="assets/js/app.js"></script>
+     <!-- Smooth Effect -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+   
 </head>
 
 <body>
@@ -78,16 +84,16 @@
                 <div class="about__hero-content">
                     <div class="about__hero-content-left">
                         <div class="about__hero-heading">
-                            <h1>Our <br> <span class="highlight-text">Vision</span></h1>
+                            <h1 class="slide-left">Our <br> <span class="highlight-text">Vision</span></h1>
                         </div>
 
-                        <h4>
+                        <h4 class="slide-up">
                             We believe that the Saudi Arabia has the potential to become a leading digital economy in
                             the world. We are committed to supporting the Kingdom's vision and helping to make it a
                             reality.
                         </h4>
 
-                        <p>
+                        <p class="long-slide-up">
                             At Mega Tech, our vision is to be the premier IT solutions provider in Saudi Arabia, setting
                             the benchmark for innovation and reliability in the digital realm. We aspire to empower
                             businesses across the Kingdom with cutting-edge technology, unwavering commitment, and
@@ -99,7 +105,7 @@
                         </p>
                     </div>
 
-                    <div class="about__hero-content-right">
+                    <div class="about__hero-content-right scale">
                         <img src="assets/about images/7. Sphere.png.png" alt="">
                     </div>
                 </div>
@@ -114,10 +120,10 @@
                 <div class="mission__content">
                     <div class="mission__heading">
                         <h5>
-                            <span class="primary-color"> Mission </span>
+                            <span class="primary-color slide-up"> Mission </span>
                         </h5>
 
-                        <h2>
+                        <h2 class="slide-up">
                             Mega Tech stands as a comprehensive hub for all client requirements in developing robust and
                             sustainable systems. We are dedicated to offering an extensive array of solutions, from
                             initial conceptualization and strategic planning to the final stages of implementation and
@@ -125,7 +131,7 @@
                         </h2>
                     </div>
 
-                    <div class="mission__details">
+                    <div class="mission__details slide-up">
                         <p>
                             MEGA Tech is a one-stop shop for technology solutions in the Saudi and Middle Eastern
                             markets. We partner with the best global vendors to bring our clients the latest and
@@ -152,16 +158,16 @@
             <div class="container">
                 <div class="clients__content">
                     <div class="clients__heading">
-                        <h6>
+                        <h6 class="slide-up">
                             Success Partners
                         </h6>
 
 
-                        <h1>
+                        <h1 class="slide-up">
                             Serving the best in the field
                         </h1>
 
-                        <p>
+                        <p class="long-slide-up">
                             Our partners are leaders in their respective fields, ranging from advanced software
                             developers to cutting-edge hardware providers. Each collaboration is a testament to our
                             commitment to delivering unparalleled IT solutions.
@@ -169,7 +175,7 @@
                     </div>
 
 
-                    <div class="clients__brands">
+                    <div class="clients__brands long-slide-up">
                         <div class="brand ">
                             <img src="assets/images/H_esriPartnerNet-silver_sRGB.png" alt="">
                         </div>
@@ -202,12 +208,12 @@
             <div class="container">
                 <div class="value__content">
                     <div class="value__titles">
-                        <h6>
+                        <h6 class="slide-up">
                             We work by these
                         </h6>
 
 
-                        <h1>
+                        <h1 class="slide-up">
                             Our Values
                         </h1>
                     </div>
@@ -219,7 +225,7 @@
 
                         <div class="value__list-top">
                             <!-- Card 1 -->
-                            <div class="value__list-box hidden">
+                            <div class="value__list-box slide-left">
                                 <h4 class="number">
                                     01
                                 </h4>
@@ -237,7 +243,7 @@
                             </div>
 
                             <!-- Card 2 -->
-                            <div class="value__list-box hidden">
+                            <div class="value__list-box slide-right">
                                 <h4 class="number">
                                     02
                                 </h4>
@@ -257,7 +263,7 @@
 
                         <div class="value__list-bottom">
                             <!-- Card 3 -->
-                            <div class="value__list-box hidden">
+                            <div class="value__list-box slide-left">
                                 <h4 class="number">
                                     03
                                 </h4>
@@ -274,7 +280,7 @@
                             </div>
 
                             <!-- Card 4 -->
-                            <div class="value__list-box hidden">
+                            <div class="value__list-box slide-right">
                                 <h4 class="number">
                                     04
                                 </h4>
@@ -304,10 +310,10 @@
             <div class="container">
                 <div class="team__content">
                     <div class="team__heading">
-                        <h1>Team <br>
+                        <h1 class="slide-left">Team <br>
                             of experts</h1>
 
-                        <h5>
+                        <h5 class="slide-right">
                             We believe that the Saudi Arabia has the potential to become a leading digital economy in
                             the world. We are committed to supporting the Kingdom's vision and helping to make it a
                             reality.
@@ -319,9 +325,9 @@
 
                         <!-- Team Member 1 -->
                         <div class="team__members-container">
-                            <img src="assets/about images/abdulhai.jpeg_abdulhaimegagroup.c_page-0001.png" alt="Dr. Abdulhai Megdad">
+                            <img class="scale" src="assets/about images/abdulhai.jpeg_abdulhaimegagroup.c_page-0001.png" alt="Dr. Abdulhai Megdad">
 
-                            <div class="member__details" id="abdulhai">
+                            <div class="member__details slide-right" id="abdulhai">
                                 <h2>Dr. Abdulhai Megdad</h2>
 
 
@@ -349,9 +355,9 @@
 
                          <!-- Team Member 2 -->
                          <div class="team__members-container" id="hamoud">
-                            <img src="assets/about images/CamScanner 11-13-2023 14.18.png" alt="Dr. Hamoud AlRemal">
+                            <img class="scale" src="assets/about images/CamScanner 11-13-2023 14.18.png" alt="Dr. Hamoud AlRemal">
 
-                            <div class="member__details">
+                            <div class="member__details slide-right">
                                 <h2>Dr. Hamoud AlRemal</h2>
 
                                 <!-- <h6>IT CONSULTANT</h6> --> <br>
@@ -366,9 +372,9 @@
 
                          <!-- Team Member 3 -->
                          <div class="team__members-container" id="riyadh">
-                            <img src="assets/about images/Dr. Riyad.png" alt="Dr. Riyadh AL-Matrafi">
+                            <img class="scale" src="assets/about images/Dr. Riyad.png" alt="Dr. Riyadh AL-Matrafi">
 
-                            <div class="member__details">
+                            <div class="member__details slide-right">
                                 <h2>Dr. Riyadh AL-Matrafi</h2>
 
                                 <!-- <h6>ACADEMIC CONSULTANT</h6> --> <br>
@@ -392,47 +398,64 @@
         <!-- ------------------- Contact Section Start---------------------- -->
         <section class="contact__Section">
             <div class="container">
-                <div class="contact__section-content">
-                    <div class="contact__section-title">
-                        <h1> Hey! We are ready <br>
-                            to <span class="primary-color">consult you_</span></h1>
-                    </div>
-
-                    <form action="/submit_form" method="post">
-                        <div class="contact__info">
-                            <div class="contact__info-name">
-                                <h4>
-                                    My name is <input type="text" name="fullname" placeholder="First and last name" required> and I'm
-                                    interested in <input type="text" name="service" placeholder="Service name" required>
-                                </h4>
-                            </div>
-                    
-                            <div class="contact__info-email">
-                                <h4>
-                                    Please, contact me at <input type="email" name="email" placeholder="name@example.com" required>
-                                </h4>
-                            </div>
-                    
-                            <div class="contact-details">
-                                <h4>
-                                    Optionally, I'm sharing more <input type="text" name="projectDetails" placeholder="your project details">
-                                </h4>
-                            </div>
-                        </div>
-                    
-                        <button type="submit"></button>
-                    </form>
-                    
+              <div class="contact__section-content long-slide-up">
+                <div class="contact__section-title">
+                  <h1 class="hey-desktop">
+                    Hey! We are ready <br />
+                    to <span class="primary-color">consult you_</span>
+                  </h1>
+                  <h1 class="hey-mobile">
+                    Hey! We are ready to
+                    <span class="primary-color">consult you_</span>
+                  </h1>
                 </div>
+      
+                <form action="/submit_form" method="post">
+                  <div class="contact__info">
+                    <div class="contact__info-name">
+                      <h4>
+                        <label for="fullname">My name is</label>
+                        <input id="fullname" type="text" name="fullname" placeholder="First and last name" required />
+                        <label for="service">and I'm interested in</label>
+                        <input id="service" type="text" name="service" placeholder="Service name" required />
+                      </h4>
+                    </div>
+      
+                    <div class="contact__info-email">
+                      <h4>
+                        <label for="email">Please, contact me at</label>
+                        <input id="email" type="email" name="email" placeholder="name@example.com" required />
+                      </h4>
+                    </div>
+      
+                    <div class="contact-details">
+                      <h4>
+                        <label for="project-details">Optionally, I'm sharing more</label>
+                        <input id="project-details" type="text" name="projectDetails" placeholder="your project details" />
+                      </h4>
+                      <div class="submit-area">
+                        <div class="btn-area">
+                          <div class="btn-animation">
+                            <input type="submit" class="btn ab-btn" value="Submit"/>
+                            <i class="fa-solid fa-arrow-right-long inner-arrow"></i>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <button type="submit"></button>
+                </form>
+              </div>
             </div>
-        </section>
-
+          </section>
 
 
         <!-- ------------------- Footer Section Start---------------------- -->
 
 
-        <section class="footer">
+        <section class="footer long-slide-up">
             <div class="container">
                 <div class="footer__content">
                     <div class="footer__short-links">
@@ -444,21 +467,10 @@
                         </div>
 
                         <div class="social-link">
-                            <!-- Instagram Link Here -->
-                            <a href="">
-                                <img src="assets/images/Group 13.png" alt="">
-                            </a>
-
-                            <!-- Twitter Link Here -->
-                            <a href="">
-                                <img src="assets/images/Group 11.png" alt="">
-                            </a>
-
-                            <!-- Facebook Link Here -->
-                            <a href="">
-                                <img src="assets/images/Group 10.png" alt="">
-                            </a>
-                        </div>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                          </div>
                     </div>
 
                     <div class="footer__big-logo">
@@ -476,11 +488,14 @@
 
     </main>
 
+    <!-- Animate js -->
+    <script defer src="assets/js/animate.js"></script>
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- Js Link -->
     <script src="assets/js/script.js"></script>
+
 
 </body>
 

@@ -1,3 +1,93 @@
+// number counter
+
+// 7+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementById("value1");
+animateValue(obj, 7, 0, 5000);
+
+// 15+
+function animateValue1(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj1.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj1 = document.getElementById("value2");
+animateValue1(obj, 15, 0, 5000);
+
+// 15+
+function animateValue2(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj2.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj2 = document.getElementById("value3");
+animateValue2(obj, 15, 0, 5000);
+
+// 15+
+function animateValue3(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj3.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj3 = document.getElementById("value4");
+animateValue3(obj, 15, 0, 5000);
+
+// 15+
+function animateValue4(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj4.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj4 = document.getElementById("value5");
+animateValue4(obj, 1, 0, 1000);
+
+
+
+
 // Sticky Header
 
 const header = document.querySelector("header")
@@ -17,9 +107,6 @@ toggleBtn.addEventListener('click', function () {
   console.log('Button clicked'); // Add this line
   dropdownMenu.classList.toggle('open');
 });
-
-
-
 
 
 
@@ -312,6 +399,11 @@ let process = new Swiper(".work__process", {
 
   },
 });
+
+
+
+
+
 
 
 

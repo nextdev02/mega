@@ -10,7 +10,6 @@
   <meta name="title" content="Mega" />
   <meta name="description"
     content="MEGA Tech is a one-stop shop for technology solutions in the Saudi and Middle Eastern markets+" />
-
   <link rel="shortcut icon" href="" type="image/svg+xml" />
 
   <!-- Bootstrap CDN -->
@@ -20,14 +19,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-  <!-- animation css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
   <!-- Smooth Effect -->
-  <script defer src="assets/js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -116,17 +114,17 @@
         <!-- ------------------- Hero Start ---------------------- -->
         <div class="home__bottom">
           <div class="home__bottom-up">
-            <h1 class="home__bottom-up-heading banner-title-desktop">
+            <h1 class="home__bottom-up-heading banner-title-desktop slide-left">
               We’re <span class="primary-color">different</span> and <br />
               we know it.
             </h1>
-            <h1 class="home__bottom-up-heading banner-title-mobile">
+            <h1 class="home__bottom-up-heading banner-title-mobile slide-up">
               We’re <span class="primary-color">different</span><br />
               and we <br />
               know it.
             </h1>
 
-            <div class="home__bottom-left">
+            <div class="home__bottom-left slide-right">
               <div class="btn-area">
                 <div class="btn-animation">
                   <a href="#" class="btn ab-btn">Services</a>
@@ -145,10 +143,10 @@
           </div>
 
           <div class="home__bottom-down">
-            <div class="boxes swiper">
+            <div class="boxes swiper scale">
               <div class="swiper-wrapper">
                 <div class="box swiper-slide">
-                  <h2>7+</h2>
+                  <h2><span id="value1">0</span>+</h2>
                   <h5>
                     Years <br />
                     Of <br />
@@ -158,7 +156,7 @@
 
                 <div class="box swiper-slide">
                   <div class="line"></div>
-                  <h2>15</h2>
+                  <h2><span id="value2">0</span></h2>
                   <h5>
                     Countries<br />
                     Served
@@ -167,7 +165,7 @@
 
                 <div class="box swiper-slide">
                   <div class="line"></div>
-                  <h2>15</h2>
+                  <h2><span id="value3">0</span></h2>
                   <h5>
                     Countries<br />
                     Served
@@ -176,7 +174,7 @@
 
                 <div class="box swiper-slide">
                   <div class="line"></div>
-                  <h2>15</h2>
+                  <h2><span id="value4">0</span></h2>
                   <h5>
                     Countries<br />
                     Served
@@ -185,7 +183,7 @@
 
                 <div class="box swiper-slide">
                   <div class="line"></div>
-                  <h2>1K</h2>
+                  <h2><span id="value5">0</span>k</h2>
                   <h5>
                     Users <br />
                     Of Our <br />
@@ -195,7 +193,7 @@
               </div>
             </div>
 
-            <div class="socials">
+            <div class="socials scale">
               <div class="social_links">
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -221,15 +219,15 @@
       <div class="container">
         <div class="service__content">
           <div class="service__content-heading title">
-            <h5>Services</h5>
+            <h5 class="slide-down">Services</h5>
 
-            <h3>
+            <h3 class="slide-up">
               <span class="primary-color">Our Pioneering </span> IT Services
               Foster Strategic
               <span class="primary-color">Growth and Innovation for Businesses</span>
             </h3>
 
-            <p>
+            <p class="slide-up">
               At Mega Tech, we specialize in a spectrum of IT services
               tailored to the evolving needs of modern businesses. Our
               offerings range from application provision, simplifying the
@@ -241,9 +239,9 @@
 
           <div class="services">
             <div class="service__list">
-              <div class="service__list-up swiper">
+              <div class="service__list-up swiper slide-up">
                 <div class="swiper-wrapper">
-                  <div class="service__list-box swiper-slide">
+                  <div class="service__list-box swiper-slide slide-left">
                     <h4 class="number">01</h4>
 
                     <h4>Application provision</h4>
@@ -254,7 +252,7 @@
                     </h6>
                   </div>
 
-                  <div class="service__list-box swiper-slide">
+                  <div class="service__list-box swiper-slide slide-up">
                     <h4 class="number">02</h4>
 
                     <h4>hardware solutions</h4>
@@ -265,7 +263,7 @@
                     </h6>
                   </div>
 
-                  <div class="service__list-box swiper-slide">
+                  <div class="service__list-box swiper-slide slide-up">
                     <h4 class="number">03</h4>
 
                     <h4>IT consultation</h4>
@@ -277,7 +275,7 @@
                     </h6>
                   </div>
 
-                  <div class="service__list-box swiper-slide">
+                  <div class="service__list-box swiper-slide slide-right">
                     <h4 class="number">04</h4>
 
                     <h4>IT services</h4>
@@ -294,7 +292,7 @@
             <br /><br /><br />
 
             <div class="service__list swiper">
-              <div class="service__list-down swiper">
+              <div class="service__list-down swiper slide-up">
                 <div class="swiper-wrapper">
                   <div class="service__list-box swiper-slide">
                     <h4 class="number">05</h4>
@@ -353,7 +351,7 @@
 
     <section class="cover__image">
       <div class="container">
-        <div class="cover__image-img">
+        <div class="cover__image-img slide-up">
           <img src="assets/images/Banner.png" alt="" />
         </div>
       </div>
@@ -364,16 +362,16 @@
     <section class="mission">
       <div class="container">
         <div class="mission__title">
-          <h3>Our Mission</h3>
+          <h3 class="slide-down">Our Mission</h3>
         </div>
 
         <div class="mission__content">
           <div class="mission__content-container">
-            <div class="mission__content-left">
+            <div class="mission__content-left slide-left">
               <img src="assets/images/18. HoneyComb.png.png" alt="HoneyComb" />
             </div>
 
-            <div class="mission__content-right">
+            <div class="mission__content-right slide-right">
               <h4>
                 "One stop shop for all the client needs to develop a
                 sustainable system"
@@ -421,7 +419,7 @@
 
               <!-- Team member 1 -->
               <a href="about.html#abdulhai" class="swiper-slide">
-                <div class="team-member">
+                <div class="team-member slide-left">
                   <div class="member-info">
                     <img src="assets/images/Dr. Riyad.png" alt="Dr. Riyadh AL-Matrafi" />
 
@@ -432,7 +430,7 @@
 
               <!-- Team member 2 -->
               <a href="about.html#hamoud" class="swiper-slide">
-                <div class="team-member">
+                <div class="team-member slide-left">
                   <div class="member-info">
                     <img src="assets/images/CamScanner 11-13-2023 14.18.png" alt="Dr. Hamoud AlRemal" />
 
@@ -443,7 +441,7 @@
 
               <!-- Team member 3 -->
               <a href="about.html#riyadh" class="swiper-slide">
-                <div class="team-member">
+                <div class="team-member slide-left">
                   <div class="member-info">
                     <img src="assets/images/abdulhai.jpeg_abdulhaimegagroup.c_page-0001.png" alt="Dr. Hamoud AlRemal" />
 
@@ -455,7 +453,7 @@
             </div>
           </div>
 
-          <div class="team_members-more">
+          <div class="team_members-more slide-right">
             <h3>
               Team <br />
               of experts
@@ -484,11 +482,11 @@
       <div class="container">
         <div class="clients__content">
           <div class="clinets__content-heading title">
-            <h5>Success Partners</h5>
+            <h5 class="slide-down">Success Partners</h5>
 
-            <h3>Serving the best in the field</h3>
+            <h3 class="slide-up">Serving the best in the field</h3>
 
-            <p>
+            <p class="slide-up">
               Our partners are leaders in their respective fields, ranging
               from advanced software developers to cutting-edge hardware
               providers. Each collaboration is a testament to our commitment
@@ -496,7 +494,7 @@
             </p>
           </div>
 
-          <div class="clients__brands swiper">
+          <div class="clients__brands swiper slide-up">
             <div class="swiper-wrapper">
               <div class="brand swiper-slide">
                 <img src="assets/images/H_esriPartnerNet-silver_sRGB.png" alt="" />
@@ -520,7 +518,7 @@
             </div>
           </div>
 
-          <div class="work__process swiper">
+          <div class="work__process swiper slide-up">
             <div class="swiper-wrapper">
               <!-- Card 1 -->
 
@@ -562,9 +560,9 @@
 
     <!-- ------------------- Contact Section Start---------------------- -->
 
-    <section class="contact__Section hidden">
+    <section class="contact__Section h-contact">
       <div class="container">
-        <div class="contact__section-content">
+        <div class="contact__section-content long-slide-up">
           <div class="contact__section-title">
             <h1 class="hey-desktop">
               Hey! We are ready <br />
@@ -599,10 +597,20 @@
                   <label for="project-details">Optionally, I'm sharing more</label>
                   <input id="project-details" type="text" name="projectDetails" placeholder="your project details" />
                 </h4>
+
+                <button class="submit-area">
+                  <div class="btn-area">
+                    <div class="btn-animation">
+                      <input type="submit" class="btn ab-btn" value="Submit"/>
+                      <i class="fa-solid fa-arrow-right-long inner-arrow"></i>
+                      <span></span>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
 
-            <button type="submit"></button>
+           
           </form>
         </div>
       </div>
@@ -610,9 +618,9 @@
 
     <!-- ------------------- Footer Section Start---------------------- -->
 
-    <section class="footer hidden">
+    <section class="footer h-footer">
       <div class="container">
-        <div class="footer__content">
+        <div class="footer__content long-slide-up">
           <div class="footer__short-links">
             <div class="short-link">
               <a href="#">Home</a>
@@ -638,16 +646,14 @@
 
 
 
-  <!-- 
+
+    <!-- 
     - #CUSTOM CURSOR
   -->
 
   <div class="cursor" data-cursor></div>
 
   <script>
-
-
-
     // add Event on multiple elment
 
     const addEventOnElements = function (elements, eventType, callback) {
@@ -698,6 +704,8 @@
   </script>
 
 
+    <!-- All animation Effect -->
+    <script defer src="assets/js/animate.js"></script>
   <!-- Swiper JS -->
   <script src="assets/js/swiper-bundle.min.js"></script>
 
