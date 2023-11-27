@@ -355,6 +355,15 @@ p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+    :root {
+        /* Font Size */
+        --fs-1: 54px;
+        --fs-2: 32px;
+        --fs-3: 24px;
+        --fs-4: 18px;
+    }
+
+
     .contact__hero .container {
         width: 100% !important;
     }

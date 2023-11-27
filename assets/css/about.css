@@ -301,7 +301,7 @@ p {
     display: flex;
     align-items: self-start;
     justify-content: space-evenly;
- 
+
 }
 
 .about__hero-content {
@@ -424,7 +424,7 @@ p {
 
 
 /* ------------------------- Clients Section ---------------------------- */
-.client__section{
+.client__section {
     background-color: var(--white-1);
     padding-bottom: 3rem;
 }
@@ -468,7 +468,7 @@ p {
 /* ------------ clients__brands -------------- */
 
 
-.clients__brands{
+.clients__brands {
     padding-top: 4rem;
     display: flex;
     align-items: center;
@@ -590,7 +590,7 @@ p {
 
 
 /* ----------------------- Team Section Start ----------------------------- */
-.team__section{
+.team__section {
     background-color: var(--white-1);
     padding-top: 8rem;
     padding-bottom: 10rem;
@@ -601,7 +601,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .team__content {
@@ -680,6 +680,14 @@ p {
 
 @media only screen and (max-width: 600px) {
 
+    :root {
+
+        --fs-1: 54px;
+        --fs-2: 32px;
+        --fs-3: 20px;
+        --fs-4: 18px;
+    }
+
     .header {
         top: 0;
         height: 75px;
@@ -732,8 +740,9 @@ p {
         width: 100%;
     }
 
-    .value__list-top, .value__list-bottom {
-       width: 100%;
+    .value__list-top,
+    .value__list-bottom {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -772,7 +781,7 @@ p {
     .team__members-container img {
         filter: grayscale(0%) brightness(100%);
     }
-    
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
