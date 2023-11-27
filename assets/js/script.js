@@ -408,3 +408,54 @@ let process = new Swiper(".work__process", {
 
 
 
+
+// About Clients Section Slider
+
+let about_clients = new Swiper(".about__clients__brands", {
+  slidesPerView: 6,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+
+    300: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+    550: {
+      slidesPerView: 2,
+    },
+
+    650: {
+      slidesPerView: 2,
+    },
+
+    800: {
+      slidesPerView: 2.4,
+    },
+
+    950: {
+      slidesPerView: 3.7,
+    },
+
+    1050: {
+      slidesPerView: 3.6,
+    },
+
+    1150: {
+      slidesPerView: 4,
+    },
+
+    1300: {
+      slidesPerView: 5
+    },
+
+  },
+});

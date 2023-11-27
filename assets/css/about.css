@@ -70,7 +70,10 @@ html {
     --section-padding: 60px;
 }
 
-
+section {
+    width: 100%;
+    overflow: hidden !important;
+}
 
 /* ----------------- Custom Css ------------------ */
 
@@ -215,6 +218,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .header.scrolled {
@@ -286,12 +290,18 @@ p {
 
 
 /* ------------------------------- About Hero Start ---------------------------- */
+.about__hero {
+    background: var(--white-1);
+    z-index: 0;
+    position: relative;
+}
 
 .about__hero .container {
     width: 1085px;
     display: flex;
     align-items: self-start;
     justify-content: space-evenly;
+ 
 }
 
 .about__hero-content {
@@ -365,7 +375,8 @@ p {
 
 /* ------------------------- Mission Section ---------------------------- */
 .mission__section {
-    margin-bottom: 15rem;
+    padding-bottom: 15rem;
+    background-color: var(--white-1);
 }
 
 .mission__section .container {
@@ -413,6 +424,11 @@ p {
 
 
 /* ------------------------- Clients Section ---------------------------- */
+.client__section{
+    background-color: var(--white-1);
+    padding-bottom: 3rem;
+}
+
 
 .client__section .container {
     width: 100%;
@@ -452,15 +468,14 @@ p {
 /* ------------ clients__brands -------------- */
 
 
-.clients__brands {
+.about__clients__brands {
     padding-top: 4rem;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1px;
 }
 
-.clients__brands .brand img {
+.about__clients__brands .brand img {
     width: 122px;
     filter: brightness(0.1);
 }
@@ -471,10 +486,11 @@ p {
 /* ------------------------- Our Values Section ---------------------------- */
 
 .value__section {
-    margin-bottom: 7rem;
-    margin-top: 7rem;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
     background-color: #15002a;
     padding: 7rem 0;
+
 }
 
 .value__list-box {
@@ -574,13 +590,18 @@ p {
 
 
 /* ----------------------- Team Section Start ----------------------------- */
+.team__section{
+    background-color: var(--white-1);
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
 
 .team__section .container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 7rem;
+    
 }
 
 .team__content {
@@ -611,7 +632,7 @@ p {
 }
 
 
-.team__members {
+.about__team__members {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -654,217 +675,190 @@ p {
 
 
 
-/* ----------------------- Contact Section Start ----------------------------- */
 
-.contact__Section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: var(--white);
+/* -------------------------------------- Responsive Start-------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        top: 0;
+        height: 75px;
+    }
+
+    .about__hero .container {
+        width: 100%;
+    }
+
+    .about__hero-content {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+
+    .about__hero-content-left .about__hero-heading h1 {
+        top: -3rem;
+        left: 0px;
+    }
+
+    .about__hero-content-left .about__hero-heading h1 .highlight-text {
+        margin-left: 5.5rem;
+    }
+
+    .mission__section {
+        margin-bottom: 0rem;
+        padding-bottom: 2rem;
+    }
+
+    .mission__content {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .mission__details {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+
+    .clients__content {
+        width: 100%;
+    }
+
+
+
+    .value__content {
+        width: 100%;
+    }
+
+    .value__list-top, .value__list-bottom {
+       width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .value__list-box {
+        width: 95%;
+        border-top: 1px solid #fff;
+    }
+
+
+
+    .team__content {
+        width: 100%;
+    }
+
+    .team__heading {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .team__heading h5 {
+        width: 76%;
+        margin-left: 20px;
+    }
+
+
+    .team__members-container {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .team__members-container img {
+        filter: grayscale(0%) brightness(100%);
+    }
+    
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 601px) and (max-width: 767px) {
 
-.contact__info {
-    padding-top: 3rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    .header {
+        top: 0;
+        height: 75px;
+    }
+
+    .about__hero-content {
+        width: 600px;
+        margin-left: 4%;
+        margin-top: 8rem;
+        margin-bottom: 10rem;
+    }
+
+
+    .about__hero-content-left .about__hero-heading h1 {
+        top: -3rem;
+        left: -30px;
+    }
+
+    .about__hero-content-left .about__hero-heading h1 .highlight-text {
+        margin-left: 5.5rem;
+    }
+
+    .mission__section {
+        padding-bottom: 5rem;
+    }
+
+
+    .team__heading {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .team__heading h5 {
+        width: 76%;
+        margin-left: 20px;
+    }
+
+
+    .team__members-container {
+        flex-direction: column;
+        gap: 7px;
+    }
 }
 
-.contact__Section .hey-mobile {
-    display: none;
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    :root {
+
+        /* Section Space */
+        --section-padding: 60px;
+    }
+
+    .header {
+        top: 0;
+        height: 75px;
+    }
+
+
+    .about__hero-content {
+        width: 700px;
+        margin-left: 4%;
+    }
+
+    .about__hero-content-left .about__hero-heading h1 {
+        top: -3rem;
+        left: -10px;
+    }
+
+    .about__hero-content-left .about__hero-heading h1 .highlight-text {
+        margin-left: 5.8rem;
+    }
+
 }
 
-.contact__info h1 {
-    line-height: 76px;
-    font-family: var(--ff-tthoves-medium);
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1439px) {
+    :root {
+
+        /* Section Space */
+        --section-padding: 60px;
+    }
 }
-
-.contact__section-title h1 {
-    font-family: var(--ff-tthoves-medium);
-    font-size: 86px;
-}
-
-.contact__info-name,
-.contact__info-email,
-.contact-details {
-    margin-bottom: 20px;
-}
-
-.contact__section-content label {
-    font-family: var(--ff-tthoves-regular);
-    font-size: 38px;
-}
-
-.contact__Section input {
-    width: 24%;
-    margin: 0 24px;
-    margin-top: 2px;
-    border-bottom: 3px solid var(--secondery-color);
-    padding: 10px 0;
-    outline: none;
-}
-
-.contact-details input {
-    width: 30%;
-}
-
-.contact__Section input::placeholder {
-    color: var(--secondery-color);
-    font-size: var(--input-font-size);
-}
-
-/* contact btn start */
-.contact__Section input.btn.ab-btn {
-    width: 100% !important;
-    height: 70px !important;
-    border: none;
-    padding: 10px 10px 10px 10px;
-}
-
-.contact__Section .btn-animation {
-    margin-top: 0px;
-    border: 2px solid var(--black);
-    padding: 10px 0px;
-    color: var(--black);
-    position: relative;
-    z-index: 2;
-    height: 70px;
-    width: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: var(--white);
-    transition: .2s ease-in-out;
-}
-
-.contact__Section .btn-animation .inner-arrow {
-    font-size: 20px;
-    color: var(--black);
-    z-index: 2;
-    margin: 0px -40px 0px 40px;
-    transition: .2s ease-in-out;
-}
-
-.contact__Section .btn-animation:hover .inner-arrow {
-    margin: 0px 10px 0px -10px;
-    color: var(--white) !important;
-    display: block;
-}
-
-.contact__Section .btn-animation:hover {
-    background: var(--black);
-    width: 300px;
-}
-
-.contact__Section .ab-btn {
-    color: var(--black);
-    z-index: 2;
-    margin: 0px -13px 0px 13px;
-    font-family: var(--ff-azeret-regular);
-}
-
-.contact__Section .btn-animation:hover .ab-btn {
-    color: var(--white) !important;
-    margin: unset;
-}
-
-.contact__Section .btn-animation span {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: var(--white);
-    transition: .2s linear;
-    border-radius: 50px;
-    z-index: 1;
-}
-
-.contact__Section .btn-animation:hover span {
-    height: 0%;
-    width: 50%;
-}
-
-.submit-area {
-    margin-left: 8.7rem;
-}
-
-.contact__Section .contact-details {
-    display: flex;
-}
-
-/* ----------------------- Footer Start ----------------------------- */
-
-.footer {
-    width: 100%;
-    background-color: var(--white-1);
-}
-
-.footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: end;
-    height: 768px;
-    padding-bottom: 2rem;
-}
-
-.footer__short-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding-bottom: 2rem;
-}
-
-.footer__short-links .short-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 54px;
-}
-
-.footer__short-links .short-link a {
-    font-size: var(--fs-5);
-}
-
-.footer__short-links .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 23px;
-}
-
-.footer .social-link a i {
-    font-size: 20px !important;
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    border: 1.5px solid #000000 !important;
-}
-
-
-.footer__big-logo {
-    width: 100%;
-}
-
-.footer__big-logo img {
-    width: 100%;
-}
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM CURSOR
-\*-----------------------------------*/
-
-.cursor {
-    display: none;
-}
-

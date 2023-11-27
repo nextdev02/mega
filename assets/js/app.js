@@ -40,8 +40,3 @@ const observer = new IntersectionObserver((entries) => {
   
   // secion animation close
 
-
-
-
-
-

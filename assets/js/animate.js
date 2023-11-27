@@ -119,9 +119,28 @@ scaleElements.forEach((el) => scaleObserver.observe(el));
 // rotate animation close
 
 
+// footer reveal start
+$(document).ready(function(){
+  $(window).bind('scroll', function() {
+  var distance = 500;
+        if ($(window).scrollTop() > distance) {
+            $('.footer').addClass("sec-fixed");
+        }else{
+          $('.footer').removeClass("sec-fixed");
+        }
+   });
+});
 
-
-
-
+// footer reveal start
+$(document).ready(function(){
+  $(window).bind('scroll', function() {
+  var distance = 500;
+        if ($(window).scrollTop() > distance) {
+            $('.h-footer').addClass("h-sec-fixed");
+        }else{
+          $('.h-footer').removeClass("h-sec-fixed");
+        }
+   });
+});
 
 
