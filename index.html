@@ -41,39 +41,59 @@
   <main >
     <!-- ------------------- Header Start ---------------------- -->
 
-    <header class="header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="assets/images/logo.png" alt="Logo" />
+    <header class="header" data-header>
+      <div class="home__navabr">
+  
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="">
         </a>
-      </div>
+  
+        <nav class="navbar" data-navbar>
+  
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+  
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <img src="assets/images/icons8-close-50.png" alt="">
+            </button>
+          </div>
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="services.html" class="navbar-link" data-nav-link>Services</a>
+            </li>
 
-      <div class="nav-items">
-        <a href="#">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-      </div>
-
-      <div class="btn">
-        <a href="contact.html">Contact Us</a>
-        <img src="assets/images/Arrow.png" alt="" />
-        <img class="c-white-arrow" src="assets/images/white-arrow.png" alt="" />
-      </div>
-
-      <div class="toggle_btn">
-        <img id="menuIcon" src="assets/images/menu.png" width="19" alt="" />
-        <img id="crossIcon" class="cross_btn" src="assets/images/icons8-cross-50.png" width="30" alt="" />
-      </div>
-
-      <div class="dropdown_menu">
-        <div class="m-nav-items">
-          <a href="#">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact Us</a>
-        </div>
+            <li class="navbar-item contact-link">
+              <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+          </ul>
+  
+        </nav>
+  
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <img src="assets/images/menu.png" alt="">
+        </button>
+  
+        <a href="contact.html" class="btn has-before has-after">Contact  <i class="fa-solid fa-arrow-right-long inner-arrow"></i></a>
+  
+        <div class="overlay" data-nav-toggler data-overlay></div>
+  
       </div>
     </header>
+  
+  
+  
 
     <!-- ------------------- Video Section Start ---------------------- -->
 
@@ -416,13 +436,13 @@
     <section class="team__section">
       <div class="container">
         <div class="team__section-part">
-          <div class="team__content swiper">
+          <div class="team__content slide-up swiper">
             <div class="team__members swiper-wrapper">
 
 
               <!-- Team member 1 -->
               <a href="about.html#abdulhai" class="swiper-slide">
-                <div class="team-member slide-left">
+                <div class="team-member">
                   <div class="member-info">
                     <img src="assets/images/Dr. Riyad.png" alt="Dr. Riyadh AL-Matrafi" />
 
@@ -433,7 +453,7 @@
 
               <!-- Team member 2 -->
               <a href="about.html#hamoud" class="swiper-slide">
-                <div class="team-member slide-left">
+                <div class="team-member">
                   <div class="member-info">
                     <img src="assets/images/CamScanner 11-13-2023 14.18.png" alt="Dr. Hamoud AlRemal" />
 
@@ -444,7 +464,7 @@
 
               <!-- Team member 3 -->
               <a href="about.html#riyadh" class="swiper-slide">
-                <div class="team-member slide-left">
+                <div class="team-member">
                   <div class="member-info">
                     <img src="assets/images/abdulhai.jpeg_abdulhaimegagroup.c_page-0001.png" alt="Dr. Hamoud AlRemal" />
 

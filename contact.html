@@ -35,44 +35,60 @@
 
 
   <main>
-    <!-- ------------------- Home Section Start ---------------------- -->
+    <!-- ------------------- Header Start ---------------------- -->
 
-    <section class="home">
-      <div class="container">
-        <!-- ------------------- Header Start ---------------------- -->
-        <header class="header">
-          <div class="logo">
-            <a href="index.html">
-              <img src="assets/about images/Group 2.png" alt="Logo" />
+    <header class="header" data-header>
+      <div class="home__navabr">
+
+        <a href="index.html" class="logo">
+          <img src="assets/about images/Group 2.png" alt="">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img src="assets/images/logo.png" alt="">
             </a>
+
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <img src="assets/images/icons8-close-50.png" alt="">
+            </button>
           </div>
 
-          <div class="nav-items">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-          </div>
+          <ul class="navbar-list">
 
-          <div class="btn">
-            <a href="contact.html">Contact Us</a>
-            <img class="c-white-arrow" src="assets/images/white-arrow.png" alt="" />
-          </div>
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
 
-          <div class="toggle_btn">
-            <img src="assets/images/menu.png" width="19" alt="" />
-          </div>
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+            </li>
 
-          <div class="dropdown_menu">
-            <div class="m-nav-items">
-              <a href="index.html">Home</a>
-              <a href="about.html">About Us</a>
-              <a href="services.html">Services</a>
-              <a href="contact.html">Contact Us</a>
-            </div>
-          </div>
-        </header>
+            <li class="navbar-item">
+              <a href="services.html" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li class="navbar-item contact-link">
+              <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+          </ul>
+
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <img src="assets/images/menu.png" alt="">
+        </button>
+
+        <a href="contact.html" class="btn has-before has-after">Contact <i
+            class="fa-solid fa-arrow-right-long inner-arrow"></i></a>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
       </div>
-    </section>
+    </header>
+
 
     <!-- ------------------- Contact Hero Section Start---------------------- -->
 

@@ -68,8 +68,22 @@ html {
     /* Section Space */
 
     --section-padding: 60px;
+
+    /**
+   * transition
+   */
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
 
+
+section {
+    width: 100%;
+    overflow: hidden !important;
+}
 
 
 /* ----------------- Custom Css ------------------ */
@@ -206,91 +220,266 @@ p {
 }
 
 
-/* ----------------- Header Start ------------------ */
+
+
+/*--------------------- HEADER -----------------------*/
+
+
+.header .btn {
+    display: none;
+}
 
 .header {
-    height: 75px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 99;
-    transition: 0.3s ease;
+    padding: 35px 20px;
+    width: 100%;
+    z-index: 4;
 }
 
 
 .header.scrolled {
-    z-index: 100;
-    background: #fff;
-
+    background-color: var(--white);
+    transition: 0.5s ease;
+    z-index: 200;
 }
 
-.header .logo {
+.header .home__navabr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
     width: 152px;
-    height: 19px;
-    margin-left: 40px;
 }
 
-.header .nav-items {
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--black);
+    color: var(--white);
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 1;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: 0.25s var(--cubic-in);
+}
+
+.navbar.active {
+    transform: translateX(0);
+    visibility: visible;
+    transition: 0.5s var(--cubic-out);
+}
+
+.navbar .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 110px;
 }
 
-.header .nav-items a {
-    color: var(--black);
-    font-size: var(--fs-7);
-    font-weight: normal;
+.navbar .wrapper .logo {
+    margin-left: -0.1rem;
+    margin-top: 1rem;
+    display: none;
 }
 
 
-.header .btn {
+.nav-close-btn {
+    transition: var(--transition-1);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.nav-close-btn img {
+    filter: grayscale(0%) brightness(100%);
+    width: 34px;
+}
+
+
+.navbar-link {
+    color: var(--white);
+    font-size: 20pt;
+    font-family: var(--ff-tthoves-regular);
+    transition: var(--transition-1);
+    padding-left: -4rem;
+}
+
+header .btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--white);
     background-color: var(--secondery-color);
     gap: 12px;
-    padding: 24px 36px;
     height: 75px;
+    padding: 24px 36px;
     border-radius: 0 0 0 27px;
-}
-
-.header .btn a {
-    color: var(--white);
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
+    font-family: var(--ff-azeret-regular);
 }
 
 .header .btn img {
-    width: 20px;
-    height: 10px;
+    width: 19px;
+    filter: grayscale(100%) brightness(0%);
 }
 
-.header .toggle_btn {
-    display: none;
+
+.nav-open-btn img {
+    width: 25px;
+    filter: grayscale(100%) brightness(0%);
 }
 
-.dropdown_menu {
-    display: none;
+
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--raisin-black_90);
+    transition: var(--transition-2);
+    opacity: 0;
+    pointer-events: none;
 }
 
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+/**
+ * responsive for large than 992px screen
+ */
+
+@media (min-width: 992px) {
+
+    /**
+     * HEADER
+     */
+
+    .header {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header.scrolled {
+        background-color: var(--white);
+        transition: 0.5s ease;
+        z-index: 200;
+    }
+
+    .header .logo img {
+        width: 152px;
+        padding-left: 30px;
+    }
+
+    .nav-open-btn,
+    .overlay,
+    .navbar .wrapper {
+        display: none;
+    }
+
+    .navbar,
+    .navbar.active {
+        all: unset;
+    }
+
+    .navbar-list {
+        display: flex;
+        gap: 68px;
+    }
+
+    .navbar-link {
+        position: relative;
+        color: var(--black);
+        font-size: 12pt;
+        font-family: var(--ff-tthoves-regular);
+        transition: var(--transition-1);
+    }
+
+
+
+
+    .contact-link {
+        display: none;
+    }
+
+    .header .btn {
+        display: inline-flex;
+    }
+}
+
+/**
+   * responsive for large than 1200px screen
+   */
+
+@media (min-width: 1340px) {
+
+
+    /**
+     * HEADER
+     */
+
+    .header {
+        padding-left: 2rem
+    }
+
+    .header.scrolled {
+        background-color: var(--white);
+        transition: 0.5s ease;
+        z-index: 200;
+    }
+
+    .header .btn img {
+        width: 19px;
+    }
+
+    .header.scrolled .btn img {
+        filter: grayscale(0%) brightness(100%);
+        color: #fff;
+    }
+
+
+    .header.scrolled .nav-open-btn img {
+        filter: grayscale(100%) brightness(0%);
+    }
+
+    .navbar-link {
+        color: var(--black);
+        font-size: 12pt;
+        font-family: var(--ff-tthoves-regular);
+        transition: var(--transition-1);
+    }
+
+    .navbar-list {
+        gap: 80px;
+    }
+
+    .contact-link {
+        display: none;
+    }
+
+}
 
 
 
 /* ----------------------------- Service Section Start------------------------------ */
 
-.service__section
-{
+.service__section {
     padding: 5rem;
     position: relative;
 
 }
 
-.service-title h1
-{
+.service-title h1 {
     padding-top: 4.6rem;
     font-size: 500px;
     font-weight: 400;
@@ -310,31 +499,27 @@ p {
     background-color: var(--white-1);
 }
 
-.service__section-content .container
-{
+.service__section-content .container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20rem;
 }
 
-.service__container
-{
+.service__container {
     width: 642px;
     padding-top: 7rem;
     padding-bottom: 8rem;
 }
 
-.service__title
-{
+.service__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 
-.service__title h3
-{
+.service__title h3 {
     font-size: 18pt;
     line-height: 32px;
     color: var(--secondery-color);
@@ -343,7 +528,7 @@ p {
     width: 50%;
 }
 
-.service__title p{
+.service__title p {
     font-size: var(--fs-6);
     color: #EE660C;
     line-height: 20px;
@@ -352,8 +537,7 @@ p {
     font-family: var(--ff-tthoves-regular);
 }
 
-.service__boxes-list
-{
+.service__boxes-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -362,8 +546,7 @@ p {
     padding-bottom: 2rem;
 }
 
-.service__boxes-list .service__boxes
-{
+.service__boxes-list .service__boxes {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -372,29 +555,25 @@ p {
     width: 50%;
 }
 
-.service__boxes-list .service__boxes .service-img img
-{
+.service__boxes-list .service__boxes .service-img img {
     width: 155px;
     height: 155px;
 }
 
 
-.service__boxes-list .service__boxes .service-details
-{
+.service__boxes-list .service__boxes .service-details {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.service__boxes-list .service__boxes .service-details .number
-{
+.service__boxes-list .service__boxes .service-details .number {
     color: var(--black);
     opacity: 0.3;
     padding-bottom: 20px;
 }
 
-.service__boxes-list .service__boxes .service-details p 
-{
+.service__boxes-list .service__boxes .service-details p {
     font-size: var(--fs-6);
     color: var(--secondery-color);
     line-height: 20px;
@@ -404,23 +583,20 @@ p {
 
 
 /* ----------------------- Clients Support Start -------------------- */
-.support__section
-{
+.support__section {
     padding: 7rem 0;
     z-index: 2;
     background-color: var(--secondery-color);
 }
 
-.support__section .container
-{
+.support__section .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.support__content
-{
+.support__content {
     display: flex;
     flex-direction: column;
     align-items: self-start;
@@ -428,14 +604,12 @@ p {
     width: 642px;
 }
 
-.support__content h6
-{
+.support__content h6 {
     color: var(--white-1);
-    
+
 }
 
-.support__content h3
-{
+.support__content h3 {
     font-size: 22pt;
     font-family: var(--ff-tthoves-medium);
     line-height: 36px;
@@ -446,31 +620,27 @@ p {
 
 /* -----------------------  Extra Support Start -------------------- */
 
-.extra__support
-{
+.extra__support {
     background-color: var(--white-1);
     padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
-.extra__support .container
-{
+.extra__support .container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 642px;
 }
 
-.extra__support-content
-{
+.extra__support-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.extra__support-heading
-{
+.extra__support-heading {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -478,15 +648,13 @@ p {
     padding-bottom: 4rem;
 }
 
-.extra__support-heading h1
-{
+.extra__support-heading h1 {
     font-family: var(--ff-tthoves-medium);
     font-size: 35pt;
     line-height: 60px;
 }
 
-.extra__support-heading h6
-{
+.extra__support-heading h6 {
     margin-bottom: -3rem;
     color: var(--secondery-color);
     font-size: 10pt;
@@ -494,8 +662,7 @@ p {
     width: 93%;
 }
 
-.extra__support-list
-{
+.extra__support-list {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -503,23 +670,20 @@ p {
     gap: 3rem;
 }
 
-.extra__support-card
-{
+.extra__support-card {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5.5rem;
 }
 
-.extra__support-card .blue-card
-{
+.extra__support-card .blue-card {
     height: 24px;
     width: 24px;
     background-color: var(--primary-color);
 }
 
-.extra__support-card h3
-{
+.extra__support-card h3 {
     width: 65%;
     font-family: var(--ff-tthoves-medium);
     font-size: var(--fs-3);
@@ -540,7 +704,7 @@ p {
         --fs-4: 18px;
     }
 
-    
+
     .service__section {
         padding: 8rem;
         position: relative;
@@ -607,8 +771,7 @@ p {
     }
 
 
-    .extra__support .container
-    {
+    .extra__support .container {
         width: 100%;
     }
 
@@ -635,8 +798,8 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 601px) and (max-width: 767px) {
-    
-    
+
+
     .service__section {
         margin-top: -6rem;
         padding: 0.2rem;

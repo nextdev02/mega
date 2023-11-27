@@ -39,46 +39,65 @@
   <main>
 
     <!-- ------------------- Header Start ---------------------- -->
-    <header class="header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="assets/about images/Group 2.png" alt="Logo" />
+
+    <header class="header" data-header>
+      <div class="home__navabr">
+  
+        <a href="index.html" class="logo">
+          <img src="assets/about images/Group 2.png" alt="">
         </a>
-      </div>
+  
+        <nav class="navbar" data-navbar>
+  
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+  
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <img src="assets/images/icons8-close-50.png" alt="">
+            </button>
+          </div>
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="services.html" class="navbar-link" data-nav-link>Services</a>
+            </li>
 
-      <div class="nav-items">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-      </div>
-
-      <div class="btn">
-        <a href="contact.html">Contact Us</a>
-        <img class="c-white-arrow" src="assets/images/white-arrow.png" alt="">
-      </div>
-
-      <div class="toggle_btn">
-        <img src="assets/images/menu.png" width="19" alt="">
-      </div>
-
-
-      <div class="dropdown_menu">
-        <div class="m-nav-items">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact Us</a>
-        </div>
+            <li class="navbar-item contact-link">
+              <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+            </li>
+          </ul>
+  
+        </nav>
+  
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <img src="assets/images/menu.png" alt="">
+        </button>
+  
+        <a href="contact.html" class="btn has-before has-after">Contact  <i class="fa-solid fa-arrow-right-long inner-arrow"></i></a>
+  
+        <div class="overlay" data-nav-toggler data-overlay></div>
+  
       </div>
     </header>
-
+  
 
     <!-- ------------------- Services Section Start---------------------- -->
 
     <section class="service__section">
       <!-- Big Title -->
       <div class="service-title">
-        <h1>Services</h1>
+        <h1 class="scale">Services</h1>
       </div>
     </section>
 
@@ -86,11 +105,11 @@
       <div class="container">
         <div class="service__container">
           <div class="service__title">
-            <h3>
+            <h3 class="slide-up">
               Explore our range of solutions designed for your technological evolution.
             </h3>
 
-            <p>
+            <p class="slide-up">
               Welcome to the forefront of IT innovation. At Mega Tech, we bring together cutting-edge
               technology and expert know-how to propel your business into the future.
             </p>
@@ -99,7 +118,7 @@
 
           <!-- Box 1 - 2 -->
           <div class="service__boxes-list">
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/6. Ring Sphere.png.png" alt="">
               </div>
@@ -116,7 +135,7 @@
               </div>
             </div>
 
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/2. Icosphere.png.png" alt="">
               </div>
@@ -135,7 +154,7 @@
 
           <!-- Box 3 - 4 -->
           <div class="service__boxes-list">
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/1. Torus.png.png" alt="">
               </div>
@@ -152,7 +171,7 @@
               </div>
             </div>
 
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/11. Chain.png.png" alt="">
               </div>
@@ -171,7 +190,7 @@
 
           <!-- Box 5 - 6 -->
           <div class="service__boxes-list">
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/17. Meta Ball.png.png" alt="">
               </div>
@@ -187,7 +206,7 @@
               </div>
             </div>
 
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/plus.png" alt="">
               </div>
@@ -207,7 +226,7 @@
 
           <!-- Box 7 - 8 -->
           <div class="service__boxes-list">
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/18. HoneyComb.png.png" alt="">
               </div>
@@ -224,7 +243,7 @@
               </div>
             </div>
 
-            <div class="service__boxes">
+            <div class="service__boxes slide-up">
               <div class="service-img">
                 <img src="assets/services images/19. Triangle.png.png" alt="">
               </div>
@@ -291,7 +310,7 @@
 
 
           <div class="extra__support-list">
-            <div class="extra__support-card">
+            <div class="extra__support-card slide-up">
               <div class="blue-card"></div>
 
               <h3>
@@ -299,7 +318,7 @@
               </h3>
             </div>
 
-            <div class="extra__support-card">
+            <div class="extra__support-card slide-up">
 
               <div class="blue-card"></div>
 
@@ -308,7 +327,7 @@
               </h3>
             </div>
 
-            <div class="extra__support-card">
+            <div class="extra__support-card slide-up">
 
               <div class="blue-card"></div>
 
