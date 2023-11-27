@@ -316,9 +316,19 @@ z-index: 1116;
   height: 0%;
   width: 50%;
 }
+
+
 .submit-area {
-  margin-left: 0rem;
+  
+  margin-left: 8.7rem;
+
 }
+
+#home__submit-area
+{
+  margin-left: 0;
+}
+
 .contact__Section .contact-details{
   display: flex;
 }
@@ -577,6 +587,11 @@ z-index: 1116;
   :root {
     /* Section Space */
     --section-padding: 60px;
+  }
+
+  .navbar 
+  {
+    width: 50%;
   }
 
   /* ----------------------- Contact Section Start ----------------------------- */

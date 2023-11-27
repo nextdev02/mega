@@ -306,7 +306,7 @@ video {
     right: 0;
     background-color: var(--black);
     color: var(--white);
-    width: 300px;
+    width: 70%;
     height: 100%;
     padding: 20px;
     z-index: 1;
@@ -462,7 +462,7 @@ header .btn {
     .navbar .wrapper {
         display: none;
     }
-
+    
     .navbar,
     .navbar.active {
         all: unset;
@@ -479,6 +479,10 @@ header .btn {
         color: var(--white);
     }
 
+    .header.scrolled  .navbar-list .navbar-link {
+        color: var(--black);
+    }
+
     .nav__social_links
     {
         display: none;
@@ -491,6 +495,11 @@ header .btn {
     .header .btn {
         display: inline-flex;
     }
+}
+
+
+@media screen {
+    
 }
 
 /**
@@ -537,6 +546,10 @@ header .btn {
 
     .header.scrolled .nav-open-btn img {
         filter: grayscale(100%) brightness(0%);
+    }
+
+    .header.scrolled  .navbar-list .navbar-link {
+        color: var(--black);
     }
 
     .navbar-list {
