@@ -219,7 +219,8 @@ p {
 
 
 
-/*--------------------- HEADER -----------------------*/
+
+/*--------------------------- HEADER ----------------------------------*/
 
 .header .btn {
     display: none;
@@ -230,11 +231,10 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    padding: 35px 20px;
+    padding: 30px 20px;
     width: 100%;
     z-index: 4;
 }
-
 
 .header.scrolled {
     background-color: var(--white);
@@ -249,7 +249,12 @@ p {
 }
 
 .header .logo img {
-    width: 152px;
+    width: 124px;
+    padding-left: 0px;
+}
+
+.header.scrolled .logo img {
+    width: 124px;
 }
 
 .navbar {
@@ -258,8 +263,7 @@ p {
     right: 0;
     background-color: var(--black);
     color: var(--white);
-    max-width: 300px;
-    width: 100%;
+    width: 300px;
     height: 100%;
     padding: 20px;
     z-index: 1;
@@ -274,18 +278,26 @@ p {
     transition: 0.5s var(--cubic-out);
 }
 
-.navbar .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.navbar .wrapper .nav__logo {
+    position: absolute;
+    width: 112px;
+    top: 2rem;
 }
 
-.navbar .wrapper .logo {
-    margin-left: -0.1rem;
-    margin-top: 1rem;
-    display: none;
+.navbar .navbar-list
+{
+    position: absolute;
+    left: -0.6rem;
 }
 
+.navbar .navbar-list .navbar-link
+{
+    display: block;
+    margin-top: 10px;
+    font-size: 16pt;
+    color: var(--white);
+}
 
 .nav-close-btn {
     transition: var(--transition-1);
@@ -308,12 +320,26 @@ p {
     padding-left: -4rem;
 }
 
+
+ .nav__social_links
+{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.nav__social_links a
+{
+    padding-inline: 5px;
+    font-size: 23px;
+}
+
 header .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
     background-color: var(--secondery-color);
+    color: var(--white);
     gap: 12px;
     height: 75px;
     padding: 24px 36px;
@@ -322,14 +348,25 @@ header .btn {
     font-family: var(--ff-azeret-regular);
 }
 
-.header .btn img {
-    width: 19px;
-    filter: grayscale(100%) brightness(0%);
+header .btn:hover
+{   color: var(--white);
+    background-color: var(--secondery-color);
 }
 
+.header.scrolled .btn {
+    color: white;
+}
+
+.header .btn a {
+    color: var(--black);
+}
+
+.header .btn img {
+    width: 19px;
+}
 
 .nav-open-btn img {
-    width: 25px;
+    width: 20px;
     filter: grayscale(100%) brightness(0%);
 }
 
@@ -356,25 +393,24 @@ header .btn {
  */
 
 @media (min-width: 992px) {
-
-    /**
-     * HEADER
-     */
-
-    .header {
+    .header
+    {
         padding: 0;
-        margin: 0;
+    }
+
+    .header.scrolled .logo img {
+        width: 152px;
+    }
+
+    .header .logo img {
+        width: 152px;
+        padding-left: 40px;
     }
 
     .header.scrolled {
         background-color: var(--white);
         transition: 0.5s ease;
         z-index: 200;
-    }
-
-    .header .logo img {
-        width: 152px;
-        padding-left: 30px;
     }
 
     .nav-open-btn,
@@ -388,21 +424,25 @@ header .btn {
         all: unset;
     }
 
-    .navbar-list {
-        display: flex;
-        gap: 68px;
-    }
-
-    .navbar-link {
+    .navbar .navbar-list {
         position: relative;
-        color: var(--black);
-        font-size: 12pt;
-        font-family: var(--ff-tthoves-regular);
-        transition: var(--transition-1);
+        display: flex;
+        gap: 80px;
     }
 
+    .navbar .navbar-list .navbar-link {
+        font-size: 12pt;
+        color: var(--black);
+    }
 
+    .nav__social_links
+    {
+        display: none;
+    }
 
+    .header.scrolled .navbar-link {
+        color: var(--black);
+    }
 
     .contact-link {
         display: none;
@@ -419,19 +459,32 @@ header .btn {
 
 @media (min-width: 1340px) {
 
+    .header
+    {
+        padding: 0;
+    }
 
-    /**
-     * HEADER
-     */
+    .header.scrolled .logo img {
+        width: 152px;
+    }
 
-    .header {
-        padding-left: 2rem
+    .header .logo img {
+        width: 152px;
+        padding-left: 40px;
     }
 
     .header.scrolled {
         background-color: var(--white);
         transition: 0.5s ease;
         z-index: 200;
+    }
+
+    .header.scrolled .navbar-link {
+        color: var(--black);
+    }
+
+    .header.scrolled .btn {
+        color: white;
     }
 
     .header .btn img {
@@ -443,20 +496,14 @@ header .btn {
         color: #fff;
     }
 
-
-    .header.scrolled .nav-open-btn img {
-        filter: grayscale(100%) brightness(0%);
-    }
-
-    .navbar-link {
-        color: var(--black);
-        font-size: 12pt;
-        font-family: var(--ff-tthoves-regular);
-        transition: var(--transition-1);
-    }
-
     .navbar-list {
+        position: relative;
         gap: 80px;
+    }
+
+    .nav__social_links
+    {
+        display: none;
     }
 
     .contact-link {
@@ -464,6 +511,7 @@ header .btn {
     }
 
 }
+
 
 
 /* ------------------------------- About Hero Start ---------------------------- */

@@ -262,9 +262,7 @@ video {
 
 
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+/*--------------------------- HEADER ----------------------------------*/
 
 .header .btn {
     display: none;
@@ -275,11 +273,10 @@ video {
     top: 0;
     left: 0;
     right: 0;
-    padding: 35px 20px;
+    padding: 30px 20px;
     width: 100%;
     z-index: 4;
 }
-
 
 .header.scrolled {
     background-color: var(--white);
@@ -294,11 +291,12 @@ video {
 }
 
 .header .logo img {
-    width: 152px;
+    width: 124px;
+    padding-left: 0px;
 }
 
 .header.scrolled .logo img {
-    width: 152px;
+    width: 124px;
     filter: grayscale(100%) brightness(0%);
 }
 
@@ -308,8 +306,7 @@ video {
     right: 0;
     background-color: var(--black);
     color: var(--white);
-    max-width: 300px;
-    width: 100%;
+    width: 300px;
     height: 100%;
     padding: 20px;
     z-index: 1;
@@ -324,18 +321,25 @@ video {
     transition: 0.5s var(--cubic-out);
 }
 
-.navbar .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.navbar .wrapper .nav__logo {
+    position: absolute;
+    width: 112px;
+    top: 2rem;
 }
 
-.navbar .wrapper .logo {
-    margin-left: -0.1rem;
-    margin-top: 1rem;
-    display: none;
+.navbar .navbar-list
+{
+    position: absolute;
+    left: -0.6rem;
 }
 
+.navbar .navbar-list .navbar-link
+{
+    display: block;
+    margin-top: 10px;
+    font-size: 16pt;
+}
 
 .nav-close-btn {
     transition: var(--transition-1);
@@ -350,7 +354,6 @@ video {
 }
 
 
-
 .navbar-link {
     color: var(--white);
     font-size: 20pt;
@@ -359,6 +362,19 @@ video {
     padding-left: -4rem;
 }
 
+
+ .nav__social_links
+{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.nav__social_links a
+{
+    padding-inline: 5px;
+    font-size: 23px;
+}
 
 header .btn {
     display: flex;
@@ -371,6 +387,11 @@ header .btn {
     border-radius: 0 0 0 27px;
     font-size: var(--fs-6);
     font-family: var(--ff-azeret-regular);
+}
+
+.header .btn:hover 
+{
+    background-color: var(--white);
 }
 
 .header.scrolled .btn {
@@ -386,9 +407,8 @@ header .btn {
     width: 19px;
 }
 
-
 .nav-open-btn img {
-    width: 25px;
+    width: 20px;
 }
 
 .header.scrolled .nav-open-btn img {
@@ -416,14 +436,19 @@ header .btn {
  */
 
 @media (min-width: 992px) {
-
-    /**
-     * HEADER
-     */
-
-    .header {
+    .header
+    {
         padding: 0;
-        margin: 0;
+    }
+
+    .header.scrolled .logo img {
+        width: 152px;
+        filter: grayscale(100%) brightness(0%);
+    }
+
+    .header .logo img {
+        width: 152px;
+        padding-left: 40px;
     }
 
     .header.scrolled {
@@ -443,21 +468,21 @@ header .btn {
         all: unset;
     }
 
-    .navbar-list {
-        display: flex;
-        gap: 68px;
-    }
-
-    .navbar-link {
+    .navbar .navbar-list {
         position: relative;
-        color: var(--white);
-        font-size: var(--fs-5);
+        display: flex;
+        gap: 80px;
     }
 
-    .header.scrolled .navbar-link {
+    .navbar .navbar-list .navbar-link {
+        font-size: 12pt;
         color: var(--black);
     }
 
+    .nav__social_links
+    {
+        display: none;
+    }
 
     .contact-link {
         display: none;
@@ -474,14 +499,19 @@ header .btn {
 
 @media (min-width: 1340px) {
 
-
-    /**
-     * HEADER
-     */
-
-    .header {
+    .header
+    {
         padding: 0;
-        margin: 0;
+    }
+
+    .header.scrolled .logo img {
+        width: 152px;
+        filter: grayscale(100%) brightness(0%);
+    }
+
+    .header .logo img {
+        width: 152px;
+        padding-left: 40px;
     }
 
     .header.scrolled {
@@ -490,9 +520,6 @@ header .btn {
         z-index: 200;
     }
 
-    .header.scrolled .navbar-link {
-        color: var(--black);
-    }
 
     .header.scrolled .btn {
         background-color: var(--black);
@@ -513,7 +540,13 @@ header .btn {
     }
 
     .navbar-list {
+        position: relative;
         gap: 80px;
+    }
+
+    .nav__social_links
+    {
+        display: none;
     }
 
     .contact-link {
