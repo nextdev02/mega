@@ -851,9 +851,9 @@ header .btn {
 .service__list-up .service__list-box,
 .service__list-down .service__list-box {
     padding: 1rem 0;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
     border-top: 1px solid #9595952f;
-    height: 230px;
+    height: 247px;
     margin-right: 25px !important;
     cursor: default;
 }
