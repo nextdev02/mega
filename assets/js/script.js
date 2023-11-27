@@ -1,91 +1,49 @@
-// number counter
+let clinets = new Swiper(".clients__brands", {
+  slidesPerView: 6,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    clickable: true,
+  },
 
-// 7+
-function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj.innerHTML = Math.floor(progress * (start - end) - end);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    320: {
+      slidesPerView: 2,
+    },
+    550: {
+      slidesPerView: 2,
+    },
 
-const obj = document.getElementById("value1");
-animateValue(obj, 7, 0, 5000);
+    650: {
+      slidesPerView: 2,
+    },
 
-// 15+
-function animateValue1(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj1.innerHTML = Math.floor(progress * (start - end) - end);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
+    800: {
+      slidesPerView: 2.4,
+    },
 
-const obj1 = document.getElementById("value2");
-animateValue1(obj, 15, 0, 5000);
+    950: {
+      slidesPerView: 3.7,
+    },
 
-// 15+
-function animateValue2(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj2.innerHTML = Math.floor(progress * (start - end) - end);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
+    1050: {
+      slidesPerView: 3.6,
+    },
 
-const obj2 = document.getElementById("value3");
-animateValue2(obj, 15, 0, 5000);
+    1150: {
+      slidesPerView: 4,
+    },
 
-// 15+
-function animateValue3(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj3.innerHTML = Math.floor(progress * (start - end) - end);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
-
-const obj3 = document.getElementById("value4");
-animateValue3(obj, 15, 0, 5000);
-
-// 15+
-function animateValue4(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj4.innerHTML = Math.floor(progress * (start - end) - end);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
-
-const obj4 = document.getElementById("value5");
-animateValue4(obj, 1, 0, 1000);
-
-
+    1300: {
+      slidesPerView: 5,
+    },
+  },
+});
 
 
 // Sticky Header
@@ -301,54 +259,6 @@ let teamcontent = new Swiper(".team__content", {
 
 // Clients Section Slider
 
-let clinets = new Swiper(".clients__brands", {
-  slidesPerView: 6,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 5000,
-  },
-  pagination: {
-    clickable: true,
-  },
-
-  breakpoints: {
-
-    300: {
-      slidesPerView: 1,
-    },
-    320: {
-      slidesPerView: 2,
-    },
-    550: {
-      slidesPerView: 2,
-    },
-
-    650: {
-      slidesPerView: 2,
-    },
-
-    800: {
-      slidesPerView: 2.4,
-    },
-
-    950: {
-      slidesPerView: 3.7,
-    },
-
-    1050: {
-      slidesPerView: 3.6,
-    },
-
-    1150: {
-      slidesPerView: 4,
-    },
-
-    1300: {
-      slidesPerView: 5
-    },
-
-  },
-});
 
 
 
@@ -406,56 +316,89 @@ let process = new Swiper(".work__process", {
 
 
 
+// number counter
 
+// 7+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
 
+const obj = document.getElementById("value1");
+animateValue(obj, 7, 0, 5000);
 
-// About Clients Section Slider
+// 15+
+function animateValue1(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj1.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
 
-let about_clients = new Swiper(".about__clients__brands", {
-  slidesPerView: 6,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 5000,
-  },
-  pagination: {
-    clickable: true,
-  },
+const obj1 = document.getElementById("value2");
+animateValue1(obj, 15, 0, 5000);
 
-  breakpoints: {
+// 15+
+function animateValue2(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj2.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
 
-    300: {
-      slidesPerView: 1,
-    },
-    320: {
-      slidesPerView: 2,
-    },
-    550: {
-      slidesPerView: 2,
-    },
+const obj2 = document.getElementById("value3");
+animateValue2(obj, 15, 0, 5000);
 
-    650: {
-      slidesPerView: 2,
-    },
+// 15+
+function animateValue3(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj3.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
 
-    800: {
-      slidesPerView: 2.4,
-    },
+const obj3 = document.getElementById("value4");
+animateValue3(obj, 15, 0, 5000);
 
-    950: {
-      slidesPerView: 3.7,
-    },
+// 15+
+function animateValue4(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj4.innerHTML = Math.floor(progress * (start - end) - end);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
 
-    1050: {
-      slidesPerView: 3.6,
-    },
-
-    1150: {
-      slidesPerView: 4,
-    },
-
-    1300: {
-      slidesPerView: 5
-    },
-
-  },
-});
+const obj4 = document.getElementById("value5");
+animateValue4(obj, 1, 0, 1000);

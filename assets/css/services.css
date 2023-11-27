@@ -209,6 +209,7 @@ p {
 /* ----------------- Header Start ------------------ */
 
 .header {
+    height: 75px;
     position: fixed;
     top: 0;
     left: 0;
@@ -217,6 +218,14 @@ p {
     align-items: center;
     justify-content: space-between;
     z-index: 99;
+    transition: 0.3s ease;
+}
+
+
+.header.scrolled {
+    z-index: 100;
+    background: #fff;
+
 }
 
 .header .logo {
@@ -326,7 +335,7 @@ p {
 
 .service__title h3
 {
-    font-size: 19pt;
+    font-size: 18pt;
     line-height: 32px;
     color: var(--secondery-color);
     font-weight: var(--ff-tthoves-medium);
@@ -524,7 +533,7 @@ p {
 @media only screen and (max-width: 600px) {
     
     .service__section {
-        padding: 7rem;
+        padding: 8rem;
         position: relative;
     }
 
@@ -540,11 +549,11 @@ p {
 
     .service-title h1 {
         margin-top: -4.3rem;
-        padding-top: 5.6rem;
-        font-size: 162px;
-        font-weight: 400;
+        padding-top: 10rem;
+        font-size: 122px;
+        font-weight: 100;
         color: var(--white-1);
-        letter-spacing: -18px;
+        letter-spacing: -8px;
         position: absolute;
         text-align: center;
         top: 4.2rem;
@@ -580,7 +589,7 @@ p {
 
 
     .service__boxes-list .service__boxes {
-        width: 90%;
+        width: 80%;
     }
 
 
@@ -606,6 +615,12 @@ p {
         margin-left: 0rem;
     }
 
+    .extra__support-card h3 {
+        width: 85%;
+        font-family: var(--ff-tthoves-medium);
+        font-size: var(--fs-3);
+        line-height: 38px;
+    }
 
 }
 

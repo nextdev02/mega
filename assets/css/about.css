@@ -468,14 +468,14 @@ p {
 /* ------------ clients__brands -------------- */
 
 
-.about__clients__brands {
+.clients__brands{
     padding-top: 4rem;
     display: flex;
     align-items: center;
     gap: 1px;
 }
 
-.about__clients__brands .brand img {
+.clients__brands .brand img {
     width: 122px;
     filter: brightness(0.1);
 }

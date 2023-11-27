@@ -368,7 +368,7 @@ p {
     .contact__hero .contact__left-img {
         position: absolute;
         right: -22rem;
-        bottom: 20rem;
+        bottom: 30rem;
     }
 
     .contact__hero .contact__left-img img {
@@ -377,7 +377,7 @@ p {
     }
 
     .contact__hero-heading {
-        padding-top: 12rem;
+        padding-top: 18rem;
     }
 
     .contact__details h6 {
