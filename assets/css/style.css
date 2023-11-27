@@ -372,7 +372,7 @@ video {
 
 .nav__social_links a
 {
-    padding-inline: 5px;
+    padding-inline: 15px;
     font-size: 23px;
 }
 
@@ -476,7 +476,7 @@ header .btn {
 
     .navbar .navbar-list .navbar-link {
         font-size: 12pt;
-        color: var(--black);
+        color: var(--white);
     }
 
     .nav__social_links

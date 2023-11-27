@@ -230,7 +230,7 @@ p {
     right: 0;
     padding: 30px 20px;
     width: 100%;
-    z-index: 4;
+    z-index: 100;
 }
 
 .header.scrolled {
@@ -327,7 +327,7 @@ p {
 
 .nav__social_links a
 {
-    padding-inline: 5px;
+    padding-inline: 15px;
     font-size: 23px;
 }
 
