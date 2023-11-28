@@ -759,15 +759,21 @@ header .btn:hover {
 }
 
 .value__titles h3 {
+    font-size: 18px;
     color: var(--primary-color);
+    font-family: var(--ff-tthoves-regular);
 }
 
 .value__list-box h4 {
+    font-size: 18px;
     color: var(--white);
+    font-family: var(--ff-tthoves-regular);
 }
 
 .value__list-box p {
+    font-size: 14px;
     line-height: 20px;
+    font-family: var(--ff-tthoves-regular);
 }
 
 .value__list-box h4.number {
