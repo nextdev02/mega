@@ -26,6 +26,11 @@
     src: url("../fonts/TTHoves-Medium.ttf");
 }
 
+@font-face {
+    font-family: TTHoves-Demibold;
+    src: url("../fonts/TTHoves-DemiBold.ttf");
+}
+
 
 :root {
 
@@ -43,6 +48,7 @@
     --ff-azeret-regular: 'Azeret-Regular';
     --ff-tthoves-regular: 'TTHoves-Regular';
     --ff-tthoves-medium: 'TTHoves-Medium';
+    --ff-tthoves-demibold: 'TTHoves-DemiBold';
 
     /* Font Size */
     --fs-1: 86px;
@@ -642,7 +648,8 @@ header .btn {
     color: var(--white);
     z-index: 2;
     margin: 0px -13px 0px 13px;
-    font-family: var(--ff-azeret-regular);
+    font-family: var(--ff-tthoves-regular);
+    font-size: var(--fs-5);
 }
 
 .home__bottom-left .btn-animation:hover .ab-btn {
@@ -669,7 +676,7 @@ header .btn {
 
 
 .home__bottom-up .home__bottom-left .home__bottom-left-content {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
     opacity: .3;
     line-height: 16px;
     width: 80%;
@@ -695,12 +702,14 @@ header .btn {
 }
 
 .home__bottom-down .box h2 {
-    font-family: var(--ff-tthoves-regular);
-    font-weight: 600;
+    font-family: var(--ff-tthoves-demibold);
+    font-size: var(--fs-2);
+    font-weight: normal;
 }
 
 .home__bottom-down .box h5 {
     font-family: var(--ff-azeret-regular);
+    font-size: var(--fs-6);
 }
 
 .home__bottom-down .box {
@@ -753,7 +762,8 @@ header .btn {
 }
 
 .home__bottom-down .socials .social-content p {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
+    font-family: var(--ff-tthoves-regular);
     line-height: 16px;
 }
 
@@ -779,6 +789,7 @@ header .btn {
 
 .service__content .service__content-heading h5 {
     opacity: 0.3;
+    font-size: var(--fs-6);
     font-family: var(--ff-tthoves-regular);
 }
 
@@ -788,12 +799,14 @@ header .btn {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: var(--ff-tthoves-medium);
+    letter-spacing: -2.7px;
 }
 
 .service__content .service__content-heading p {
     width: 39%;
     line-height: 16px;
-    opacity: 0.3;
+    opacity: 30%;
+    font-size: var(--fs-6);
     font-family: var(--ff-tthoves-regular);
 }
 
