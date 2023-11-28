@@ -200,6 +200,13 @@
     background-color: var(--white);
   }
 
+  .team__heading h1 {
+    width: 100%;
+    font-size: 54px;
+    font-family: var(--ff-tthoves-medium);
+  }
+  
+
   .team__section-part {
     flex-direction: column;
     align-items: start;
@@ -469,6 +476,7 @@
     background-color: var(--white);
   }
 
+
   .team__section-part {
     flex-direction: column;
     align-items: start;
@@ -486,6 +494,8 @@
   .team_members-more {
     width: 96%;
   }
+
+
 
   .team_members-more h3 {
     line-height: 43px;
