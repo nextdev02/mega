@@ -802,6 +802,7 @@ header .btn:hover
     }
 
     .extra__support-heading {
+        width: 100%;
         flex-direction: column;
     }
 

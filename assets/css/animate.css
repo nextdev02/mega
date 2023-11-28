@@ -346,11 +346,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 54px;
+  gap: 84px;
 }
 
 .footer__short-links .short-link a {
-  font-size: var(--fs-6);
+  font-size: 12px;
   font-family: var(--ff-azeret-regular);
 }
 
@@ -625,6 +625,28 @@
     gap: 0px;
   }
 
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .contact__section-content label {
+    font-family: var(--ff-tthoves-regular);
+    font-size: 26px;
+}
+
+.contact__Section input {
+  width: 24%;
+  font-size: 20px;
+}
+
+.submit-area {
+  margin-left: 4.7rem;
+}
+
+#project-details
+{
+  width: 35%;
+}
 
 }
 
