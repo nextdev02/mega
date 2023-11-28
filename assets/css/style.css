@@ -1,9 +1,4 @@
-.team__members-container {
-    display: flex;
-    align-items: self-start;
-    justify-content: space-between;
-    gap: 30px;
-}
+
 
 /* Font Family */
 @font-face {
