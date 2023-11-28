@@ -49,9 +49,7 @@ html {
     --ff-tthoves-regular: 'TTHoves-Regular';
     --ff-tthoves-medium: 'TTHoves-Medium';
 
-
-
-    /* Font Size */
+    
     --fs-1: 54pt;
     --fs-2: 32pt;
     --fs-3: 20pt;
@@ -59,10 +57,8 @@ html {
     --fs-5: 14pt;
     --fs-6: 12pt;
     --fs-7: 12pt;
-    /* Font Width */
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-700: 700;
+
+
 
 
     /* Section Space */
@@ -295,7 +291,7 @@ p {
 {
     display: block;
     margin-top: 10px;
-    font-size: 16pt;
+    font-size: var();
     color: var(--white);
 }
 

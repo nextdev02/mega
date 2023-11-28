@@ -364,7 +364,7 @@ function animateValue(obj, start, end, duration) {
 }
 
 const obj = document.getElementById("value1");
-animateValue(obj, 7, 0, 5000);
+animateValue(obj, 7, 0, 2000);
 
 // 15+
 function animateValue1(obj, start, end, duration) {
@@ -381,7 +381,7 @@ function animateValue1(obj, start, end, duration) {
 }
 
 const obj1 = document.getElementById("value2");
-animateValue1(obj, 15, 0, 5000);
+animateValue1(obj, 15, 0, 2000);
 
 // 15+
 function animateValue2(obj, start, end, duration) {
@@ -398,7 +398,7 @@ function animateValue2(obj, start, end, duration) {
 }
 
 const obj2 = document.getElementById("value3");
-animateValue2(obj, 15, 0, 5000);
+animateValue2(obj, 15, 0, 2000);
 
 // 15+
 function animateValue3(obj, start, end, duration) {
@@ -415,7 +415,7 @@ function animateValue3(obj, start, end, duration) {
 }
 
 const obj3 = document.getElementById("value4");
-animateValue3(obj, 15, 0, 5000);
+animateValue3(obj, 15, 0, 2000);
 
 // 15+
 function animateValue4(obj, start, end, duration) {
@@ -432,4 +432,4 @@ function animateValue4(obj, start, end, duration) {
 }
 
 const obj4 = document.getElementById("value5");
-animateValue4(obj, 1, 0, 1000);
+animateValue4(obj, 1, 0, 500);

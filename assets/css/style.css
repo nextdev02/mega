@@ -27,23 +27,15 @@
 }
 
 
-
-html {
-    scroll-behavior: smooth;
-}
-
 :root {
 
     /* ------ Colors ----- */
-
     --primary-color: #7F00FF;
     --secondery-color: #1F0A3F;
     --black: #000000;
-
     --white: #FFFFFF;
     --white-1: #F1F0EC;
     --white-2: #C1C1C1;
-
 
 
     /* Font Family */
@@ -58,23 +50,14 @@ html {
     --fs-3: 60px;
     --fs-4: 38px;
     --fs-5: 14px;
-    --fs-6: 17px;
+    --fs-6: 12px;
     --input-font-size: 24px;
 
-    /* Font Width */
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-700: 700;
-
-
     /* Section Space */
-
     --section-padding: 60px;
 
-    /**
-   * transition
-   */
 
+    /* transition */
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease;
     --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
@@ -100,7 +83,7 @@ section {
 }
 
 html {
-    font-family: var(--ff-tthoves-medium);
+    font-family: var(--ff-tthoves-regular);
     scroll-behavior: smooth;
 }
 
@@ -164,13 +147,9 @@ button {
     padding-block: var(--section-padding);
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: var(--fw-400);
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: normal;
 }
 
 h1 {
@@ -197,7 +176,6 @@ h6 {
     font-size: var(--fs-6);
 }
 
-
 p {
     font-size: var(--fs-5);
 }
@@ -209,11 +187,6 @@ p {
 
 .w-100 {
     width: 100%;
-}
-
-.grid-list {
-    display: grid;
-    gap: 20px;
 }
 
 .section-title,
@@ -256,6 +229,7 @@ video {
 
 .video__cover .list li h5 {
     color: var(--white);
+    font-size: var(--fs-6);
     font-family: var(--ff-azeret-regular);
 }
 
@@ -338,7 +312,8 @@ video {
 {
     display: block;
     margin-top: 10px;
-    font-size: 16pt;
+    font-size: var(--fs-6);
+    font-family: var(--ff-tthoves-regular);
 }
 
 .nav-close-btn {
@@ -385,7 +360,7 @@ header .btn {
     height: 75px;
     padding: 24px 36px;
     border-radius: 0 0 0 27px;
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
     font-family: var(--ff-azeret-regular);
 }
 
@@ -475,7 +450,8 @@ header .btn {
     }
 
     .navbar .navbar-list .navbar-link {
-        font-size: 12pt;
+        font-size: var(--fs-6);
+        font-family: var(--ff-tthoves-regular);
         color: var(--white);
     }
 
@@ -601,6 +577,7 @@ header .btn {
     font-size: var(--fs-1);
     line-height: 96px;
     font-family: var(--ff-tthoves-medium);
+    letter-spacing: -4.3px;
 }
 
 .banner-title-mobile {
