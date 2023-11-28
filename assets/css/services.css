@@ -52,12 +52,12 @@ html {
 
 
     /* Font Size */
-    --fs-1: 54pt;
-    --fs-2: 32pt;
-    --fs-3: 24pt;
-    --fs-4: 18pt;
-    --fs-5: 14pt;
-    --fs-6: 12pt;
+    --fs-1: 54px;
+    --fs-2: 32px;
+    --fs-3: 24px;
+    --fs-4: 18px;
+    --fs-5: 14px;
+    --fs-6: 12px;
 
     /* Font Width */
     --fw-400: 400;

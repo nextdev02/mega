@@ -246,7 +246,7 @@
 
   .clients__brands .brand img {
     width: 100%;
-    filter: brightness(0.1);
+    filter: unset;
   }
 
 
@@ -274,7 +274,7 @@
 
   .contact__section-content label {
     font-family: var(--ff-tthoves-regular);
-    margin-top: 0px;
+    font-size: 26px;
   }
 
   .contact__Section input {
@@ -524,6 +524,7 @@
 
   .contact__section-content label {
     font-family: var(--ff-tthoves-regular);
+    font-size: 28px;
     margin-top: 0px;
   }
 

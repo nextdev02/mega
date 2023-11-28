@@ -52,14 +52,16 @@ html {
 
 
     /* Font Size */
-    --fs-1: 54pt;
-    --fs-2: 32pt;
-    --fs-3: 20pt;
-    --fs-4: 18pt;
-    --fs-5: 14pt;
-    --fs-6: 12pt;
-    --fs-7: 12pt;
+    --fs-1: 54px;
+    --fs-2: 32px;
+    --fs-3: 20px;
+    --fs-4: 18px;
+    --fs-5: 14px;
+    --fs-6: 12px;
+    --fs-7: 12px;
+    
     /* Font Width */
+
     --fw-400: 400;
     --fw-500: 500;
     --fw-700: 700;
@@ -548,9 +550,9 @@ header .btn:hover {
 }
 
 .about__hero-content-left .about__hero-heading h1 .highlight-text {
-    font-size: 71pt;
+    font-size: 71px;
     color: var(--primary-color);
-    margin-left: 8.5rem;
+    margin-left: 6rem;
     font-family: var(--ff-tthoves-medium);
 }
 
@@ -561,11 +563,12 @@ header .btn:hover {
     line-height: 30px;
     width: 64%;
     color: var(--secondery-color);
+    font-size: 18px;
     font-family: var(--ff-tthoves-medium);
 }
 
 .about__hero-content-left p {
-    font-size: var(--fs-6);
+    font-size: 14px;
     font-weight: 400;
     color: var(--p);
     line-height: 20px;
@@ -582,7 +585,6 @@ header .btn:hover {
 
 .about__hero-content-right img {
     width: 100%;
-
     height: auto;
 }
 
@@ -617,7 +619,7 @@ header .btn:hover {
     color: var(--secondery-color);
     font-family: var(--ff-tthoves-medium);
     line-height: 38px;
-    font-size: 23pt;
+    font-size: 24px;
     letter-spacing: -1.2px;
 }
 
@@ -633,7 +635,7 @@ header .btn:hover {
     line-height: 20px;
     color: var(--white-2);
     font-family: var(--ff-tthoves-regular);
-    font-size: var(--fs-6);
+    font-size: 14px;
     font-weight: 300;
     color: var(--p);
 }
@@ -665,17 +667,18 @@ header .btn:hover {
 }
 
 .clients__heading h6 {
+    font-size: 12px;
     opacity: 0.3;
 }
 
 .clients__heading h1 {
-    font-size: 35pt;
+    font-size: 54px;
     font-family: var(--ff-tthoves-medium);
 
 }
 
 .clients__heading p {
-    font-size: var(--fs-6);
+    font-size: 12px;
     line-height: 16px;
     opacity: 0.3;
     width: 96%;
@@ -842,7 +845,7 @@ header .btn:hover {
 
 .team__heading h5 {
     width: 66%;
-    font-size: var(--fs-6);
+    font-size: 14px;
     color: var(--secondery-color);
     line-height: 20px;
     font-family: var(--ff-tthoves-regular);

@@ -4,6 +4,7 @@ let clinets = new Swiper(".clients__brands", {
   autoplay: {
     delay: 5000,
   },
+  
   pagination: {
     clickable: true,
   },

@@ -52,17 +52,12 @@ html {
 
 
     /* Font Size */
-    --fs-1: 54pt;
-    --fs-2: 32pt;
-    --fs-3: 24pt;
-    --fs-4: 18pt;
-    --fs-5: 14pt;
-    --fs-6: 12pt;
-
-    /* Font Width */
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-700: 700;
+    --fs-1: 54px;
+    --fs-2: 32px;
+    --fs-3: 24px;
+    --fs-4: 18px;
+    --fs-5: 14px;
+    --fs-6: 12px;
 
 
     /* Section Space */
@@ -543,18 +538,18 @@ header .btn:hover
 .contact__hero-heading h1 {
     font-family: var(--ff-tthoves-medium);
     font-weight: 500;
-    font-size: 45pt;
+    font-size: 54px;
 }
 
 .contact__hero-heading h1 .highlight-text {
     margin-left: 8rem;
     color: var(--primary-color);
-    font-size: 64pt;
+    font-size: 71px;
 }
 
 .contact_network h3 {
     margin: 3rem 0;
-    font-size: 20pt;
+    font-size: 24px;
     line-height: 32px;
     font-family: var(--ff-tthoves-medium);
 }
@@ -566,7 +561,7 @@ header .btn:hover
 }
 
 .contact__details h6 {
-    font-size: 12pt;
+    font-size: 14px;
     color: var(--p);
     font-family: var(--ff-tthoves-regular);
     line-height: 1.7em;
@@ -574,7 +569,7 @@ header .btn:hover
 
 .contact__details h3 {
     color: #EE660C;
-    font-size: 20pt;
+    font-size: 24px;
     letter-spacing: -0.2px;
     font-family: var(--ff-tthoves-regular);
 }

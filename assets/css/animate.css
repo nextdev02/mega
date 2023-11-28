@@ -194,7 +194,7 @@
 
 .contact__section-content label {
   font-family: var(--ff-tthoves-regular);
-  font-size: 38px;
+  font-size: 32px;
 }
 
 .contact__Section input {
@@ -223,6 +223,8 @@
   border: none;
   padding: 10px 10px 10px 10px;
 }
+
+
 .contact__Section .btn-animation {
   margin-top: 0px;
   border: 2px solid var(--black);
@@ -231,7 +233,7 @@
   position: relative;
   z-index: 2;
   height: 70px;
-  width: 260px;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,7 +259,7 @@
 
 .contact__Section .btn-animation:hover {
   background: var(--black);
-  width: 300px;
+  width: 220px;
 }
 
 .contact__Section .ab-btn {
@@ -427,7 +429,7 @@
 
   .contact__section-title h1 {
     font-family: var(--ff-tthoves-medium);
-    font-size: 52px;
+    font-size: 34px;
 }
 
 .contact__Section .contact-details {
@@ -441,7 +443,7 @@
 
 .contact__section-content label {
   font-family: var(--ff-tthoves-regular);
-  font-size: 28px;
+  font-size: 26px;
 }
   
   .contact__Section input {
@@ -502,7 +504,7 @@
 
   .contact__section-title h1 {
     font-family: var(--ff-tthoves-medium);
-    font-size: 52px;
+    font-size: 40px;
 }
 
 .contact__Section .contact-details {
@@ -583,7 +585,7 @@
 
   .contact__section-title h1 {
     font-family: var(--ff-tthoves-medium);
-    font-size: 52px;
+    font-size: 46px;
 }
 
 .contact__section-content label {
