@@ -210,11 +210,11 @@ let serviceupswiperdown = new Swiper(".service__list-down", {
     },
 
     550: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.9,
     },
 
     650: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
     },
 
     800: {
@@ -239,7 +239,6 @@ let serviceupswiperdown = new Swiper(".service__list-down", {
 
   },
 });
-
 
 // Team Member Slider
 
