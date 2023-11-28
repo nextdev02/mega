@@ -673,6 +673,7 @@ header .btn:hover {
 
 .clients__heading h1 {
     font-size: 54px;
+    letter-spacing: -2.7px;
     font-family: var(--ff-tthoves-medium);
 
 }
