@@ -418,7 +418,7 @@
   }
 
   .mission__content-article h6 {
-    width: 70%;
+    width: 80%;
   }
 
   /* ----------------------- Team Section Start ----------------------------- */
@@ -585,6 +585,7 @@
   .mission__content-left img {
     width: 280px;
     height: auto;
+    margin-left: 0rem;
   }
 
   .mission__content-right {
@@ -734,7 +735,7 @@
   }
 
   .mission__content-article h6 {
-    width: 45%;
+    width: 100%;
   }
 
   /* ----------------------- Team Section Start ----------------------------- */
