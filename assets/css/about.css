@@ -49,7 +49,9 @@ html {
     --ff-tthoves-regular: 'TTHoves-Regular';
     --ff-tthoves-medium: 'TTHoves-Medium';
 
-    
+
+
+    /* Font Size */
     --fs-1: 54pt;
     --fs-2: 32pt;
     --fs-3: 20pt;
@@ -57,8 +59,10 @@ html {
     --fs-5: 14pt;
     --fs-6: 12pt;
     --fs-7: 12pt;
-
-
+    /* Font Width */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
 
 
     /* Section Space */
@@ -281,17 +285,15 @@ p {
     top: 2rem;
 }
 
-.navbar .navbar-list
-{
+.navbar .navbar-list {
     position: absolute;
     left: -0.6rem;
 }
 
-.navbar .navbar-list .navbar-link
-{
+.navbar .navbar-list .navbar-link {
     display: block;
     margin-top: 10px;
-    font-size: var();
+    font-size: 16pt;
     color: var(--white);
 }
 
@@ -317,15 +319,13 @@ p {
 }
 
 
- .nav__social_links
-{
+.nav__social_links {
     position: absolute;
     left: 1rem;
     bottom: 1rem;
 }
 
-.nav__social_links a
-{
+.nav__social_links a {
     padding-inline: 15px;
     font-size: 23px;
 }
@@ -344,8 +344,8 @@ header .btn {
     font-family: var(--ff-azeret-regular);
 }
 
-header .btn:hover
-{   color: var(--white);
+header .btn:hover {
+    color: var(--white);
     background-color: var(--secondery-color);
 }
 
@@ -389,8 +389,7 @@ header .btn:hover
  */
 
 @media (min-width: 992px) {
-    .header
-    {
+    .header {
         padding: 0;
     }
 
@@ -431,8 +430,7 @@ header .btn:hover
         color: var(--black);
     }
 
-    .nav__social_links
-    {
+    .nav__social_links {
         display: none;
     }
 
@@ -455,8 +453,7 @@ header .btn:hover
 
 @media (min-width: 1340px) {
 
-    .header
-    {
+    .header {
         padding: 0;
     }
 
@@ -497,8 +494,7 @@ header .btn:hover
         gap: 80px;
     }
 
-    .nav__social_links
-    {
+    .nav__social_links {
         display: none;
     }
 
@@ -872,23 +868,29 @@ header .btn:hover
 
 .team__members-container img {
     filter: grayscale(100%) brightness(100%);
+
+    width: 311px;
+    height: 311px;
 }
 
 
 
 .team__members-container .member__details h2 {
-    font-size: 20pt;
+    font-size: 32px;
+    font-family: var(--ff-tthoves-regular);
     font-weight: 500;
 }
 
 .team__members-container .member__details h6 {
     color: #EE660C;
-    font-size: 10px;
+    font-size: 12px;
+    font-family: var(--ff-tthoves-regular);
 }
 
 
 .team__members-container .member__details p {
     font-size: 12px;
+    font-family: var(--ff-tthoves-regular);
     opacity: 0.3;
 }
 

@@ -26,21 +26,24 @@
     src: url("../fonts/TTHoves-Medium.ttf");
 }
 
-@font-face {
-    font-family: TTHoves-Demibold;
-    src: url("../fonts/TTHoves-DemiBold.ttf");
-}
 
+
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
 
     /* ------ Colors ----- */
+
     --primary-color: #7F00FF;
     --secondery-color: #1F0A3F;
     --black: #000000;
+
     --white: #FFFFFF;
     --white-1: #F1F0EC;
     --white-2: #C1C1C1;
+
 
 
     /* Font Family */
@@ -48,7 +51,6 @@
     --ff-azeret-regular: 'Azeret-Regular';
     --ff-tthoves-regular: 'TTHoves-Regular';
     --ff-tthoves-medium: 'TTHoves-Medium';
-    --ff-tthoves-demibold: 'TTHoves-DemiBold';
 
     /* Font Size */
     --fs-1: 86px;
@@ -56,14 +58,23 @@
     --fs-3: 60px;
     --fs-4: 38px;
     --fs-5: 14px;
-    --fs-6: 12px;
+    --fs-6: 17px;
     --input-font-size: 24px;
 
+    /* Font Width */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+
     /* Section Space */
+
     --section-padding: 60px;
 
+    /**
+   * transition
+   */
 
-    /* transition */
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease;
     --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
@@ -89,7 +100,7 @@ section {
 }
 
 html {
-    font-family: var(--ff-tthoves-regular);
+    font-family: var(--ff-tthoves-medium);
     scroll-behavior: smooth;
 }
 
@@ -153,9 +164,13 @@ button {
     padding-block: var(--section-padding);
 }
 
-h1, h2, h3, h4, h5, h6
-{
-    font-weight: normal;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: var(--fw-400);
 }
 
 h1 {
@@ -182,6 +197,7 @@ h6 {
     font-size: var(--fs-6);
 }
 
+
 p {
     font-size: var(--fs-5);
 }
@@ -193,6 +209,11 @@ p {
 
 .w-100 {
     width: 100%;
+}
+
+.grid-list {
+    display: grid;
+    gap: 20px;
 }
 
 .section-title,
@@ -235,7 +256,6 @@ video {
 
 .video__cover .list li h5 {
     color: var(--white);
-    font-size: var(--fs-6);
     font-family: var(--ff-azeret-regular);
 }
 
@@ -318,8 +338,7 @@ video {
 {
     display: block;
     margin-top: 10px;
-    font-size: var(--fs-6);
-    font-family: var(--ff-tthoves-regular);
+    font-size: 16pt;
 }
 
 .nav-close-btn {
@@ -366,7 +385,7 @@ header .btn {
     height: 75px;
     padding: 24px 36px;
     border-radius: 0 0 0 27px;
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
     font-family: var(--ff-azeret-regular);
 }
 
@@ -456,8 +475,7 @@ header .btn {
     }
 
     .navbar .navbar-list .navbar-link {
-        font-size: var(--fs-6);
-        font-family: var(--ff-tthoves-regular);
+        font-size: 12pt;
         color: var(--white);
     }
 
@@ -583,7 +601,6 @@ header .btn {
     font-size: var(--fs-1);
     line-height: 96px;
     font-family: var(--ff-tthoves-medium);
-    letter-spacing: -4.3px;
 }
 
 .banner-title-mobile {
@@ -648,8 +665,7 @@ header .btn {
     color: var(--white);
     z-index: 2;
     margin: 0px -13px 0px 13px;
-    font-family: var(--ff-tthoves-regular);
-    font-size: var(--fs-5);
+    font-family: var(--ff-azeret-regular);
 }
 
 .home__bottom-left .btn-animation:hover .ab-btn {
@@ -676,7 +692,7 @@ header .btn {
 
 
 .home__bottom-up .home__bottom-left .home__bottom-left-content {
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
     opacity: .3;
     line-height: 16px;
     width: 80%;
@@ -702,14 +718,12 @@ header .btn {
 }
 
 .home__bottom-down .box h2 {
-    font-family: var(--ff-tthoves-demibold);
-    font-size: var(--fs-2);
-    font-weight: normal;
+    font-family: var(--ff-tthoves-regular);
+    font-weight: 600;
 }
 
 .home__bottom-down .box h5 {
     font-family: var(--ff-azeret-regular);
-    font-size: var(--fs-6);
 }
 
 .home__bottom-down .box {
@@ -762,8 +776,7 @@ header .btn {
 }
 
 .home__bottom-down .socials .social-content p {
-    font-size: var(--fs-6);
-    font-family: var(--ff-tthoves-regular);
+    font-size: var(--fs-5);
     line-height: 16px;
 }
 
@@ -789,7 +802,6 @@ header .btn {
 
 .service__content .service__content-heading h5 {
     opacity: 0.3;
-    font-size: var(--fs-6);
     font-family: var(--ff-tthoves-regular);
 }
 
@@ -799,14 +811,12 @@ header .btn {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: var(--ff-tthoves-medium);
-    letter-spacing: -2.7px;
 }
 
 .service__content .service__content-heading p {
     width: 39%;
     line-height: 16px;
-    opacity: 30%;
-    font-size: var(--fs-6);
+    opacity: 0.3;
     font-family: var(--ff-tthoves-regular);
 }
 
@@ -868,8 +878,9 @@ header .btn {
     transition: all .3s ease-in-out;
 }
 
-.service__list-up .service__list-box h6,
-.service__list-down .service__list-box h6 {
+.service__list-up .service__list-box p,
+.service__list-down .service__list-box p {
+    font-size: 14px;
     font-weight: 400;
     padding-top: 50px;
     color: var(--secondery-color);
@@ -889,13 +900,13 @@ header .btn {
     transform: translateY(-40px);
 }
 
-.service__list-up .service__list-box h6,
-.service__list-down .service__list-box h6 {
+.service__list-up .service__list-box p,
+.service__list-down .service__list-box p {
     transition: .3s linear;
 }
 
-.service__list-up .service__list-box:hover h6,
-.service__list-down .service__list-box:hover h6 {
+.service__list-up .service__list-box:hover p,
+.service__list-down .service__list-box:hover p {
     transform: translateY(-40px);
 }
 
@@ -987,7 +998,9 @@ header .btn {
 
 .mission__content-right h4 {
     line-height: 1.3em;
-    font-size: var(--fs-4);
+    font-size: 32px;
+    font-family: var(--ff-tthoves-medium);
+
 }
 
 .mission__content-article {
@@ -998,6 +1011,7 @@ header .btn {
 }
 
 .mission__content-article h6 {
+    font-size: 14px;
     width: 82%;
     font-weight: var(--fw-400);
     line-height: 20px;
@@ -1031,6 +1045,7 @@ header .btn {
 
 .team-member .member__name {
     font-size: 18px;
+    font-family: var(--ff-tthoves-regular);
     display: block;
     padding-top: 1rem;
 }
@@ -1081,8 +1096,7 @@ header .btn {
 
 .team_members-more h6 {
     padding-top: 1rem;
-    font-size: var(--fs-6);
-    font-weight: 400;
+    font-size: 14px;
     line-height: 20px;
     color: var(--secondery-color);
     font-family: var(--ff-tthoves-regular);
@@ -1191,11 +1205,13 @@ header .btn {
 }
 
 .clients__content .clinets__content-heading h3 {
+    font-size: 54px;
     font-weight: var(--fw-400);
     font-family: var(--ff-tthoves-medium);
 }
 
 .clients__content .clinets__content-heading p {
+    font-size: 12px;
     width: 40%;
     text-align: center;
 }

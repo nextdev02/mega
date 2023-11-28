@@ -653,9 +653,9 @@ header .btn:hover
 }
 
 .support__content h3 {
-    font-size: 22pt;
+    font-size: 32px;
     font-family: var(--ff-tthoves-medium);
-    line-height: 36px;
+    line-height: 38px;
     color: var(--primary-color);
 }
 
@@ -684,6 +684,7 @@ header .btn:hover
 }
 
 .extra__support-heading {
+    width: 642px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -693,16 +694,16 @@ header .btn:hover
 
 .extra__support-heading h1 {
     font-family: var(--ff-tthoves-medium);
-    font-size: 35pt;
+    font-size: 54px;
     line-height: 60px;
 }
 
 .extra__support-heading h6 {
     margin-bottom: -3rem;
     color: var(--secondery-color);
-    font-size: 10pt;
+    font-size: 14px;
     line-height: 20px;
-    width: 93%;
+    width: 80%;
 }
 
 .extra__support-list {
