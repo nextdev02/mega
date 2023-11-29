@@ -218,6 +218,7 @@
   margin-top: 2px;
   font-family: var(--ff-tthoves-regular);
   border-bottom: 3px solid var(--secondery-color);
+  font-size: 28px;
   padding: 10px 0;
   outline: none;
 }
@@ -229,6 +230,7 @@
 .contact__Section input::placeholder {
   color: var(--secondery-color);
   font-size: var(--input-font-size);
+  font-family: var(--ff-tthoves-regular);
 }
 
 /* contact btn start */
@@ -462,6 +464,7 @@
 
   .contact__Section input {
     width: 100%;
+    font-size: 24px;
     margin: 0px 0px 40px 0px;
     margin-top: 2px;
     border-bottom: 3px solid var(--secondery-color);
